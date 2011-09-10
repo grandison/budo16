@@ -1,0 +1,82 @@
+{
+  "type": "widget",
+  "name": "weather",
+  "version": "4.0.1",
+  "revision": "8273",
+  "path": "application\/widgets\/weather",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Weather",
+  "description": "Displays the weather.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.0.1": {
+      "choose.tpl": "Page now reloads when location is selected"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Weather",
+    "description": "Displays the weather.",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/widgets\/weather": {
+      "type": "directory",
+      "path": "application\/widgets\/weather",
+      "structure": [
+        {
+          "path": "choose.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 931,
+          "sha1": "f450e7663449ed67021ab1aaa1c8f807d87f586a"
+        },
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1686,
+          "sha1": "ba574252fb662341806734a74ad9dd53962dc702"
+        },
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1273,
+          "sha1": "eb5836e19a6784253f7ada33ff9f82228e71446f"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1012,
+          "sha1": "9ad446cfa60a0780f9d3746bcbdeb0812fb03c4c"
+        }
+      ]
+    }
+  }
+}

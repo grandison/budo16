@@ -1,0 +1,79 @@
+{
+  "type": "external",
+  "name": "chootools",
+  "version": "4.1.0",
+  "revision": "8176",
+  "path": "externals\/chootools",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Chootools",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.0": {
+      "chootools.js": "Improved javascript automatic link enabling; added Request.Post class",
+      "manifest.php": "Incremented version"
+    },
+    "4.0.3": {
+      "chootools.js": "Tweak for line endings",
+      "manifest.php": "Incremented version"
+    },
+    "4.0.2": {
+      "chootools.js": "Improved language support; fixed rare bug in javascript sprintf implementation",
+      "manifest.php": "Incremented version"
+    },
+    "4.0.1": {
+      "chootools.js": "Added console.log() error protection; changed class name to update timestamps",
+      "manifest.php": "Incremented version"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Chootools",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/chootools": {
+      "type": "directory",
+      "path": "externals\/chootools",
+      "structure": [
+        {
+          "path": "chootools.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 30070,
+          "sha1": "93b217d067ea000c5f1099334fde46829b411a36"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1160,
+          "sha1": "c1d018f5a300fbd741afad2bb4ead13743a3a4cc"
+        }
+      ]
+    }
+  }
+}

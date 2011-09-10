@@ -1,0 +1,431 @@
+
+/* $Id: main.css 8271 2011-01-19 04:03:44Z john $ */
+@include "~/application/modules/Core/externals/styles/constants.css";
+
+
+
+
+
+
+/*
+FEED ITEMS
+Styles items with classified attachments in the feed.
+*/
+ul.feed .feed_attachment_classified
+{
+  display: block;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+  vertical-align: top;
+}
+html[dir="rtl"] ul.feed .feed_attachment_classified
+{
+  margin: 0px 0px 5px 5px;
+}
+ul.feed .feed_attachment_classified > div > a
+{
+  display: block;
+  float: left;
+  margin-right: 7px;
+}
+html[dir="rtl"] ul.feed .feed_attachment_classified > div > a
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+ul.feed .feed_attachment_classified > div > a > img
+{
+  display: inline-block;
+  max-width: 90px;
+  max-height: 90px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_classified > div > div
+{
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_classified
+{
+  background-image: url(~/application/modules/Classified/externals/images/types/classified.png);
+}
+
+
+/*
+BROWSE CLASSIFIEDS
+These styles are used on the browse classifieds page
+*/
+.browseclassifieds_criteria
+{
+  +rounded;
+  +foreground;
+  padding: 7px;
+}
+.browseclassifieds_criteria span.overTxtLabel
+{
+  color: $theme_font_color_light;
+}
+.browseclassifieds_criteria > ul > li + li
+{
+  margin-top: 7px;
+}
+.browseclassifieds_criteria > ul > li
+{
+  clear: both;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+.browseclassifieds_criteria > ul > li > span
+{
+  display: block;
+  margin-bottom: 3px;
+}
+
+ul.classifieds_browse
+{
+  clear: both;
+}
+ul.classifieds_browse > li
+{
+  clear: both;
+  padding: 0px 0px 15px 0px;
+  overflow: hidden;
+}
+ul.classifieds_browse > li + li
+{
+  padding-top: 15px;
+  border-top-width: 1px;
+}
+ul.classifieds_browse .classifieds_browse_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 8px;
+}
+html[dir="rtl"] ul.classifieds_browse .classifieds_browse_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+ul.classifieds_browse .classifieds_browse_photo img
+{
+  width: 100px;
+}
+ul.classifieds_browse .classifieds_browse_options
+{
+  float: right;
+  overflow: hidden;
+  padding-left: 20px;
+}
+ul.classifieds_browse .classifieds_browse_options > a
+{
+  clear: both;
+  display: block;
+  margin: 5px;
+  font-size: .8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+ul.classifieds_browse .classifieds_browse_info
+{
+  overflow: hidden;
+}
+ul.classifieds_browse .classifieds_browse_info_title h3
+{
+  margin: 0px;
+}
+ul.classifieds_browse .classifieds_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.classifieds_browse .classifieds_browse_info_blurb
+{
+  margin-top: 5px;
+}
+
+
+
+
+/*
+VIEW CLASSIFIED
+Styles both the 'view classifieds' and the 'view classified listing'
+pages, including the right-side gutter column by default.
+*/
+ul.classifieds_entrylist
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.classifieds_entrylist > li
+{
+  padding-bottom: 10px;
+}
+ul.classifieds_entrylist h3
+{
+  margin-bottom: 1px;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_date
+{
+  font-size: 8pt;
+  margin-bottom: 5px;
+  color: $theme_font_color_light;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body
+{
+  line-height: 1.5em;
+  padding: 5px 5px 5px 0px;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body img
+{
+  max-width: 100%;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body + .buttonlink
+{
+  margin-top: 5px;
+}
+ul.classifieds_entrylist + .comments
+{
+  padding-top: 10px;
+}
+div.classifieds_gutter .classifieds_gutter_photo
+{
+  display: block;
+}
+div.classifieds_gutter .classifieds_gutter_photo img
+{
+  display: block;
+  width: 98%;
+}
+div.classifieds_gutter .classifieds_gutter_name
+{
+  display: block;
+  font-weight: bold;
+  margin: 3px 0px 15px 0px;
+  font-size: 1em;
+}
+div.classifieds_gutter .buttonlink
+{
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+div.classifieds_gutter h4
+{
+  margin: 20px 0px 5px 0px;
+  text-transform: uppercase;
+}
+div.classifieds_gutter > ul > li
+{
+  margin-bottom: 2px;
+}
+div.classifieds_gutter ul.classifieds_gutter_options > li
+{
+  font-size: .8em;
+  margin: 3px 0px 3px 0px;
+}
+ul.classified_thumbs > li img
+{
+  max-width: 50%;
+  max-height: 50%;
+  margin: 15px 15px 15px 0px;
+  border: 1px solid $theme_photo_border_color;
+}
+.classified_stats
+{
+  margin-bottom: 15px;
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+}
+.classified_stats > a
+{
+  font-weight: bold;
+}
+
+
+
+
+/*
+EDIT CLASSIFIED LISTING
+*/
+ul.classifieds_editphotos
+{
+  width: 600px;
+}
+ul.classifieds_editphotos > li
+{
+  padding-top: 15px;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+ul.classifieds_editphotos .classifieds_editphotos_photo
+{
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+}
+ul.classifieds_editphotos .classifieds_editphotos_photo img
+{
+  display: block;
+  margin: 3px;
+  width: 170px;
+}
+ul.classifieds_editphotos .classifieds_editphotos_info
+{
+  overflow: hidden;
+}
+ul.classifieds_editphotos .classifieds_editphotos_title_input input,
+{
+  margin: 2px 0px 6px 0px;
+  width: 25em;
+}
+ul.classifieds_editphotos .classifieds_editphotos_caption_input textarea
+{
+  margin: 2px 0px 6px 0px;
+  width: 25em;
+  height: 3em;
+  min-height: 0px;
+}
+ul.classifieds_editphotos .classifieds_editphotos_label
+{
+  float: left;
+}
+ul.classifieds_editphotos .classifieds_editphotos_cover
+{
+  float: left;
+}
+ul.classifieds_editphotos .photo-delete-wrapper
+{
+  float: left;
+  margin-right: 15px;
+}
+ul.classifieds_editphotos .photo-delete-wrapper > label
+{
+  display: block;
+  float: left;
+}
+
+
+
+
+/*
+CLASSIFIED PHOTOS UPLOAD FORM
+Some minor changes to the global form.
+*/
+.classified_form_upload #file-label,
+.classified_form_upload #submit-label
+{
+  display: none;
+}
+
+
+
+
+
+
+
+
+/*
+CLASSIFIEDS USER PROFILE TAB
+Styles the list of classified listings on a user's Classifieds profile tab.
+*/
+ul.classifieds_profile_tab > li
+{
+  overflow: hidden;
+}
+ul.classifieds_profile_tab > li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+html[dir="rtl"] ul.classifieds_profile_tab .classifieds_profile_tab_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_photo img
+{
+  max-width: 90px;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_info
+{
+  overflow: hidden;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_title > a
+{
+  font-weight: bold;
+}
+ul.classifieds_profile_tab .classifieds_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.classifieds_profile_tab .classifieds_browse_info_blurb
+{
+  margin-top: 7px;
+}
+
+
+
+
+
+
+/* ICONS */
+.icon_classified_new
+{
+  background-image: url(~/application/modules/Classified/externals/images/create.png);
+}
+.icon_classified_edit
+{
+  background-image: url(~/application/modules/Classified/externals/images/edit.png);
+}
+.icon_classified_close
+{
+  background-image: url(~/application/modules/Classified/externals/images/close.png);
+}
+.icon_classified_open
+{
+  background-image: url(~/application/modules/Classified/externals/images/unclose.png);
+}
+.icon_classified_delete
+{
+  background-image: url(~/application/modules/Classified/externals/images/delete.png);
+}
+.icon_classified_photo_new
+{
+  background-image: url(~/application/modules/Classified/externals/images/upload.png);
+}
+.icon_classified_viewall
+{
+  background-image: url(~/application/modules/Classified/externals/images/allentries.png);
+}
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_classified
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}

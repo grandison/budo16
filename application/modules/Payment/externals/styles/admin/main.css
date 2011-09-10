@@ -1,0 +1,39 @@
+
+/* $Id: main.css 8221 2011-01-15 00:24:02Z john $ */
+
+.payment_transaction_detail_headline
+{
+  padding: 10px 0px 0px 10px;
+}
+
+dl.payment_transaction_details
+{
+  min-width: 500px;
+  padding: 2px 10px 2px 15px;
+}
+
+dl.payment_transaction_details dd
+{
+  min-height: 16px;
+  min-width: 250px;
+  float: left;
+  padding: 4px 5px 4px 0px;
+  clear: left;
+}
+
+dl.payment_transaction_details dt
+{
+  min-height: 16px;
+  padding: 4px 0px;
+  clear: right;
+}
+
+table.payment_transaction_list
+{
+  padding: 2px 10px 2px 15px;
+}
+
+.icon_plan_add
+{
+  background-image: url(~/application/modules/Payment/externals/images/plan_add.png);
+}

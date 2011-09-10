@@ -1,0 +1,191 @@
+{
+  "type": "external",
+  "name": "mootools",
+  "version": "4.1.4",
+  "revision": "8820",
+  "path": "externals\/mootools",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Mootools",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.4": {
+      "manifest.php": "Incremented version",
+      "mootools-1.2.5.1-more-nc.js": "Added; Hack to prevent IE drag\/drop issues",
+      "mootools-1.2.5.1-more-yc.js": "Added; Hack to prevent IE drag\/drop issues",
+      "mootools-1.2.5-core-nc.js": "Hack to prevent IE drag\/drop issues",
+      "mootools-1.2.5-core-yc.js": "Hack to prevent IE drag\/drop issues"
+    },
+    "4.1.0": {
+      "manifest.php": "Incremented version",
+      "mootools-1.2.4.4-more-nc.js": "Hack to prevent IE draggable error",
+      "mootools-1.2.4.4-more-yc.js": "Hack to prevent IE draggable error"
+    },
+    "4.0.2": {
+      "manifest.php": "Incremented version",
+      "mootools-1.2.5-core-nc.js": "Added; Hack to prevent iframe issues",
+      "mootools-1.2.5-core-yc.js": "Added; Hack to prevent iframe issues"
+    },
+    "4.0.1": {
+      "manifest.php": "Incremented version",
+      "mootools-1.2.4-core-nc.js": "Hack to prevent iframe issues",
+      "mootools-1.2.4-core-yc.js": "Hack to prevent iframe issues",
+      "mootools-1.2.4.4-more-nc.js": "Added",
+      "mootools-1.2.4.4-more-yc.js": "Added"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Mootools",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/mootools": {
+      "type": "directory",
+      "path": "externals\/mootools",
+      "structure": [
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1623,
+          "sha1": "0769801968f7163667ed8b26c2791798fc522dda"
+        },
+        {
+          "path": "mootools-1.2.2-core-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 99061,
+          "sha1": "3c1ddf62af20a1f5c5de7a3af180b32528dc47db"
+        },
+        {
+          "path": "mootools-1.2.2-core-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 65834,
+          "sha1": "669d164e3bff6156b21084cf035979d62433df75"
+        },
+        {
+          "path": "mootools-1.2.2.2-more-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 143182,
+          "sha1": "b0b30a4f01eab9fb0a764134826d3a2df0bd7588"
+        },
+        {
+          "path": "mootools-1.2.2.2-more-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 96286,
+          "sha1": "bfd574c8b46ca0f0ed9724c0f64c4aed5705b1c5"
+        },
+        {
+          "path": "mootools-1.2.4-core-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 103531,
+          "sha1": "8b64e26bb9c4a06ee7aaa71a4701f967a639f5dd"
+        },
+        {
+          "path": "mootools-1.2.4-core-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 66907,
+          "sha1": "0672aee8d66c62e8f5894d9381a622a819a02df9"
+        },
+        {
+          "path": "mootools-1.2.4.2-more-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 202905,
+          "sha1": "061142b0600acc25d23f8964281e198753aee3a4"
+        },
+        {
+          "path": "mootools-1.2.4.2-more-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 131125,
+          "sha1": "b8162825722cdb3f49922faacef9c03dea6748ba"
+        },
+        {
+          "path": "mootools-1.2.4.4-more-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 208412,
+          "sha1": "eee5ace235686e106d48324338a7211bd328e3d6"
+        },
+        {
+          "path": "mootools-1.2.4.4-more-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 134301,
+          "sha1": "b0e1fff128efcb767f7990174a5ad35f963f1401"
+        },
+        {
+          "path": "mootools-1.2.5-core-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 103913,
+          "sha1": "508409b71ce4a408c4f06b32e2521f2fa945f2ee"
+        },
+        {
+          "path": "mootools-1.2.5-core-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 67215,
+          "sha1": "2c0f4687806b64b634081c4f98e5e58d28f3c6df"
+        },
+        {
+          "path": "mootools-1.2.5.1-more-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 213371,
+          "sha1": "fe2aa6e53c509537a44f5aebe23bff28d92f5d03"
+        },
+        {
+          "path": "mootools-1.2.5.1-more-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 136235,
+          "sha1": "1af5bf9c2f143639a8ff3859ff8ee85a01b54460"
+        }
+      ]
+    }
+  }
+}

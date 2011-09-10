@@ -1,0 +1,83 @@
+{
+  "type": "external",
+  "name": "smoothbox",
+  "version": "4.1.4",
+  "revision": "8841",
+  "path": "externals\/smoothbox",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Smoothbox",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.4": {
+      "manifest.php": "Incremented version",
+      "smoothbox4.js": "Fixed javascript errors in IE9"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Smoothbox",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/smoothbox": {
+      "type": "directory",
+      "path": "externals\/smoothbox",
+      "structure": [
+        {
+          "path": "loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2248,
+          "sha1": "0a76d065f62bf9ba51ba666efa3ce7b30344d053"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 552,
+          "sha1": "cf2b2cede2fdc7d1f263a7a3e8e6db06f532b6a0"
+        },
+        {
+          "path": "smoothbox.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 14135,
+          "sha1": "365892e96dcdf58f95f77a25be2188df15d1b47d"
+        },
+        {
+          "path": "smoothbox4.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 17149,
+          "sha1": "ef0e7e9345c3d4198f61bab67ee9ba179f7d2501"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "type": "widget",
+  "name": "rss",
+  "version": "4.0.3",
+  "revision": "8448",
+  "path": "application\/widgets\/rss",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "RSS Feed",
+  "description": "Displays an RSS feed.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.0.3": {
+      "Controller.php": "Fixed issue with getting link",
+      "index.tpl": "Fixed issue with getting link; added link enabling; added option to not strip HTML",
+      "manifest.php": "Incremented version; added option to not strip HTML"
+    },
+    "4.0.2": {
+      "index.tpl": "Added styles",
+      "manifest.php": "Incremented version"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "RSS Feed",
+    "description": "Displays an RSS feed.",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/widgets\/rss": {
+      "type": "directory",
+      "path": "application\/widgets\/rss",
+      "structure": [
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2035,
+          "sha1": "8cd4ddf1442caaf6c19e3f36b76585f3c912f0a6"
+        },
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1476,
+          "sha1": "c7b122acff67c54bcd248d638045e29d38e54d40"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1803,
+          "sha1": "b3d8c6cbb34338d905facbed95744394f2a42ba6"
+        }
+      ]
+    }
+  }
+}

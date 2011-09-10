@@ -1,0 +1,1253 @@
+{
+  "type": "module",
+  "name": "fields",
+  "version": "4.1.4",
+  "revision": "8820",
+  "path": "application\/modules\/Fields",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Fields",
+  "description": "Fields",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.4": {
+      "Form\/Search.php": "Fixed multi-checkbox display issues",
+      "Model\/DbTable\/Meta.php": "Fixed issue with clearing field alias when changing the profile type",
+      "Model\/DbTable\/Search.php": "Fixed search issues with pre-built select fields",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_jsSwitch.tpl": "Removed a console.log which could cause a javascript error"
+    },
+    "4.1.3": {
+      "Model\/DbTable\/Search.php": "Fixed search issue when the same birthday max\/min value is selected",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/fields.php": "Added birthday view helper to fix issue with birthday links on profile",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/FieldBirthdate.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldWebsite.php": "URL fields now open in a new tab\/window."
+    },
+    "4.1.2": {
+      "Form\/Element\/Birthdate.php": "Fixed birthdate minimum age to support zero",
+      "Model\/DbTable\/Search.php": "Fixes issue with linked textarea",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/FieldTextareaLinked.php": "Fixes issue with linked textarea",
+      "View\/Helper\/FieldValueLoop.php": "Added notice to admins for fields that would normally be hidden",
+      "views\/scripts\/admin-fields\/field-create.tpl": "Removed autocomplete for mapping fields"
+    },
+    "4.1.1": {
+      "Controller\/AdminAbstract.php": "Added new method of linking fields",
+      "externals\/.htaccess": "Added keywords; removed deprecated code",
+      "Form\/Admin\/Heading.php": "Added ability to hide heading on signup",
+      "Form\/Admin\/Map.php": "Added",
+      "Model\/DbTable\/Meta.php": "Added alias when editing field",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/fields.php": "Added custom helper for zip code",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/FieldDate.php": "Removed timezone to prevent date issue",
+      "View\/Helper\/FieldZipCode.php": "Fixed issue with linking",
+      "views\/scripts\/_jsAdmin.tpl": "Fixed javascript errors that would prevent updating page via AJAX",
+      "views\/scripts\/_jsSwitch.tpl": "Performance improvements",
+      "views\/scripts\/admin-fields\/field-create.tpl": "Added new method of linking fields",
+      "views\/scripts\/admin-fields\/map-create.tpl": "Added new method of linking fields"
+    },
+    "4.1.0": {
+      "\/application\/languages\/en\/fields.csv": "Fixed phrases with stray double-quotes",
+      "Form\/Standard.php": "Added custom error message support; fixed issue with saving multi select fields",
+      "Model\/DbTable\/Search.php": "Fixed issue that would prevent saving multiple values in a multi-checkbox or multi-select field (courtesy of RadCodes); fixed issue preventing searching by just a min or just a max value",
+      "Model\/DbTable\/Values.php": "Fixed typo",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/FieldAbstract.php": "Added",
+      "View\/Helper\/FieldAim.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldCountry.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldCurrency.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldDate.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldEmail.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldFacebook.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldLocation.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldMultiCheckbox.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldMultiselect.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldOptions.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldSelect.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldText.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldTextarea.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldTextareaLinked.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldTwitter.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldValueLoop.php": "Admins can now see all fields",
+      "View\/Helper\/FieldWebsite.php": "Added \"link to browse page\" support",
+      "View\/Helper\/FieldZipCode.php": "Added \"link to browse page\" support",
+      "views\/helpers\/AdminFieldMeta.php": "Added missing translation",
+      "views\/scripts\/_jsSwitch.tpl": "Fixed issue with field switching on browse pages",
+      "views\/scripts\/admin-fields\/field-create.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/field-edit.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/heading-create.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/heading-edit.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/map-create.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/option-edit.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/type-create.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/type-delete.tpl": "UI improvements",
+      "views\/scripts\/admin-fields\/type-edit.tpl": "UI improvements"
+    },
+    "4.0.5p1": {
+      "Form\/Standard.php": "Fixed issue where fields hidden on signup are hidden on edit as well",
+      "settings\/manifest.php": "Incremented version",
+      "View\/Helper\/FieldValueLoop.php": "Fixed notice caused by undefined variable",
+      "views\/scripts\/_jsSwitch.tpl": "Removed console.log"
+    },
+    "4.0.5": {
+      "Controller\/AdminAbstract.php": "Fixed rare error caused by missing options",
+      "Form\/Admin\/Field.php": "Added ability to hide a field on signup",
+      "Form\/Element\/Country.php": "Fixed issue with not adding an empty option when not required",
+      "Form\/Search.php": "Added support for dependent fields; fixed issue where country field was missing an empty option",
+      "Form\/Standard.php": "Added ability to hide a field on signup; fixed issue that allowed a user to bypass fields step on signup",
+      "Model\/DbTable\/Search.php": "Added method for memory usage improvements",
+      "Model\/Meta.php": "Required fields now have an empty option, to prevent accidental submission of incorrect options",
+      "settings\/changelog.php": "Added",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.4-4.0.5.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/FieldValueLoop.php": "Moved code into separate method for reusage",
+      "views\/scripts\/_jsSwitch.tpl": "Fixed bug with dependent fields and radio elements"
+    },
+    "4.0.4": {
+      "Api\/Core.php": "Fixes memory leak in network admin page",
+      "Form\/Admin\/Field\/Currency.php": "Causes currencies to be translated based on the language pack in use rather than the browser locale",
+      "Form\/Element\/Currency.php": "Fixes rare exceptions caused by locale codes without a territory",
+      "Form\/Element\/Country.php": "Fixes incorrect translation of country names",
+      "Model\/DbTable\/Search.php": "Added method to delete values for an item",
+      "Model\/DbTable\/Values.php": "Added method to delete values for an item",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/FieldCountry.php": "Fixes incorrect translation of country names"
+    },
+    "4.0.3": {
+      "Model\/DbTable\/Options.php": "ENUM\/SET columns in search table get updated when options are added",
+      "Model\/DbTable\/Search.php": "Proper handling of search bit",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.0.2": {
+      "Controller\/AdminAbstract.php": "Fixed problem that would prevent populating form elements for extra configuration options",
+      "Form\/Search.php": "Fixes age search to use minimum age",
+      "Form\/Standard.php": "Missing translation; fixed problem when used as a subform",
+      "settings\/manifest.php": "Increment version",
+      "View\/Helper\/FieldFacebook.php": "Fixed improper display of value",
+      "views\/scripts\/_jsAdmin.tpl": "Nested dependent fields now display properly"
+    },
+    "4.0.1": {
+      "Controller\/AdminAbstract.php": "Fixed error caused when trying to link field to parent when it had already been linked; cache is flushed on changing of order",
+      "Form\/Search.php": "Required caused field to be required on search; fixed improper inflection on field types",
+      "Model\/DbTable\/Abstract.php": "Added public flushCache method",
+      "Model\/DbTable\/Maps.php": "Field is now deleted when last map is removed",
+      "Model\/DbTable\/Search.php": "Fixed \"typo\" that would cause search index to not get removed on field deletion",
+      "settings\/manifest.php": "Incremented version",
+      "View\/Helper\/FieldFacebook.php": "Fixed bad rendering of facebook link when given a URL instead of a profile name"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Fields",
+    "description": "Fields",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Module",
+    "priority": 3500
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.2",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Fields": {
+      "type": "directory",
+      "path": "application\/modules\/Fields",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 21427,
+          "sha1": "509715e8feee0277b5a2a408b11198ba898c1eb7"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 549,
+          "sha1": "150161d3a55f20236558771c18c15ff1cc651163"
+        },
+        {
+          "path": "Controller",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Controller\/AdminAbstract.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 22114,
+          "sha1": "e86b25d22fee13ff2a11c0925e319acc6fa2dea4"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 71,
+          "sha1": "a137936c85f4bba6a98f924e9a6e367bd8b20ada"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/admin\/field.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 153,
+          "sha1": "56c846d5fa36aa646c36dfeda598ea71d444ae1f"
+        },
+        {
+          "path": "externals\/images\/admin\/field_add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 321,
+          "sha1": "d3e06d33f4f46fc4a447d6a524b70a203b25b5a2"
+        },
+        {
+          "path": "externals\/images\/admin\/heading.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 303,
+          "sha1": "e369025b97972ede064a00ea35b8438a8924fcf5"
+        },
+        {
+          "path": "externals\/images\/admin\/heading_add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 303,
+          "sha1": "e369025b97972ede064a00ea35b8438a8924fcf5"
+        },
+        {
+          "path": "externals\/images\/admin\/more.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 201,
+          "sha1": "6197eb13b4254f77f16833e1a9a8640e939d574c"
+        },
+        {
+          "path": "externals\/images\/admin\/type_add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 714,
+          "sha1": "7cbc947612ae34bfeb9a0314ddf2155f8ac620c1"
+        },
+        {
+          "path": "externals\/images\/admin\/type_delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 729,
+          "sha1": "28457c41855241c14568f3b5930c1e122a0201d4"
+        },
+        {
+          "path": "externals\/images\/admin\/type_rename.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 762,
+          "sha1": "7b837d31c7fc18ddf6c8b7db581e5802d337d4d4"
+        },
+        {
+          "path": "externals\/images\/field.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 153,
+          "sha1": "56c846d5fa36aa646c36dfeda598ea71d444ae1f"
+        },
+        {
+          "path": "externals\/images\/heading.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 303,
+          "sha1": "e369025b97972ede064a00ea35b8438a8924fcf5"
+        },
+        {
+          "path": "externals\/images\/option.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 273,
+          "sha1": "1b05c1e8e09201100a0e86a23cacc50d7ad543de"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Field",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Field\/Birthdate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 716,
+          "sha1": "03c741f8c5e10ac0a6e0bab3abc11ab6de7d0073"
+        },
+        {
+          "path": "Form\/Admin\/Field\/Currency.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1507,
+          "sha1": "593df81e3a3e991ccee1bc6efffd002e13c0d25b"
+        },
+        {
+          "path": "Form\/Admin\/Field.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3923,
+          "sha1": "e34a7cecb84778d7bb34c93e2eec5c1cb9e3ba69"
+        },
+        {
+          "path": "Form\/Admin\/FieldType.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1694,
+          "sha1": "ce3c85d018a49821f4e7655ef8131e201abf4a6a"
+        },
+        {
+          "path": "Form\/Admin\/Heading.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1795,
+          "sha1": "0d2b72e4087010378e120c38b46c42ec322300dd"
+        },
+        {
+          "path": "Form\/Admin\/Map.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1448,
+          "sha1": "8757c3308335cdd92b63b902fe5679091bf3e199"
+        },
+        {
+          "path": "Form\/Admin\/Option.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1323,
+          "sha1": "a8fda60655c6766b9b5ad2ac08890b2ce286a393"
+        },
+        {
+          "path": "Form\/Admin\/Type.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1331,
+          "sha1": "1e3d92b376f1961285cf2b3d44a4c383b32a1ce1"
+        },
+        {
+          "path": "Form\/Element",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 8192,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Element\/AboutMe.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 548,
+          "sha1": "d42a5dcf691d2b146064b62cbc9aee8dd8fe7c30"
+        },
+        {
+          "path": "Form\/Element\/Aim.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 537,
+          "sha1": "fa48e005dcbe111a04c49c26b7667212b95761cb"
+        },
+        {
+          "path": "Form\/Element\/Birthdate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1727,
+          "sha1": "30eb709322d8b9d868ec8078120d82156a463a1d"
+        },
+        {
+          "path": "Form\/Element\/City.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 538,
+          "sha1": "1288e2c7e2a3e2402bda065ed835a87299705cf9"
+        },
+        {
+          "path": "Form\/Element\/Country.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 908,
+          "sha1": "2151b74d41190e6fcb559412fbe74195a61172f4"
+        },
+        {
+          "path": "Form\/Element\/Currency.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1819,
+          "sha1": "c38c5b299d6a86c08041a35b239929f9af6b5c80"
+        },
+        {
+          "path": "Form\/Element\/EducationLevel.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 560,
+          "sha1": "e7bbcbf3c1794d8c7675de23a78ccd7e1d9466ac"
+        },
+        {
+          "path": "Form\/Element\/Ethnicity.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 557,
+          "sha1": "099f0c5b5d148bdf3673c3e36ac860b5f4b3f970"
+        },
+        {
+          "path": "Form\/Element\/EyeColor.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 549,
+          "sha1": "f45d11ca498f0ade26f0430413ea92be5f44b5d3"
+        },
+        {
+          "path": "Form\/Element\/Facebook.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 546,
+          "sha1": "623ea1e09ba8067ca82a7a8574080bea269dbac9"
+        },
+        {
+          "path": "Form\/Element\/FirstName.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 548,
+          "sha1": "a61a17b411e0b13336aaf2dd991527d290d3dea8"
+        },
+        {
+          "path": "Form\/Element\/Gender.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 544,
+          "sha1": "bec86beee60a03b998e312a09fba1aee5b6cd9dd"
+        },
+        {
+          "path": "Form\/Element\/Income.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 544,
+          "sha1": "17c4bf12f5fd51ce33a9cc5fb6b5f3ae4cff9dcb"
+        },
+        {
+          "path": "Form\/Element\/Interests.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 552,
+          "sha1": "2a3d18c8088217af2dac40b9742cbf0bf3bb7ca2"
+        },
+        {
+          "path": "Form\/Element\/LastName.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 544,
+          "sha1": "967e809afcac5a393f3f9cf1322e8aabea7622e7"
+        },
+        {
+          "path": "Form\/Element\/Location.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 544,
+          "sha1": "3429a0459ca377efe82a4af6ddcd47d4735bf57d"
+        },
+        {
+          "path": "Form\/Element\/LookingFor.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 560,
+          "sha1": "378ec62c8fea4a9f552d481bfd51c784381dda30"
+        },
+        {
+          "path": "Form\/Element\/Occupation.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 552,
+          "sha1": "e719929dc03c8a4071ff68430e2a5b0219e56fea"
+        },
+        {
+          "path": "Form\/Element\/PartnerGender.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 565,
+          "sha1": "07854fd6c97e1dd19abbc449437621026b5d2d72"
+        },
+        {
+          "path": "Form\/Element\/PoliticalViews.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 560,
+          "sha1": "1fe20731a3dafdffd8c44d3a97b86ca2b165a5bb"
+        },
+        {
+          "path": "Form\/Element\/ProfileType.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 554,
+          "sha1": "ce44bf84953bfe8f94c7383009c3a865f1ae0b82"
+        },
+        {
+          "path": "Form\/Element\/RelationshipStatus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 568,
+          "sha1": "7fe5f847ebbd16823672672ef12a2e48fefe7cf1"
+        },
+        {
+          "path": "Form\/Element\/Religion.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 548,
+          "sha1": "f197947059e63dac1849c471e8b4649a981abd40"
+        },
+        {
+          "path": "Form\/Element\/Twitter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 544,
+          "sha1": "91203d6a648f486dbc876a714e93cf0f7b5b422d"
+        },
+        {
+          "path": "Form\/Element\/Website.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 697,
+          "sha1": "0bbb3be124d80a353b1d4e870ce91dedbf750734"
+        },
+        {
+          "path": "Form\/Element\/Weight.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 544,
+          "sha1": "c8976c65ed192204a64b680c4104d7be0f20d9a5"
+        },
+        {
+          "path": "Form\/Element\/ZipCode.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 771,
+          "sha1": "a7da9acd493842ec7074427ed8749ad28942629f"
+        },
+        {
+          "path": "Form\/Element\/Zodiac.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 544,
+          "sha1": "58eb4bfa0504aa7147b142c4580a04c2a331ec8d"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8782,
+          "sha1": "f8f548742ba936667828476edc48c86b10214761"
+        },
+        {
+          "path": "Form\/Standard.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11714,
+          "sha1": "add165af3a90904e8c21f222572d0f972fee71ac"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Abstract.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 627,
+          "sha1": "2094e501df79207fdb04eb3d415fe90205910fd8"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Abstract.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2725,
+          "sha1": "757b8844416ae66689cb2defad612bbed7ee789b"
+        },
+        {
+          "path": "Model\/DbTable\/Maps.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3551,
+          "sha1": "530398042a0aba96c8f40a0fb4ad2f4193cbfd67"
+        },
+        {
+          "path": "Model\/DbTable\/Meta.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5661,
+          "sha1": "f4b6e2fc56ee2e2544dc8ec962a42621b86d797a"
+        },
+        {
+          "path": "Model\/DbTable\/Options.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3610,
+          "sha1": "64d41612f6038fa0a30351795e06f078a125d767"
+        },
+        {
+          "path": "Model\/DbTable\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 17039,
+          "sha1": "19ea77494a8b8290c39bf0088430421e97786df8"
+        },
+        {
+          "path": "Model\/DbTable\/Values.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3216,
+          "sha1": "ab9c0305297e1242e6bdf92f051ec15e9721d392"
+        },
+        {
+          "path": "Model\/Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 529,
+          "sha1": "7e0edb9012e675e95f134ec07d03145616a25185"
+        },
+        {
+          "path": "Model\/Map.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1196,
+          "sha1": "4e34bc5ffad6741dc14c259188c9209741fcf7e1"
+        },
+        {
+          "path": "Model\/Meta.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5205,
+          "sha1": "018477808c21927ba9cd322ebe777f9519f85c35"
+        },
+        {
+          "path": "Model\/Option.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 703,
+          "sha1": "2a1ecf050eb5b018abee77d2e308286b48459efc"
+        },
+        {
+          "path": "Model\/Rowset.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1874,
+          "sha1": "2520704776f7627d4e409bb191d51676201878cf"
+        },
+        {
+          "path": "Model\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 532,
+          "sha1": "beb8f10e2356b955b28747e74028e092460b067b"
+        },
+        {
+          "path": "Model\/Value.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 674,
+          "sha1": "f99d3fb61429fc1af22a7cc8d715b15bba8c35f2"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/changelog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9738,
+          "sha1": "6895705d743809ebbb3c3e48814de09fdc0d9592"
+        },
+        {
+          "path": "settings\/fields.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11693,
+          "sha1": "1e21f76a90f9db1aa1eb41f6aef15f975bffd77d"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1765,
+          "sha1": "2bde5311d88077311d20932b0fd55fdd54272f2a"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.4-4.0.5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 88,
+          "sha1": "466c48e857fe93653994d9f733ff10b681213ac2"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1128,
+          "sha1": "72e020df53e0a8c6fbc5f6fd0125fa4340afbe47"
+        },
+        {
+          "path": "View",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 8192,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper\/FieldAbstract.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1888,
+          "sha1": "c96230a39dc3f067c98fc351eb9fb073aee39cc5"
+        },
+        {
+          "path": "View\/Helper\/FieldAim.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 771,
+          "sha1": "078c9e74fac772527983677ccb572d98e1c4c02d"
+        },
+        {
+          "path": "View\/Helper\/FieldBirthdate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1275,
+          "sha1": "656c54df5ec070f240bf14f6a37f00c6406f05f9"
+        },
+        {
+          "path": "View\/Helper\/FieldCountry.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 933,
+          "sha1": "b3bfa993ef611bda681a6bd8fb09091ce3767604"
+        },
+        {
+          "path": "View\/Helper\/FieldCurrency.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 794,
+          "sha1": "c26644da9852013209a9f19dbadf090e3d3018c8"
+        },
+        {
+          "path": "View\/Helper\/FieldDate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 864,
+          "sha1": "699732c4c47e029c37984ca7ca900370b475a18f"
+        },
+        {
+          "path": "View\/Helper\/FieldEmail.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 693,
+          "sha1": "4da595c04af956793dbffdc23485183c902beaa2"
+        },
+        {
+          "path": "View\/Helper\/FieldFacebook.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 933,
+          "sha1": "9c2408b17c54aa20aa2d1aa95593607c2d544168"
+        },
+        {
+          "path": "View\/Helper\/FieldLocation.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 824,
+          "sha1": "c3675e5c0b16e205b24e14b2f5aac068c253e03c"
+        },
+        {
+          "path": "View\/Helper\/FieldMultiCheckbox.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1292,
+          "sha1": "b949baf8547e270a07918f35b946c82741a6a5a4"
+        },
+        {
+          "path": "View\/Helper\/FieldMultiselect.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1287,
+          "sha1": "3e9833ec2db26602de334614cbbe68fe84d0938e"
+        },
+        {
+          "path": "View\/Helper\/FieldOptions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1340,
+          "sha1": "fefcf02f61a420231ff8f927d7a5cc0b138d83fc"
+        },
+        {
+          "path": "View\/Helper\/FieldSelect.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1778,
+          "sha1": "6cd214ae14fb6a49a751ca72457dfbe07ab2c0f0"
+        },
+        {
+          "path": "View\/Helper\/FieldText.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 695,
+          "sha1": "4922aa712ea212104379db262c7664d15f8947fd"
+        },
+        {
+          "path": "View\/Helper\/FieldTextarea.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 682,
+          "sha1": "5f0502fb8b469835c1e5df12e4e49f5120ec9914"
+        },
+        {
+          "path": "View\/Helper\/FieldTextareaLinked.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 948,
+          "sha1": "1a9759e1c23d643024a7b46273ec4bdef89ef735"
+        },
+        {
+          "path": "View\/Helper\/FieldTwitter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 784,
+          "sha1": "4aa60754fa1e8f74a6c442d0878b3cf36dfab194"
+        },
+        {
+          "path": "View\/Helper\/FieldValueLoop.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3913,
+          "sha1": "e699fbab432abc54fffc73af3c89539224bfa816"
+        },
+        {
+          "path": "View\/Helper\/FieldWebsite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 888,
+          "sha1": "403d5fe59db82380f5d18796733ecf032a795d2b"
+        },
+        {
+          "path": "View\/Helper\/FieldZipCode.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 710,
+          "sha1": "6dfcdf4377ca3ce9eaa0ce9c01904964ebd9e5c3"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/helpers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/helpers\/AdminFieldMeta.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4665,
+          "sha1": "520f8f28324981c7dc369540159c2fcb404a5fa7"
+        },
+        {
+          "path": "views\/helpers\/AdminFieldOption.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2556,
+          "sha1": "6656eeb8042d1cdae7e6417f6726826e88a04266"
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-fields",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/field-create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1991,
+          "sha1": "bf3b4cfe6801c79ac468eefc4d47935c6e07071d"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/field-delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 376,
+          "sha1": "7c25b985f5a632bf89e1a0bcacc23aede1fc58f5"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/field-edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 755,
+          "sha1": "f9258868c2f5647684800c6a13781d084873c268"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/heading-create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 763,
+          "sha1": "df9f9b35fe5ef9014316c705dfa3f3894a4fca7e"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/heading-edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 759,
+          "sha1": "9b2b825c0f0be1805be5b840b643e3020851122c"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2000,
+          "sha1": "1ed0cf3758f4a896bb697c7acea0727f41e94c76"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/map-create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 757,
+          "sha1": "0696fdff522fa8b667b94b576f5f83d508578d0b"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/option-edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 758,
+          "sha1": "4119b00c6a9e58480b76d45ef84b3fa096a7bdb2"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/type-create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 719,
+          "sha1": "3be845ff7abc8f4014128e22fe9987708c678433"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/type-delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 657,
+          "sha1": "5bfb15962c99105308d425d85e8a57824687d2bb"
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/type-edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 715,
+          "sha1": "65b3349d47aa4dc70eaded186cc94b2455874803"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 280,
+          "sha1": "7110d65657d9a09dc72c34cfa7d3085e67ddef17"
+        },
+        {
+          "path": "views\/scripts\/index\/script.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1852,
+          "sha1": "a1b106890eafa419a18162a8204f2dddeb41a6dc"
+        },
+        {
+          "path": "views\/scripts\/_jsAdmin.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 19239,
+          "sha1": "2c2182425d1529fbd75bec852fa0371420f321e7"
+        },
+        {
+          "path": "views\/scripts\/_jsSwitch.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4812,
+          "sha1": "73b6662b8d34c78ff5286580c5fe15e9fdc9843e"
+        }
+      ]
+    },
+    "application\/languages\/en\/fields.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/fields.csv",
+      "structure": {
+        "path": "fields.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 4545,
+        "sha1": "3364a71a3badfc161f536568e73194aa4b567155"
+      }
+    }
+  }
+}

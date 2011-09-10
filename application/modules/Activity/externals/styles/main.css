@@ -1,0 +1,473 @@
+
+/* $Id: main.css 8710 2011-03-25 02:40:48Z alex $ */
+
+
+/*
+REQUESTS & NOTIFICATIONS
+Used on the member's "view requests and updates" page,
+which lists all their recent notifications.
+*/
+div.notifications_layout
+{
+  clear: both;
+  overflow: hidden;
+}
+div.notifications_layout > div.notifications_leftside
+{
+  float: left;
+  width: 330px;
+  overflow: hidden;
+}
+html[dir="rtl"] div.notifications_layout > div.notifications_leftside
+{
+  float: right;
+}
+div.notifications_layout > div.notifications_rightside
+{
+  overflow: hidden;
+  padding-left: 30px;
+}
+html[dir="rtl"] div.notifications_layout > div.notifications_rightside
+{
+  padding-left: 0px;
+  padding-right: 30px;
+}
+ul.notifications > li
+{
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 10px;
+}
+ul.notifications > li + li
+{
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.notifications > li.notifications_unread > span
+{
+  font-weight: bold;
+}
+ul.notifications > li > span
+{
+  display: block;
+  padding-left: 22px;
+  background-repeat: no-repeat;
+}
+html[dir="rtl"] ul.notifications > li > span
+{
+  padding-left: 0px;
+  padding-right: 22px;
+  background-position: top right;
+}
+ul.requests
+{
+  overflow: hidden;
+}
+ul.requests > li
+{
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 20px;
+}
+ul.requests > li + li
+{
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.requests > li > img
+{
+  display: block;
+  float: left;
+}
+html[dir="rtl"] ul.requests > li > img
+{
+  float: right;
+}
+ul.requests > li > div
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+html[dir="rtl"] ul.requests > li > div
+{
+  padding-left: 0px;
+  padding-right: 10px;
+}
+ul.requests > li > div > div > a
+{
+  font-weight: bold;
+}
+ul.requests > li > div > div + div
+{
+  padding: 10px 0px 0px 0px;
+}
+ul.requests > li > div > div + div > a
+{
+  font-weight: normal;
+}
+ul.requests > li > div > div + div > button
+{
+  font-size: .8em;
+}
+
+
+
+/*
+REQUESTS WIDGET
+Used to style the small list of requests,
+typically viewed on the user home page
+when signed in.
+*/
+ul.requests_widget
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+ul.requests_widget > li + li
+{
+  margin-top: 5px;
+}
+
+
+
+
+
+
+/*
+ACTIVITY FEEDS
+These styles are used for the recent activity
+feed shown on the main portal page, as well as
+any other activity feeds shown elsewhere.
+*/
+ul.feed
+{
+  clear: both;
+}
+ul.feed > li
+{
+  padding: 0px 0px 10px 0px;
+  overflow: hidden;
+}
+ul.feed > li + li
+{
+  padding-top: 10px;
+  border-top-width: 1px;
+}
+ul.feed .feed_item_generated
+{
+  color: $theme_font_color_light;
+}
+ul.feed .feed_item_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+  line-height: 0px;
+  font-size: 0px;
+}
+html[dir="rtl"] ul.feed .feed_item_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+ul.feed .feed_item_photo > a
+{
+  text-decoration: none;
+}
+ul.feed .feed_item_photo > a > img
+{
+  display: block;
+}
+ul.feed .feed_item_body
+{
+  overflow: hidden;
+}
+ul.feed .feed_item_username
+{
+  font-weight: bold;
+}
+ul.feed .feed_item_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+  padding-top: 1px;
+}
+ul.feed .feed_item_date > ul
+{
+  line-height: 1em;
+}
+ul.feed .feed_item_date > ul > li
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.feed .feed_item_icon
+{
+  margin-top: 3px;
+  padding: 1px 0px 3px 0px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+html[dir="rtl"] ul.feed .feed_item_icon
+{
+  padding-left: 0px;
+  padding-right: 20px;
+  background-position: top right;
+}
+ul.feed .feed_item_bodytext
+{
+  display: inline;
+}
+ul.feed .feed_item_attachments
+{
+  overflow: hidden;
+  padding: 10px 10px 3px 10px;
+}
+ul.feed .feed_attachment_core_link
+{
+  overflow: hidden;
+}
+ul.feed .feed_attachment_core_link > div
+{
+  overflow: hidden;
+  width: auto;
+}
+ul.feed .feed_attachment_core_link > div > a
+{
+  display: block;
+  float: left;
+}
+html[dir="rtl"] ul.feed .feed_attachment_core_link > div > a
+{
+  float: right;
+}
+ul.feed .feed_attachment_core_link > div > a > img
+{
+  display: block;
+  max-width: 100px;
+}
+ul.feed .feed_attachment_core_link > div > a + div
+{
+  overflow: hidden;
+  padding-left: 8px;
+}
+html[dir="rtl"] ul.feed .feed_attachment_core_link > div > a + div
+{
+  padding-left: 0px;
+  padding-right: 8px;
+}
+ul.feed .feed_attachment_core_link > div > a + div > a
+{
+  font-weight: bold;
+}
+
+
+
+
+ul.feed .feed_attachment_photo
+{
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px 0px 5px 0px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_photo a
+{
+  display: block;
+  float: left;
+}
+html[dir="rtl"] ul.feed .feed_attachment_photo a
+{
+  float: right;
+}
+ul.feed .feed_attachment_photo a > img
+{
+  display: inline-block;
+  max-width: 90px;
+  max-height: 90px;
+  vertical-align: top;
+}
+
+
+
+
+ul.feed .feed_item_link_title
+{
+  font-size: .8em;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+ul.feed .feed_item_link_desc
+{
+  font-size: 0.8em;
+}
+ul.feed .comments
+{
+  width: 360px;
+}
+ul.feed .comments textarea
+{
+  font-size: 8pt;
+}
+ul.feed .comments textarea + button
+{
+  display: none;
+  font-size: .8em;
+}
+ul.feed .comments textarea:focus + button
+{
+  display: block;
+}
+ul.feed .comments > ul > li > div > a > img
+{
+  width: 32px;
+  height: 32px;
+}
+ul.feed span.view_more .view_more_link
+{
+  display: inline-block;
+  background-image: url(~/application/modules/Activity/externals/images/more.png);
+  background-repeat: no-repeat;
+  padding-left: 10px;
+}
+ul.feed span.view_more .view_less_link
+{
+  display: inline-block;
+  background-image: url(~/application/modules/Activity/externals/images/less.png);
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  margin-left: 7px;
+}
+ul.feed .feed_item_posted .view_more_link,
+ul.feed .feed_item_posted .view_less_link
+{
+  font-size: .8em;
+}
+div.feed_viewmore
+{
+  border-top-width: 1px;
+  padding-top: 5px;
+}
+
+
+/*
+COMMENT TIPS STYLES
+Compatibility for lack of theme updates
+*/
+div.comments_comment_likes_tips
+{
+  border: 1px solid $theme_foreground_border_color;
+  padding: 4px 7px;
+  background-color: $theme_foreground_background_color;
+  color: $theme_font_color_light;
+  font-size: 0.9em;
+}
+
+
+
+
+/*
+SHARE POPUP (SMOOTHBOX)
+Used to style the attachment preview inside the
+share popup.
+*/
+.sharebox
+{
+  +foreground;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.sharebox_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 8px;
+}
+html[dir="rtl"] .sharebox_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+.sharebox_photo img
+{
+  border: 1px solid $theme_photo_border_color;
+  max-width: 120px;
+  max-height: 120px;
+}
+.sharebox_title
+{
+  font-weight: bold;
+}
+.sharebox_description
+{
+  font-size: .8em;
+  margin-top: 3px;
+}
+
+
+
+
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_commented,
+.notification_type_commented_commented
+{
+  background-image: url(~/application/modules/Activity/externals/images/activity/comment.png);
+}
+
+.notification_type_liked,
+.notification_type_liked_commented
+{
+  background-image: url(~/application/modules/Activity/externals/images/activity/like.png);
+}
+
+
+
+/* FACEBOOK STYLES FOR FEED COMPOSER */
+.composer_facebook_toggle
+{
+  float: right;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(~/application/modules/Activity/externals/images/facebook_inactive.png);
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-top: 7px;
+  margin-right: 1px;
+  padding: 0px;
+}
+.composer_facebook_toggle:hover
+{
+  background-image: url(~/application/modules/Activity/externals/images/facebook.png);
+  cursor: pointer;
+}
+.composer_facebook_toggle_active
+{
+  background-image: url(~/application/modules/Activity/externals/images/facebook.png);
+}
+.composer_facebook_tooltip
+{
+  display: none;
+  +rounded;
+  position: absolute;
+  padding: 7px;
+  background: #333;
+  opacity: .8;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 180px;
+  font-size: 8pt;
+  margin-top: -30px;
+  margin-left: -84px;
+}
+.composer_facebook_toggle:hover > .composer_facebook_tooltip
+{
+  display: block;
+}

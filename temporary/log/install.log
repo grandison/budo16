@@ -1,0 +1,360 @@
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 60dab2
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: e9b282
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 1f77fb
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: cc8540
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 50c647
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 746ea0
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 07701c
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 382b69
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 408810
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T11:24:50+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 2f4ca8
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 1a3618
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 67455d
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 0664db
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: c62877
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 55c42b
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 436b02
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 9de8c2
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 9343e3
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: e5215b
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:21:08+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 13525f
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 74c163
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: eeaccc
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 8dbef3
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 5a3d33
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 12e4f3
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: db91cd
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 37be87
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: adccf6
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 74ba4f
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+
+2011-08-17T12:41:52+00:00 NOTICE (5): [8] Undefined variable: key (/var/www/budo/data/www/budo.mailtat.ru/application/libraries/Engine/Package/Manager.php) [447]
+Error Code: 9e459f
+Stack trace:
+#0 /var/www/budo/data/www/budo.mailtat.ru/install/controllers/ManageController.php(530): Engine_Package_Manager->decide(Array, )
+#1 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Action.php(513): ManageController->prepareAction()
+#2 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('prepareAction')
+#3 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#4 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#5 /var/www/budo/data/www/budo.mailtat.ru/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/budo/data/www/budo.mailtat.ru/install/index.php(87): Zend_Application->run()
+#7 {main}
+

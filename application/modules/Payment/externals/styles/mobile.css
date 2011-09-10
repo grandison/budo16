@@ -1,0 +1,21 @@
+
+/* $Id: mobile.css 8825 2011-04-09 01:34:20Z john $ */
+
+
+
+.payment_form_settings .package-container
+{
+  display: block;
+  padding-left: 20px;
+}
+
+.payment_form_settings .package-label
+{
+  font-weight: bold;
+}
+
+.payment_form_settings .package-description
+{
+  padding-top: 2px;
+  clear: both;
+}

@@ -1,0 +1,68 @@
+
+#poll-home-poll-search-results
+{
+  clear: both;
+  padding: 10px 10px 0 13px;
+}
+#poll-home-poll-search-results ul
+{
+  margin-top: 10px;
+  clear: both;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-top: 10px;
+  max-height: 100px;
+  min-width: 200px;
+  overflow-y: auto;
+}
+#poll-home-poll-search-results ul > li
+{
+  padding: 5px;
+}
+#poll-home-poll-search-results ul > li + li
+{
+  border-top: 1px solid #ddd;
+}
+
+#poll-home-poll-selected
+{
+  +foreground;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+#poll-home-poll-selected .photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 8px;
+}
+html[dir="rtl"] #poll-home-poll-selected .photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+#poll-home-poll-selected .photo img
+{
+  border: 1px solid $theme_photo_border_color;
+  max-width: 120px;
+  max-height: 120px;
+}
+#poll-home-poll-selected .title
+{
+  font-weight: bold;
+}
+#poll-home-poll-selected .description
+{
+  font-size: .8em;
+  margin-top: 3px;
+}
+#poll-home-poll-form
+{
+  overflow: hidden;
+}
+#poll-home-poll-search > *
+{
+  margin-bottom: 5px;
+}

@@ -1,0 +1,70 @@
+{
+  "type": "external",
+  "name": "swfobject",
+  "version": "4.0.0",
+  "revision": "7593",
+  "path": "externals\/swfobject",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Swfobject",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Swfobject",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/swfobject": {
+      "type": "directory",
+      "path": "externals\/swfobject",
+      "structure": [
+        {
+          "path": "expressInstall.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 727,
+          "sha1": "1c12004633e89d6de3bbe4a190093a537bdecebe"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 376,
+          "sha1": "7cdab8883967f2a4ee2fc7bd34120e174d6ca0cc"
+        },
+        {
+          "path": "swfobject.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 10220,
+          "sha1": "5847ed101f55d51c53538a7078971e7de8fb6762"
+        }
+      ]
+    }
+  }
+}

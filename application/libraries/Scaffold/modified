@@ -1,0 +1,8 @@
+libraries/Scaffold/Scaffold.php - PHP5.1 compat, line 866 = @ to protect from open_basedir + output hook
+modules/Absolute_Urls/Absolute_Urls.php - PHP5.1 compat
+modules/Extensions/Extensions.php - PHP5.1 compat
+modules/Flags/Flags.php - PHP5.1 compat
+modules/Mixins/Mixins.php - PHP5.1 compat
+modules/NestedSelectors/Extensions.php - PHP5.1 compat
+modules/Paginator - Added
+modules/ScanInclude - Added

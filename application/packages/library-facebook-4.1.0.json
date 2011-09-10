@@ -1,0 +1,76 @@
+{
+  "type": "library",
+  "name": "facebook",
+  "version": "4.1.0",
+  "revision": "8176",
+  "path": "application\/libraries\/Facebook",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Facebook API",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.0": {
+      "Api.php": "Updated to latest version",
+      "Exception.php": "Updated to latest version",
+      "manifest.php": "Incremented version"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Facebook API",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/libraries\/Facebook": {
+      "type": "directory",
+      "path": "application\/libraries\/Facebook",
+      "structure": [
+        {
+          "path": "Api.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 24306,
+          "sha1": "422525ff2d6d56470a84170e8e4d4c61cd6b8eaf"
+        },
+        {
+          "path": "Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2202,
+          "sha1": "149d7bc11fc83f7e4e7e4bb23baa5cea4d59a8f6"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 621,
+          "sha1": "915fa7c7b32e323e012409b4f5487f532008ab79"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/*
+This stylesheet is used to style the 'FancyUpload'
+multi-file uploader.
+*/
+
+
+.swiff-uploader-box a
+{
+  display: none !important;
+}
+#demo-status.hide
+{
+  display: none;
+}
+#demo-status
+{
+  width: 420px;
+}
+#demo-status > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#demo-status > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#demo-status .current-text,
+#demo-status .demo-status-overall
+{
+  display: none;
+}
+#demo-status .overall-title,
+#demo-status .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#demo-status .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(./assets/progress-bar/progress.gif);
+}
+html[dir="rtl"] #demo-status .progress
+{
+  /* @todo check */
+  background-position: +50% 0;
+  margin-right: 0em;
+  margin-left: 0.5em;
+}
+#demo-status .progress-text
+{
+  font-size: 0.9em;
+}
+#demo-list
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+#demo-list li.validation-error
+{
+  padding: 8px 8px 8px 28px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  background-image: url(./assets/error.png);
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+html[dir="rtl"] #demo-list li.validation-error
+{
+  padding: 8px 28px 8px 8px;
+  background-position: 99% 50%;
+}
+#demo-list li.file
+{
+  padding: 8px 8px 8px 28px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  background-image: url(./assets/waiting.png);
+  background-repeat: no-repeat;
+}
+html[dir="rtl"] #demo-list li.file
+{
+  padding: 8px 28px 8px 8px;
+  background-position: 99% 50%;
+}
+#demo-list li.file + li.file
+{
+  border-top: 1px solid #ccc;
+}
+#demo-list li.file span
+{
+  display: none;
+}
+#demo-list li.file-uploading
+{
+  background-image: url(./assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#demo-list li.file-success
+{
+  background-image: url(./assets/finished.png);
+  background-repeat: no-repeat;
+}
+#demo-list li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+html[dir="rtl"] #demo-list li.file .file-name
+{
+  clear: right;
+}
+#demo-list li.file .file-size
+{
+  display: none;
+}
+#demo-list li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+html[dir="rtl"] #demo-list li.file .file-remove
+{
+  clear: left;
+  float: left;
+}

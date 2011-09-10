@@ -1,0 +1,1443 @@
+
+/* $Id: main.css 8934 2011-05-12 21:13:19Z jung $ */
+
+
+
+/*
+MAIN LOGIN FORM
+Gives special positioning to the elements in the main
+login form.
+*/
+#user_form_login #fieldset-buttons
+{
+  overflow: hidden;
+}
+#user_form_login #submit-wrapper
+{
+  float: left;
+  clear: none;
+}
+#user_form_login #submit-element
+{
+  min-width: 0px;
+}
+#user_form_login #remember-wrapper
+{
+  float: left;
+  clear: none;
+  padding-top: 6px;
+  padding-left: 15px;
+}
+#user_form_login.global_form_box #remember-wrapper
+{
+  float: left;
+  clear: none;
+  padding-top: 0px;
+  padding-left: 5px;
+}
+#user_form_login.global_form_box #remember-wrapper label
+{
+  margin-top: 5px;
+}
+#user_form_login #remember-label
+{
+  display: none;
+}
+#user_form_login #forgot-element
+{
+  margin-top: 5px;
+}
+
+
+
+
+/*
+NETWORK STATISTICS WIDGET
+Shows some basic stats about the network,
+e.g. total members, total friendships, total
+posts, etc.
+*/
+.layout_core_statistics
+{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.layout_core_statistics ul
+{
+  +foreground;
+  +rounded;
+  padding: 5px;
+}
+.layout_core_statistics ul > li
+{
+  padding: 5px;
+  overflow: hidden;
+  clear: both;
+}
+.layout_core_statistics ul > li span
+{
+  font-size: 1.4em;
+  display: block;
+  float: left;
+  margin-right: 6px;
+}
+.layout_core_statistics ul > li div
+{
+  display: block;
+  float: left;
+  line-height: 1.7em;
+}
+
+html[dir="rtl"] .layout_core_statistics ul > li span
+{
+  margin-right: 0px;
+  margin-left: 6px;
+  float: right
+}
+html[dir="rtl"] .layout_core_statistics ul > li div
+{
+  float: right
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ANNOUNCEMENTS WIDGET
+*/
+.layout_announcement_list_announcements
+{
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.layout_announcement_list_announcements ul
+{
+  +rounded;
+  +foreground;
+  overflow: hidden;
+  padding: 10px;
+}
+.layout_announcement_list_announcements li + li
+{
+  margin-top: 10px;
+  border-top: 1px solid $theme_foreground_border_color_light;
+  padding-top: 10px;
+}
+.layout_announcement_list_announcements .announcements_title
+{
+  font-weight: bold;
+}
+.layout_announcement_list_announcements .announcements_info
+{
+  margin-bottom: 10px;
+}
+.layout_announcement_list_announcements .announcements_author
+{
+  font-size: .8em;
+}
+.layout_announcement_list_announcements .announcements_date
+{
+  font-size: .8em;
+}
+.layout_announcement_list_announcements .announcements_body
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+RATING ICONS
+Used wherever icons are shown for rating things.
+*/
+.rating
+{
+  clear: both;
+  overflow: hidden;
+}
+/* small icons */
+.rating_star_generic
+{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-repeat: no-repeat;
+  font-size: 1px;
+  cursor: default;
+}
+.rating_star,
+.rating_star_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star.png);
+}
+.rating_star_disabled
+{
+  background-image: url(~/application/modules/Core/externals/images/star_disabled.png);
+}
+.rating_star_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star_half.png);
+  width: 4px;
+}
+html[dir="rtl"] .rating_star_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star_half_rtl.png);
+}
+/* big icons */
+.rating_star_big_generic
+{
+  float: left;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  font-size: 1px;
+  cursor: pointer;
+}
+html[dir="rtl"] .rating_star_big_generic
+{
+  float: right;
+  background-position: right center;
+}
+.rating_star_big
+{
+  background-image: url(~/application/modules/Core/externals/images/star_big.png);
+}
+.rating_star_big_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star_big_half.png);
+}
+.rating_star_big_disabled
+{
+  background-image: url(~/application/modules/Core/externals/images/star_big_disabled.png);
+}
+html[dir="rtl"] .rating_star_big_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star_big_half_rtl.png);
+}
+/* text */
+.rating_text
+{
+  float: left;
+  display: inline-block;
+  height: 16px;
+  color: #aaa;
+  font-size: .8em;
+  line-height: .8em;
+  cursor: pointer;
+  margin-left: 5px;
+  padding-top: .4em;
+  cursor: default;
+}
+html[dir="rtl"] .rating_text
+{
+  float: right;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+TAG AUTOSUGGEST
+Used to style the autosuggest pulldown
+shown when you are entering a tag
+on the edit/new blog page.
+*/
+ul.tag-autosuggest
+{
+  position: absolute;
+  padding: 0px;
+  width: 300px;
+  list-style: none;
+  z-index: 50;
+  border: 1px solid $theme_border_color;
+  margin: 0px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background: $theme_list_background_color;
+}
+ul.tag-autosuggest > li
+{
+  padding: 3px;
+  overflow: hidden;
+}
+ul.tag-autosuggest > li + li
+{
+  border-top: 1px solid $theme_border_color;
+}
+ul.tag-autosuggest > li img
+{
+  max-width: 25px;
+  max-height: 25px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+ul.tag-autosuggest > li.autocompleter-selected
+{
+  background: $theme_list_background_color_hover;
+  color: $theme_font_color;
+}
+ul.tag-autosuggest > li.autocompleter-choices
+{
+  font-size: .8em;
+}
+ul.tag-autosuggest > li.autocompleter-choices .autocompleter-choice
+{
+  line-height: 25px;
+}
+ul.tag-autosuggest > li:hover
+{
+  background: $theme_list_background_color_hover;
+  color: $theme_font_color;
+}
+ul.tag-autosuggest > li span.autocompleter-queried
+{
+  font-weight: bold;
+}
+ul.tag-autosuggest .search-working
+{
+  background-image: none;
+}
+.autocompleter-choice
+{
+  cursor: pointer;
+}
+.autocompleter-choice:hover
+{
+  color: #5ba1cd;
+}
+
+
+
+
+
+/* FILE UPLOADER */
+.uploader .swiff-uploader-box a
+{
+  display: none !important;
+}
+.uploader #demo-status
+{
+  padding: 10px 15px;
+  width: 420px;
+  border: 1px solid #eee;
+}
+.uploader #demo-status .progress
+{
+  background: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+  background-repeat: no-repeat;
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.uploader #demo-status .progress-text
+{
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.uploader #demo-list
+{
+  list-style: none;
+  width: 450px;
+  margin: 0;
+}
+.uploader #demo-list li.validation-error
+{
+  padding-left: 44px;
+  display: block;
+  clear: left;
+  line-height: 40px;
+  color: #8a1f11;
+  cursor: pointer;
+  border-bottom: 1px solid #fbc2c4;
+  background: #fbe3e4 url(~/externals/fancyupload/assets/failed.png) no-repeat 4px 4px;
+}
+.uploader #demo-list li.file
+{
+  border-bottom: 1px solid #eee;
+  background: url(~/externals/fancyupload/assets/file.png) no-repeat 4px 4px;
+  overflow: auto;
+}
+.uploader #demo-list li.file.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/uploading.png);
+  background-color: #D9DDE9;
+}
+.uploader #demo-list li.file.file-success
+{
+  background-image: url(~/externals/fancyupload/assets/success.png);
+}
+.uploader #demo-list li.file.file-failed
+{
+  background-image: url(~/externals/fancyupload/assets/failed.png);
+}
+.uploader #demo-list li.file .file-name
+{
+  font-size: 1.2em;
+  margin-left: 44px;
+  display: block;
+  clear: left;
+  line-height: 40px;
+  height: 40px;
+  font-weight: bold;
+}
+.uploader #demo-list li.file .file-size
+{
+  font-size: 0.9em;
+  line-height: 18px;
+  float: right;
+  margin-top: 2px;
+  margin-right: 6px;
+}
+.uploader #demo-list li.file .file-info
+{
+  display: block;
+  margin-left: 44px;
+  font-size: 0.9em;
+  line-height: 20px;
+}
+.uploader #demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  line-height: 18px;
+  margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+
+/*
+GLOBAL BROWSE PAGE STYLES
+Used to style the browse pages throughout the site.
+*/
+.browse-range-wrapper input[type=text]
+{
+  width: 50px;
+}
+.browse-separator-wrapper
+{
+  border-bottom: 1px solid #ccc;
+  height: 1px;
+  margin: 6px 0 0;
+}
+.field_search_criteria .form-options-wrapper > li
+{
+  padding-top: 3px;
+}
+
+
+
+
+
+/*
+GLOBAL PAGINATION
+Used to show page numbers and previous & next links throughout the site.
+*/
+.pages
+{
+  overflow: hidden;
+  clear: both;
+}
+.paginationControl
+{
+  float: left;
+  overflow: hidden;
+  +rounded(3px);
+  border: 1px solid $theme_foreground_border_color;
+  clear: both;
+}
+.paginationControl > li
+{
+  float: left;
+  overflow: hidden;
+  margin: 1px;
+}
+.paginationControl > li > a
+{
+  +rounded(3px);
+  display: block;
+  padding: .3em .6em;
+  font-weight: bold;
+  font-size: 1em;
+}
+.paginationControl > li > a:hover
+{
+  text-decoration: none;
+  background-color: $theme_foreground_background_color;
+}
+.paginationControl > li.disabled > a
+{
+  color: $theme_font_color_light;
+}
+.paginationControl > li.disabled > a:hover
+{
+  background-color: transparent;
+  cursor: default;
+}
+.paginationControl > li.selected
+{
+  +rounded(3px);
+  background-color: $theme_foreground_background_color;
+}
+.paginationControl > li.selected > a
+{
+  color: $theme_font_color;
+}
+.paginator_previous
+{
+  float: left;
+  display: inline;
+}
+.paginator_next
+{
+  float: right;
+  display: inline;
+}
+
+
+
+
+
+
+
+
+/*
+PHOTO THUMBS LIST
+Used throughout the core and various plugins to show a grid
+of photo thumbnails.
+*/
+ul.thumbs
+{
+  overflow: hidden;
+}
+ul.thumbs > li
+{
+  float: left;
+  margin: 0px 10px 0px 0px;
+  height: 180px;
+}
+html[dir="rtl"] ul.thumbs > li
+{
+  float: right;
+  margin: 0px 0px 0px 10px;
+}
+ul.thumbs .thumbs_photo
+{
+  display: inline-block;
+  border: 1px solid $theme_photo_border_color;
+  padding: 4px;
+  vertical-align: bottom;
+}
+ul.thumbs .thumbs_photo:hover
+{
+  border: 1px solid $theme_photo_border_color_hover;
+  cursor: pointer;
+}
+ul.thumbs .thumbs_photo > span
+{
+  display: block;
+  width: 142px;
+  height: 106px;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+ul.thumbs .thumbs_info
+{
+  padding-top: 4px;
+  display: block;
+  font-size: .8em;
+  color: $theme_font_color_light;
+  overflow: hidden;
+}
+ul.thumbs .thumbs_title
+{
+  width: 142px;
+  display: block;
+  font-weight: bold;
+  word-wrap: break-word;
+  max-height: 2.6em;
+  overflow: hidden;
+}
+ul.thumbs.thumbs_nocaptions > li
+{
+  height: auto;
+  margin-bottom: 10px;
+}
+ul.thumbs.thumbs_nocaptions > li.sortable,
+ul.thumbs.thumbs_nocaptions > li.sortable a
+{
+  cursor: move;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+PHOTO TAGGING
+Styles the popup used to show the tagging form for photos.
+*/
+div.tag_div,
+div.tag_div_hidden
+{
+  position: absolute;
+  z-index: 98;
+  border: 2px solid #fff;
+}
+div.tag_div_hidden
+{
+  /* z-index: -1; 
+  visibility: hidden;*/
+  border: 2px solid transparent;
+}
+div.tag_label,
+div.tag_label_hidden
+{
+  position: absolute;
+  padding: 3px 5px 3px 5px;
+  border: 1px solid #777;
+  font-weight: bold;
+  display: block;
+  z-index: 98;
+  background: #fff;
+}
+div.tag_label_hidden
+{
+  z-index: -1;
+  visibility: hidden;
+}
+div.media_photo_tagform_titlebar
+{
+  text-align: left;
+  padding: 7px 7px 4px 7px;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+div.media_photo_tagform_container
+{
+  padding: 0px 7px 7px 7px;
+  overflow: hidden;
+}
+div.media_photo_tagform_container input[type=text]
+{
+  width: 130px;
+}
+div.media_photo_tagform_text
+{
+  font-size: .8em;
+  margin-bottom: 7px;
+}
+div.tagger_list,
+div.media_photo_friendlist 
+{
+  width: 126px;
+  overflow: auto;
+  margin: 4px 0px 4px 0px;
+  height: 130px;
+  text-align: left;
+  padding: 4px;
+  border: 1px solid #bbb;
+}
+div.tagger_list a,
+div.media_photo_friendlist a
+{
+  font-size: .8em;
+}
+div.tagger_list a:hover,
+div.media_photo_friendlist a:hover
+{
+  text-decoration:underline;
+}
+div.media_photo_tagform_submits a:hover
+{
+  text-decoration:underline;
+}
+div.media_photo_tagform_submits a
+{
+  font-weight: bold;
+  font-size: .8em;
+  cursor: pointer;
+}
+html[dir="rtl"] div.media_photo_tagform_submits a
+{
+  float: right;
+}
+div.media_photo_tagform_submits a + a
+{
+  margin-left: 13px;
+}
+html[dir="rtl"] div.media_photo_tagform_submits a + a
+{
+  margin-left: 0px;
+  margin-right: 13px;
+}
+div.media_photo_tagform
+{
+  +opacity(1);
+  display: none;
+  border: 1px solid #888;
+  width: 150px;
+  position: absolute;
+  background: #fff;
+}
+div.media_photo_tagform
+{
+  text-decoration: none;
+}
+div.media_photo_div
+{
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.media_tag_listcontainer > a
+{
+  font-weight: bold;
+}
+#tagger_input
+{
+  margin-bottom: 8px;
+}
+li.autocompleter-choices
+{
+ padding: 0px 5px 5px 5px;
+}
+li.autocompleter-choices img
+{
+  height: 16px;
+  width: 16px;
+  float: left;
+  margin-right: 5px;
+}
+html[dir="rtl"] li.autocompleter-choices img
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+li.autocompleter-choices .autocompleter-queried
+{
+  font-weight: bold;
+}
+.tag_comma
+{
+  margin-right: 6px;
+}
+.tag_div,
+.tag_label
+{
+  z-index: 100000;
+}
+.tag_label
+{
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 3px;
+}
+.tag_hidden,
+.tag_label_hidden
+{
+  visibility: hidden;
+}
+.albums_viewmedia_info_tags
+{
+  margin-top: 6px;
+}
+.tagger_form
+{
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.tagger_input
+{
+  width: 99%;
+  height: 18px;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+}
+span.tag_info a.tag_destroyer
+{
+  font-size: 8pt;
+  font-weight: normal;
+}
+
+
+/*
+ACTIVITY FEED COMPOSER FORM
+These styles are used for the small form that sits
+above the activity feed, allowing members to post.
+*/
+.activity-post-container
+{
+  +foreground;
+  +rounded;
+  margin-bottom: 10px;
+}
+form.activity
+{
+  padding: 7px;
+  overflow: hidden;
+}
+form.activity > div > input[type=text],
+form.activity > div > textarea
+{
+  width: 99%;
+}
+form.activity .buttonlink
+{
+  margin-top: 7px;
+  font-size: .8em;
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+
+
+
+
+
+/*
+ACTIVITY FEED POST FORM
+These styles are used for the post form above the activity feed.
+*/
+.activity-post-container
+{
+  +foreground;
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding;
+  overflow: hidden;
+  padding: 0;
+}
+.activity-post-container textarea
+{
+  width: 99%;
+}
+#compose-submit
+{
+  margin-right: 5px;
+}
+
+
+
+
+/*
+ACTIVITY FEED COMPOSER 
+These styles are used for the attachment composer.
+*/
+.compose-container
+{
+  position:relative;
+}
+.compose-container .overTxtLabel
+{
+  padding: 4px 0px 0px 3px;
+  color: $theme_font_color_light;
+}
+.compose-content
+{
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  +rounded(3px);
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  cursor: text;
+  padding: 5px;
+  clear: both;
+  outline: none;
+  -moz-outline-style: none;
+}
+.compose-container .compose-content div
+{
+  clear: both;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+div.compose-menu a.compose-activator
+{
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  margin-left: 14px;
+  padding-left: 21px;
+}
+html[dir="rtl"] div.compose-menu a.compose-activator
+{
+  background-position: 100% 50%;
+  margin-left: 0px;
+  margin-right: 14px;
+  padding-left: 0px;
+  padding-right: 21px;
+}
+.compose-tray
+{
+  padding: 0px 10px 5px 10px;
+}
+.compose-body
+{
+  display: block;
+  overflow: hidden;
+  padding: 7px 0px;
+}
+.compose-menu
+{
+  overflow: hidden;
+  margin-top: 9px;
+}
+.compose-tray .compose-menu > span
+{
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  display: block;
+}
+html[dir="rtl"] .compose-tray .compose-menu > span
+{
+  padding-left: 0px;
+  padding-right: 20px;
+  background-position: 100% 50%;
+}
+.compose-loading
+{
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+html[dir="rtl"] .compose-loading
+{
+  background-position: 100% 0%;
+}
+.compose-loading span
+{
+  margin-left: 22px;
+  display: block;
+}
+html[dir="rtl"] .compose-loading span
+{
+  margin-left: 0px;
+  margin-right: 22px;
+}
+.compose-loading img
+{
+  display: block;
+  float: left;
+}
+html[dir="rtl"] .compose-loading img
+{
+  float: right;
+}
+.compose-preview-image-invisible
+{
+  visibility : hidden;
+}
+.compose-preview-image-hidden
+{
+  display: none;
+}
+.compose-preview-image
+{
+  border: 1px solid $theme_photo_border_color;
+}
+.compose-preview-info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+
+
+/*
+ACTIVITY FEED COMPOSER LINK
+These styles are used for the attachment composer above the
+main feed.
+*/
+#compose-link-activator,
+#compose-link-menu span
+{
+  background-image: url(~/application/modules/Activity/externals/images/link.png);
+  background-repeat: no-repeat;
+}
+#compose-link-form-input
+{
+  display: block;
+  margin-bottom: 7px;
+  width: 75%;
+}
+#compose-link-preview-images
+{
+  float: left;
+  overflow: hidden;
+  vertical-align: top;
+  display: block;
+}
+#compose-link-preview-images img
+{
+  border: 1px solid $theme_photo_border_color;
+  width: 100px;
+}
+#compose-link-preview-title
+{
+  margin-bottom: 4px;
+}
+#compose-link-preview-title a
+{
+  font-weight: bold;
+}
+#compose-link-preview-description
+{
+  font-size: .8em;
+}
+#compose-link-preview-options,
+#compose-link-preview-options-choose
+{
+  font-size: .8em;
+  margin: 8px 0px 8px 0px;
+  font-weight: bold;
+}
+#compose-link-preview-options-choose span
+{
+  padding-right: 5px;
+}
+#compose-link-preview-options-none
+{
+  font-size: .8em;
+}
+#compose-link-preview-options-none input[type=checkbox]
+{
+  display: block;
+  float: left;
+}
+#compose-link-preview-options-none label
+{
+  display: block;
+  float: left;
+}
+
+
+
+
+
+
+
+/*
+GENERIC LIST WIDGET
+These icons are used for list widgets.
+*/
+.layout_generic_list_widget
+{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+ul.generic_list_widget
+{
+  +foreground;
+  +rounded;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+ul.generic_list_widget > li
+{
+  clear: both;
+  overflow: hidden;
+  padding: 3px 5px 3px 5px;
+}
+ul.generic_list_widget_large_photo > li + li
+{
+  margin-top: 10px;
+}
+ul.generic_list_widget .photo
+{
+  float: left;
+  display: block;
+}
+ul.generic_list_widget_large_photo .photo
+{
+  float: none;
+  clear: both;
+  display: block;
+  margin-bottom: 5px;
+}
+ul.generic_list_widget a.thumb
+{
+  /* width: 48px; */
+}
+ul.generic_list_widget a.thumb > img
+{
+  display: block;
+}
+ul.generic_list_widget .info
+{
+  padding: 0px 0px 0px 6px;
+  overflow: hidden;
+}
+ul.generic_list_widget_large_photo .info
+{
+  padding: 0px 0px 0px 2px;
+}
+ul.generic_list_widget .title
+{
+  font-weight: bold;
+}
+ul.generic_list_widget .stats
+{
+  font-size: .8em;
+}
+ul.generic_list_widget .owner
+{
+  margin-top: 2px;
+  font-size: 0.8em;
+}
+ul.generic_list_widget .description
+{
+  clear: both;
+  margin-top: 10px;
+  padding: 1px 0px 4px 0px;
+  font-size: .8em;
+  /* border-bottom: 1px solid #fff; */
+}
+ul.generic_list_widget_large_photo .info + .description
+{
+  padding-left: 2px;
+  margin-top: 4px;
+}
+
+/* ACTION TYPE ICONS */
+.activity_icon_status
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+
+/* ITEM TYPE ICONS */
+.item_icon_core_link
+{
+  background-image: url(~/application/modules/Core/externals/images/types/core_link.png);
+}
+
+
+
+
+
+
+
+/*
+GLOBAL ICONS
+These icons are used with "buttonlink" links in various modules throughout
+the site.
+*/
+.icon_back
+{
+  background-image: url(~/application/modules/Core/externals/images/back.png);
+}
+html[dir="rtl"] .icon_back
+{
+  background-image: url(~/application/modules/Core/externals/images/back_rtl.png);
+}
+.icon_previous
+{
+  background-image: url(~/application/modules/Core/externals/images/previous.png);
+}
+html[dir="rtl"] .icon_previous
+{
+  background-image: url(~/application/modules/Core/externals/images/previous_rtl.png);
+}
+.icon_next
+{
+  background-image: url(~/application/modules/Core/externals/images/next.png);
+}
+html[dir="rtl"] .icon_next
+{
+  background-image: url(~/application/modules/Core/externals/images/next_rtl.png);
+}
+.icon_comments
+{
+  background-image: url(~/application/modules/Core/externals/images/comments.png);
+}
+.icon_viewmore
+{
+  background-image: url(~/application/modules/Core/externals/images/viewmore.png);
+}
+.icon_clearlist
+{
+  background-image: url(~/application/modules/Core/externals/images/clear.png);
+}
+.icon_friend_add
+{
+  background-image: url(~/application/modules/User/externals/images/friends/add.png);
+}
+.icon_friend_remove
+{
+  background-image: url(~/application/modules/User/externals/images/friends/remove.png);
+}
+.icon_friend_cancel
+{
+  background-image: url(~/application/modules/User/externals/images/friends/remove.png);
+}
+.icon_friend_accept
+{
+  background-image: url(~/application/modules/User/externals/images/friends/add.png);
+}
+.icon_activity_post
+{
+  background-image: url(~/application/modules/Activity/externals/images/post.png);
+}
+.icon_report
+{
+  background-image: url(~/application/modules/Core/externals/images/report.png);
+}
+.icon_loading
+{
+  background-image: url(~/application/modules/Core/externals/images/loading.gif);
+}
+.icon_delete
+{
+  background-image: url(~/application/modules/Core/externals/images/delete.png);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+SMOOTHBOX
+Used for the modal popup smoothbox.
+*/
+.modal {
+	display: none;
+}
+.modal_row {
+	margin: 5px 5px 10px 10px;
+}
+.modal_textoption {
+	margin-top: 3px;
+	font-size: 8pt;
+}
+.modal_textoption input.text {
+	width: 200px;
+}
+
+#global_content_simple
+{
+  display: inline-block;
+}
+
+#TB_secondLine {
+}
+
+#TB_window a:link {color: #666666;}
+#TB_window a:visited {color: #666666;}
+#TB_window a:hover {color: #000;}
+#TB_window a:active {color: #666666;}
+#TB_window a:focus{color: #666666;}
+
+#TB_overlay {
+	position: absolute;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	background-color:#000;
+}
+
+#TB_window {
+        +rounded(8px);
+	position: absolute;
+	z-index: 102;
+	text-align: left;
+	background: #eee;
+	color: #000;
+	border: 8px solid #444;
+}
+
+#TB_caption{
+	height:25px;
+	padding:7px 30px 10px 25px;
+	float:left;
+}
+
+#TB_closeWindow{
+	height:25px;
+	padding:11px 25px 10px 0;
+	float:right;
+}
+
+#TB_closeAjaxWindow{
+	padding:5px 10px 7px 0;
+	margin-bottom:1px;
+	text-align:right;
+	float:right;
+}
+
+#TB_ajaxWindowTitle{
+	float:left;
+	padding:7px 0 5px 10px;
+	margin-bottom:1px;
+}
+
+#TB_title{
+	background-color:#e9f4fa;
+	height:33px;
+	border-bottom: 1px solid #d7e8f1;
+}
+
+/* hide the title bar by default */
+#TB_title
+{
+  display: none;
+}
+
+#TB_title * {
+	font-weight:bold;
+	font-size: 13pt;
+	letter-spacing: -1px;
+}
+
+#TB_ajaxContent{
+	clear:both;
+	padding:12px 15px 38px 10px;
+	overflow:auto;
+	text-align:left;
+	line-height:1.4em;
+}
+
+#TB_ajaxContent p{
+	padding:5px 0px 5px 0px;
+}
+
+#TB_load{
+	position: absolute;
+	display:none;
+	height:100px;
+	width:100px;
+	z-index:101;
+}
+
+#TB_HideSelect{
+	z-index:99;
+	position:absolute;
+	top: 0;
+	left: 0;
+	background-color:#fff;
+	border:none;
+}
+
+#TB_iframeContent{
+	clear:both;
+	border:none;
+	margin-bottom:-1px;
+	margin-top:1px;
+}
+
+/* IE6 */
+* html #TB_iframeContent{
+	margin-bottom:1px;
+}
+
+
+
+
+/* 
+INLINE NOTIFICATIONS 
+*/
+ul.notifications
+{
+  overflow: hidden;
+}
+ul.notifications_menu > li,
+ul.notifications_menu > div
+{
+  padding: .5em;
+  min-width: 160px;
+}
+ul.notifications_menu > li
+{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+ul.notifications_menu > li + li
+{
+  border-top-width: 1px;
+}
+ul.notifications_menu > li.notifications_unread > span
+{
+  font-weight: bold;
+}
+ul.notifications_menu > li > span
+{
+  min-height: 16px;
+  display: block;
+  padding-left: 22px;
+  background-repeat: no-repeat;
+  float: none;
+}
+ul.notifications_menu > li > span > a
+{
+  display: inline;
+  float: none;
+}
+.notifications_options
+{
+  overflow: hidden;
+  border-top-width: 1px;
+  padding-top: 7px;
+}
+.notifications_options > div
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+.notifications_options > div + div
+{
+  margin-left: 15px;
+}
+.notifications_markread_link
+{
+  background-image: url(~/application/modules/Core/externals/images/markread.png);
+}
+
+.layout_left #captcha-element img, .layout_right #captcha-element img
+{
+  width:100%;
+  max-width:200px;
+} 

@@ -1,0 +1,1121 @@
+
+/* $Id: main.css 8453 2011-02-12 02:09:18Z john $ */
+@include "~/application/modules/Core/externals/styles/constants.css";
+
+
+/*
+FEED ITEMS
+Styles event attachments in the feed.
+*/
+.feed_attachment_event > div
+{
+  overflow: hidden;
+}
+.feed_attachment_event > div > a
+{
+  display: inline-block;
+  float: left;
+  margin-right: 7px;
+}
+.feed_attachment_event > div > a > img
+{
+  display: block;
+  max-width: 90px;
+  max-height: 90px;
+}
+.feed_attachment_event > div > div
+{
+  overflow: hidden;
+}
+
+
+/*
+UPCOMING EVENTS WIDGET
+Shown on user home by default.
+*/
+#events-upcoming
+{
+  +rounded;
+  +foreground;
+  padding: 7px 10px 10px 10px;
+  margin-bottom:15px;
+}
+#events-upcoming li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 7px;
+}
+#events-upcoming li > a
+{
+  font-weight: bold;
+  font-size: .8em;
+}
+#events-upcoming .events-upcoming-date
+{
+  font-size: .8em;
+}
+#events-upcoming .events-upcoming-ongoing
+{
+  font-size: .8em;
+}
+
+
+
+
+
+/*
+BROWSE EVENTS
+These styles are used on the browse events page
+*/
+ul.events_browse > li
+{
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+ul.events_browse > li + li
+{
+  padding-top: 15px;
+  border-top-width: 1px;
+}
+ul.events_browse .events_photo
+{
+  float: left;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.events_browse .events_photo
+{
+  float: right;
+}
+ul.events_browse .events_photo img
+{
+  width: 100px;
+  display: block;
+}
+ul.events_browse .events_info
+{
+  padding-left: 10px;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.events_browse .events_info
+{
+  padding-left: 0px;
+  padding-right: 10px;
+}
+ul.events_browse .events_title h3
+{
+  margin: 0px;
+}
+ul.events_browse .events_members
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.events_browse .events_desc
+{
+  margin-top: 5px;
+  clear: both;
+}
+ul.events_browse .events_options
+{
+  float: right;
+  overflow: hidden;
+  width: 120px;
+  padding-left: 15px;
+}
+html[dir="rtl"] ul.events_browse .events_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+ul.events_browse .events_options a
+{
+  clear: both;
+  margin: 3px 0px 0px 0px;
+  font-size: .8em;
+  padding-top: 1px;
+  height: 16px;
+}
+
+
+
+
+
+
+
+/*
+VIEW EVENT
+These styles are used on the view event page, i.e.
+the event's profile page
+*/
+.layout_event_profile_info
+{
+  margin-top:10px;
+}
+#event_photo > img
+{
+  width: 100%;
+}
+div.event_info > h4
+{
+  margin-bottom: 1.1em;
+}
+div.event_info > ul
+{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+div.event_info > ul > li
+{
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 5px;
+}
+div.event_info > ul > li > div
+{
+  float: left;
+  clear: left;
+  width: 120px;
+}
+div.event_info > ul > li > div + div
+{
+  float: none;
+  clear: none;
+  overflow: hidden;
+  width: auto;
+}
+#event_stats
+{
+  margin-top: 10px;
+  overflow: hidden;
+}
+#event_stats > ul
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+#event_stats > ul > li
+{
+  font-size: .8em;
+  overflow: hidden;
+}
+#event_stats > ul > li:first-child
+{
+  margin-bottom: 10px;
+  font-size: .8em;
+}
+#event_stats .event_date
+{
+  margin-bottom: 10px;
+}
+#event_stats .event_date .label
+{
+ clear: both; 
+}
+#event_stats > ul > li + li
+{
+  margin-top: 5px;
+}
+#event_stats > ul > li > div
+{
+  font-size: 1em;
+}
+#event_stats .label
+{
+  width: 45px;
+}
+#event_stats .event_stats_content
+{
+  font-weight: bold;
+}
+#event_stats .label, #event_stats .event_stats_content
+{
+  float: left;
+}
+html[dir="rtl"] #event_stats .label, #event_stats .event_stats_content
+{
+  float: right;
+}
+#event_stats .event_stats_title
+{
+  font-weight: bold;
+}
+#event_stats .event_stats_title a
+{
+  display: block;
+  font-weight: normal;
+}
+#event_stats .event_stats_staff
+{
+  margin-top: 8px;
+}
+#event_stats .event_stats_info span
+{
+  font-weight: normal;
+}
+
+.event_rsvp_form
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+  font-size: .8em;
+}
+.events_rsvp > div
+{
+  font-size: .8em;
+  clear: both;
+}
+.events_rsvp > div + div
+{
+  margin-top: 5px;
+  font-size: .8em;
+  clear: both;
+}
+.events_rsvp .event_radio_loading
+{
+  background-image: url(~/application/modules/Core/externals/images/loading.gif);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.events_rsvp .event_radio_loading input
+{
+  visibility: hidden;
+}
+
+
+/* event members tab */
+.event_members_info
+{
+  clear: both;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.event_members_info .event_members_total
+{
+  margin-top: 5px;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+.event_members_info .event_members_search
+{
+  float: right;
+  overflow: hidden;
+  text-align: right;
+  padding-bottom: 2px;
+}
+html[dir="rtl"] .event_members_info .event_members_search
+{
+  float: left;
+  text-align: left;
+}
+ul.event_members
+{
+  border-top-width: 1px;
+  margin-bottom: 8px;
+}
+ul.event_members > li
+{
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+  border-bottom-width: 1px;
+}
+ul.event_members .event_members_icon
+{
+  float: left;
+  display: block;
+}
+html[dir="rtl"] ul.event_members .event_members_icon
+{
+  float: right;
+}
+ul.event_members .event_members_icon > img
+{
+  display: block;
+}
+ul.event_members .event_members_body
+{
+  overflow: hidden;
+  padding-left: 7px;
+}
+html[dir="rtl"] ul.event_members .event_members_body
+{
+  padding-left: 0px;
+  padding-right: 7px;
+}
+ul.event_members .event_members_status
+{
+  font-weight: bold;
+}
+ul.event_members .event_members_options
+{
+  float: right;
+  min-width: 180px;
+  overflow: hidden;
+  padding-left: 15px;
+}
+html[dir="rtl"] ul.event_members .event_members_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+ul.event_members .event_members_options a
+{
+  display: block;
+  clear: both;
+  margin: 1px;
+}
+ul.event_members .event_members_options a.buttonlink
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size: .8em;
+}
+ul.event_members .event_members_options div
+{
+  text-align: right;
+}
+html[dir="rtl"] ul.event_members .event_members_options div
+{
+  text-align: left;
+}
+ul.event_members .event_members_rsvp
+{
+  margin-top: 3px;
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+
+
+
+
+
+/* photos tab */
+div.event_photos > ul
+{
+  clear: both;
+  overflow: hidden;
+  margin: 20px 0px 20px 0px;
+}
+div.event_photos > ul > li
+{
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-right: 20px;
+  height: 170px;
+}
+div.event_photos > ul > li > div
+{
+  float: left;
+  overflow: hidden;
+  padding: 3px;
+  border: 1px solid $theme_photo_border_color;
+}
+div.event_photos > ul > li > div:hover
+{
+  border: 1px solid $theme_photo_border_color_hover;
+}
+div.event_photos > ul > li > div img
+{
+  display: block;
+}
+
+/* discussions tab and view page */
+.event_discussions_options
+{
+  +foreground;
+  +rounded;
+  padding: 10px 0px 10px 0px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.event_discussion_options a
+{
+  margin-right: 15px;
+}
+html[dir="rtl"] .event_discussion_options a
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+ul.event_discussions > li
+{
+  padding: 10px 10px 10px 0px;
+  overflow: hidden;
+}
+ul.event_discussions > li + li
+{
+  border-top-width: 1px;
+}
+ul.event_discussions .event_discussions_replies
+{
+  +foreground;
+  +rounded;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+  width: 40px;
+  padding: 7px 10px 7px 10px;
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+html[dir="rtl"] ul.event_discussions .event_discussions_replies
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+ul.event_discussions .event_discussions_replies span
+{
+  font-size: 2em;
+  display: block;
+}
+ul.event_discussions .event_discussions_info
+{
+  overflow: hidden;
+}
+ul.event_discussions h3
+{
+  margin-bottom: 0px;
+}
+ul.event_discussions .event_discussions_sticky a
+{
+  background-image: url(~/application/modules/Event/externals/images/post/stick.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-position: 0px .2em;
+}
+html[dir="rtl"] ul.event_discussions .event_discussions_sticky a
+{
+  background-position: right center;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+ul.event_discussions .event_discussions_lastreply
+{
+  float: right;
+  overflow: hidden;
+  width: 250px;
+  margin-left: 10px;
+}
+html[dir="rtl"] ul.event_discussions .event_discussions_lastreply
+{
+  float: left;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+ul.event_discussions .event_discussions_lastreply > a
+{
+  float: left;
+  display: block;
+}
+html[dir="rtl"] ul.event_discussions .event_discussions_lastreply > a
+{
+  float: right;
+}
+ul.event_discussions .event_discussions_lastreply > a > img
+{
+  display: block;
+}
+ul.event_discussions .event_discussions_lastreply_info
+{
+  overflow: hidden;
+  padding-left: 5px;
+}
+html[dir="rtl"] ul.event_discussions .event_discussions_lastreply_info
+{
+  padding-left: 0px;
+  padding-right: 5px;
+}
+ul.event_discussions .event_discussions_lastreply_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+/* some overrides on the tab page for spacing purposes */
+div.event_discussions_list
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+}
+div.event_discussions_list h3
+{
+  font-size: 1em;
+  letter-spacing: 0px;
+}
+div.event_discussions_list .event_discussions_sticky a
+{
+  background-position: 0px 0px;
+}
+html[dir="rtl"] div.event_discussions_list .event_discussions_sticky a
+{
+  background-position: top right;
+}
+
+
+
+
+/* view event discussion thread */
+div.event_discussions_thread_options .buttonlink
+{
+  padding-top: 1px;
+  font-size: .8em;
+  height: 16px;
+  margin-right: 15px;
+}
+html[dir="rtl"] div.event_discussions_thread_options .buttonlink
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+div.event_discussions_thread_options_closed
+{
+  background-image: url(~/application/modules/Event/externals/images/post/close.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: $theme_font_color_light;
+  display: inline-block;
+  margin-left: 20px;
+}
+html[dir="rtl"] div.event_discussions_thread_options_closed
+{
+  padding-left: 0px;
+  padding-right: 20px;
+  margin-left: 0px;
+  margin-right: 20px;
+  background-position: right center;
+}
+ul.event_discussions_thread
+{
+  margin: 10px 0px 10px 0px;
+  overflow: hidden;
+}
+ul.event_discussions_thread > li
+{
+  +foreground;
+  overflow: hidden;
+  border-top: 1px solid $theme_border_medium_color;
+}
+ul.event_discussions_thread > li + li
+{
+  margin-top: 5px;
+}
+ul.event_discussions_thread .event_discussions_thread_author
+{
+  float: left;
+  overflow: hidden;
+  width: 120px;
+  font-weight: bold;
+  padding: 5px 10px 7px 10px;
+}
+ul.event_discussions_thread .event_discussions_thread_author_name
+{
+  margin-bottom: 5px;
+}
+html[dir="rtl"] ul.event_discussions_thread .event_discussions_thread_author
+{
+  float: right;
+}
+ul.event_discussions_thread .event_discussions_thread_photo
+{
+  display: block;
+  margin-bottom: 3px;
+  clear: both;
+}
+ul.event_discussions_thread .event_discussions_thread_info
+{
+  padding: 0px 10px 5px 5px;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.event_discussions_thread .event_discussions_thread_info
+{
+  padding: 0px 5px 5px 10px;
+}
+ul.event_discussions_thread .event_discussions_thread_details
+{
+  padding: 6px 0px 6px 0px;
+  border-bottom: 1px solid $theme_border_medium_color;
+}
+ul.event_discussions_thread .event_discussions_thread_details_date
+{
+  font-size: .8em;
+  overflow: hidden;
+  color: $theme_font_color_light;
+}
+ul.event_discussions_thread .event_discussions_thread_details_options
+{
+  margin-top: -2px;
+  float: right;
+  overflow: hidden;
+  text-align: right;
+}
+html[dir="rtl"] ul.event_discussions_thread .event_discussions_thread_details_options
+{
+  float: left;
+  text-align: left;
+}
+ul.event_discussions_thread .event_discussions_thread_details_options .buttonlink
+{
+  font-size: .8em;
+  height: 16px;
+}
+ul.event_discussions_thread .event_discussions_thread_body
+{
+  padding: 5px 0px 5px 0px;
+}
+ul.event_discussions_thread .event_discussions_thread_body blockquote
+{
+  border: 1px solid $theme_border_color;
+  background: $theme_body_background_color;
+  padding: 10px;
+}
+
+
+
+/*
+EVENT PHOTOS UPLOAD FORM
+Some minor changes to the global form.
+*/
+.event_form_upload #file-label,
+.event_form_upload #submit-label
+{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/*
+EVENT CREATE FORM
+Some minor changes to the create new event form.
+*/
+#event_create_form .calendar_output_span
+{
+  display: inline-block;
+  margin-right: 15px;
+  min-width: 90px;
+}
+html[dir="rtl"] #event_create_form .calendar_output_span
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+#event_create_form #starttime-wrapper select + select,
+#event_create_form #endtime-wrapper select + select
+{
+  margin-left: 5px;
+}
+html[dir="rtl"] #event_create_form #starttime-wrapper select + select,
+html[dir="rtl"] #event_create_form #endtime-wrapper select + select
+{
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+
+
+
+
+/* ITEM TYPE ICONS */
+
+.item_icon_event
+{
+  background-image: url(~/application/modules/Event/externals/images/types/event.png);
+}
+.item_icon_event_topic,
+.item_icon_event_post
+{
+  background-image: url(~/application/modules/Event/externals/images/types/post.png);
+}
+.item_icon_event_album,
+.item_icon_event_photo
+{
+  background-image: url(~/application/modules/Event/externals/images/types/album.png);
+}
+
+
+
+/* NOTIFICATION TYPE ICONS */
+
+.notification_type_event_discussion_response,
+.notification_type_event_discussion_reply
+{
+  background-image: url(~/application/modules/Event/externals/images/types/post.png);
+}
+
+.notification_type_event_invite,
+.notification_type_event_accepted
+{
+  background-image: url(~/application/modules/Event/externals/images/types/event.png);
+}
+
+
+
+
+
+
+
+/*
+VIEW EVENT ALBUM
+Styles for the list event photo page.
+*/
+.event_album_options a
+{
+  margin-right: 15px;
+}
+html[dir="rtl"] .event_album_options a
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+/*
+VIEW EVENT PHOTO
+These styles are used on the view photo page within
+an album.
+*/
+div.event_photo_view
+{
+  margin: 25px auto 0px auto;
+  max-width: 750px;
+  min-width: 400px;
+  overflow: visible;
+}
+div.event_photo_view #media_photo
+{
+  border: 1px solid $theme_photo_border_color;
+  margin: auto;
+  display: block;
+  max-width: 720px;
+}
+div.event_photo_view .event_photo_nav
+{
+  clear: both;
+  overflow: visible;
+  margin-bottom: 4px;
+}
+div.event_photo_view .event_photo_nav > div
+{
+  float: left;
+  overflow: visible;
+}
+div.event_photo_view .event_photo_nav > div + div
+{
+  float: none;
+  text-align: right;
+}
+div.event_photo_view .event_photo_nav > div + div > a + a
+{
+  margin-left: 20px;
+}
+div.event_photo_info
+{
+  +foreground;
+  +rounded;
+  text-align: center;
+  padding: 10px;
+  border: 5px solid $theme_foreground_border_color;
+}
+div.event_photo_info p
+{
+  text-align: left;
+}
+div.event_photo_container
+{
+  position: relative;
+  display: inline-block;
+}
+div.event_photo_container a:link
+{
+  text-decoration: none;
+}
+div.event_photo_view > span + div > a
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.event_photo_view > span + div > a:link
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.event_photo_info .event_photo_title
+{
+  margin-top: 5px;
+  font-weight: bold;
+}
+div.event_photo_info .event_photo_description
+{
+  font-size: .8em;
+  margin-top: 3px;
+}
+div.event_photo_info .event_photo_owner
+{
+  font-size: .8em;
+  margin-top: 3px;
+}
+div.event_photo_info .event_photo_title + .event_photo_tags,
+div.event_photo_info .event_photo_description + .event_photo_tags
+{
+  margin-top: 15px;
+}
+div.event_photo_info .event_photo_tags
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.event_photo_info .event_photo_date
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.event_photo_view > div.comments
+{
+  margin-top: 15px;
+}
+
+
+
+
+
+/*
+EVENTS USER PROFILE TAB
+Styles the list of events on a user's Events profile tab.
+*/
+ul.events_profile_tab > li
+{
+  overflow: hidden;
+}
+ul.events_profile_tab > li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.events_profile_tab .events_profile_tab_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+html[dir="rtl"] ul.events_profile_tab .events_profile_tab_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+ul.events_profile_tab .events_profile_tab_photo img
+{
+  max-width: 90px;
+}
+ul.events_profile_tab .events_profile_tab_info
+{
+  overflow: hidden;
+}
+ul.events_profile_tab .events_profile_tab_title > a
+{
+  font-weight: bold;
+}
+ul.events_profile_tab .events_profile_tab_members
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.events_profile_tab .events_profile_tab_desc
+{
+  margin-top: 7px;
+}
+
+
+
+
+
+/*
+POST EVENT TOPIC FORM
+*/
+#event_topic_create .form-elements
+{
+  margin-top: 10px;
+}
+#event_topic_create .form-label
+{
+  clear: both;
+  float: none;
+  text-align: left;
+  margin-bottom: 3px;
+}
+html[dir="rtl"] #event_topic_create .form-label
+{
+  text-align: right;
+}
+#event_topic_create #watch-label
+{
+  display: none;
+}
+
+/*
+REPLY TO EVENT TOPIC FORM
+*/
+#event_topic_reply h3,
+#event_topic_reply #body-label,
+#event_topic_reply #submit-label
+{
+  display: none;
+}
+#event_topic_reply .form-elements
+{
+  margin-top: 0px;
+}
+#event_topic_reply #watch-label
+{
+  display: none;
+}
+
+
+/*
+INVITE FORM
+*/
+#event_form_invite #users-label
+{
+  display: none;
+}
+#event_form_invite #users-element
+{
+  border: 1px solid $theme_border_dark_color;
+  padding: 7px 10px 7px 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 10px 0px 10px 0px;
+}
+
+
+/*
+TAG FOR SENDING MESSAGES
+*/
+.tag.tag_event
+{
+  background-image: url(~/application/modules/Event/externals/images/types/event.png);
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+}
+
+
+
+/* ICONS */
+.icon_event_new, .icon_event_create
+{
+  background-image: url(~/application/modules/Event/externals/images/create.png);
+}
+.icon_event_edit
+{
+  background-image: url(~/application/modules/Event/externals/images/edit.png);
+}
+.icon_event_join
+{
+  background-image: url(~/application/modules/Event/externals/images/member/join.png);
+}
+.icon_event_delete
+{
+  background-image: url(~/application/modules/Event/externals/images/delete.png);
+}
+.icon_event_leave
+{
+  background-image: url(~/application/modules/Event/externals/images/member/leave.png);
+}
+.icon_event_accept
+{
+  background-image: url(~/application/modules/Event/externals/images/member/accept.png);
+}
+.icon_event_reject
+{
+  background-image: url(~/application/modules/Event/externals/images/member/reject.png);
+}
+.icon_event_cancel
+{
+  background-image: url(~/application/modules/Event/externals/images/member/cancel.png);
+}
+.icon_event_photo_new
+{
+  background-image: url(~/application/modules/Event/externals/images/photo/upload.png);
+}
+.icon_event_photo_view
+{
+  background-image: url(~/application/modules/Event/externals/images/photo/view.png);
+}
+.icon_event_post_new
+{
+  background-image: url(~/application/modules/Event/externals/images/post/create.png);
+}
+.icon_event_post_edit
+{
+  background-image: url(~/application/modules/Event/externals/images/post/edit.png);
+}
+.icon_event_post_reply
+{
+  background-image: url(~/application/modules/Event/externals/images/post/reply.png);
+}
+.icon_event_post_stick
+{
+  background-image: url(~/application/modules/Event/externals/images/post/stick.png);
+}
+.icon_event_post_unstick
+{
+  background-image: url(~/application/modules/Event/externals/images/post/unstick.png);
+}
+.icon_event_post_close
+{
+  background-image: url(~/application/modules/Event/externals/images/post/close.png);
+}
+.icon_event_post_open
+{
+  background-image: url(~/application/modules/Event/externals/images/post/unclose.png);
+}
+.icon_event_post_rename
+{
+  background-image: url(~/application/modules/Event/externals/images/post/rename.png);
+}
+.icon_event_post_delete
+{
+  background-image: url(~/application/modules/Event/externals/images/post/delete.png);
+}
+.icon_event_post_quote
+{
+  background-image: url(~/application/modules/Event/externals/images/post/quote.png);
+}
+.icon_event_topic_watch
+{
+  background-image: url(~/application/modules/Event/externals/images/watch.png);
+}
+.icon_event_topic_unwatch
+{
+  background-image: url(~/application/modules/Event/externals/images/unwatch.png);
+}
+
+.activity_icon_event_join
+{
+  background-image: url(~/application/modules/Event/externals/images/member/join.png);
+}

@@ -1,0 +1,183 @@
+
+div.event_calendar_container
+{
+  margin-bottom: 4px;
+  display:block;
+  height: 20px;
+}
+
+input.event_calendar,
+select.event_calendar
+{
+  margin-right: 6px;
+  width: 149px;
+  float: left;
+}
+html[dir="rtl"] input.event_calendar,
+html[dir="rtl"] select.event_calendar
+{
+  margin-right: 0px;
+  margin-left: 6px;
+  float: right;
+}
+
+div.event_calendar_container button.event_calendar
+{
+  background: url(./images/event_calendar_icon.gif);
+  border: 0;
+  cursor: pointer;
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+  line-height: 100%;
+}
+
+html[dir="rtl"] div.event_calendar_container button.event_calendar
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 6px;
+}
+
+button.event_calendar:hover,
+button.event_calendar.active
+{
+  background-position: 0 20px;
+}
+
+div.event_calendar
+{
+  background: url(./images/event_calendar_bg.png) no-repeat;
+  /* height: 278px; */
+  height: 140px;
+  padding: 4px;
+  width: 164px;
+}
+
+div.event_calendar * {
+  margin: 0;
+  padding: 0;
+}
+
+div.event_calendar div {
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  cursor: move;
+  /* height: 278px; */
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+  width: 164px;
+}
+
+/*
+div.se_event_calendar.january div { background-image: url(se_event_calendar-jan.jpg); }	
+div.se_event_calendar.february div { background-image: url(se_event_calendar-feb.jpg); }	
+div.se_event_calendar.march div { background-image: url(se_event_calendar-mar.jpg); }	
+div.se_event_calendar.april div { background-image: url(se_event_calendar-apr.jpg); }	
+div.se_event_calendar.may div { background-image: url(se_event_calendar-may.jpg); }	
+div.se_event_calendar.june div { background-image: url(se_event_calendar-jun.jpg); }	
+div.se_event_calendar.july div { background-image: url(se_event_calendar-jul.jpg); }	
+div.se_event_calendar.august div { background-image: url(se_event_calendar-aug.jpg); }	
+div.se_event_calendar.september div { background-image: url(se_event_calendar-sep.jpg); }	
+div.se_event_calendar.october div { background-image: url(se_event_calendar-oct.jpg); }	
+div.se_event_calendar.november div { background-image: url(se_event_calendar-nov.jpg); }	
+div.se_event_calendar.december div { background-image: url(se_event_calendar-dec.jpg); }	
+*/
+
+/* 
+We won't be using the caption element traditionally
+We have to make sure it doesn't take up space in the browser and offset the other elements
+Unfortunately position: absolute is not supported by all browsers for table-caption
+IEX only responds to line-height
+*/
+
+div.event_calendar caption {
+  color: #808080;
+  height: 0%;
+  line-height: 0;
+}
+div.event_calendar caption a {
+  cursor: pointer;
+  display: block;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -100px;
+  top: 0;
+  width: 23px;
+  z-index: 200;
+}
+div.event_calendar caption a.prev {
+  background-image: url(./images/event_calendar_prev.png);
+  left: 0;
+}
+div.event_calendar caption a.next {
+  background-image: url(./images/event_calendar_next.png);
+  right: 0;
+}
+div.event_calendar caption a:hover {
+  background-position: 0 25px;
+}
+div.event_calendar caption span.month {
+  bottom: 8px;
+  font: normal 11px Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+}
+
+/* 
+IEX won't work if all the children of the caption element are absolutely positioned
+Since we can't just leave the year un-positioned, we will have to hide it
+(Remarkably this actually works in IEX)
+*/
+
+div.event_calendar caption span.year {
+  display: none;
+}
+
+div.event_calendar table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* margin: 143px 10px 0 7px; */
+  margin: 9px 10px 0 7px;
+}
+div.event_calendar tbody {
+  cursor: default;
+}
+div.event_calendar td {
+  border: 0;
+  color: #FFF;
+  font: normal 9px Arial, Helvetica, sans-serif;
+  height: 21px;
+  text-align: right;
+  vertical-align: bottom;
+  width: 21px;
+}
+div.event_calendar td.active,
+div.event_calendar td.hover {
+  background: url(./images/event_calendar_active.gif);
+  color: #25A8C2;
+  cursor: pointer;
+}
+div.event_calendar td.invalid {
+  background: url(./images/event_calendar_invalid.gif);
+  color: #DA2727;
+}
+div.event_calendar td.valid {
+  color: #808080;
+  cursor: pointer;
+}
+div.event_calendar td.inactive {
+  background: url(./images/event_calendar_inactive.gif);
+  color: #808080;
+}
+div.event_calendar thead {
+  display: none;
+}
+
+
+

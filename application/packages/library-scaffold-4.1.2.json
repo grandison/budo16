@@ -1,0 +1,1011 @@
+{
+  "type": "library",
+  "name": "scaffold",
+  "version": "4.1.2",
+  "revision": "8441",
+  "path": "application\/libraries\/Scaffold",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "CSS Scaffold",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.1": {
+      "manifest.php": "Incremented version",
+      "modules\/Absolute_Urls.php": "Added hack to send expires flush counter to images in the stylesheets"
+    },
+    "4.0.3": {
+      "libraries\/Scaffold\/Scaffold.php": "Fix for open_basedir warning",
+      "manifest.php": "Incremented version"
+    },
+    "4.0.2": {
+      "libraries\/Scaffold\/Scaffold.php": "Fix for open_basedir warning",
+      "manifest.php": "Incremented version"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "CSS Scaffold",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/libraries\/Scaffold": {
+      "type": "directory",
+      "path": "application\/libraries\/Scaffold",
+      "structure": [
+        {
+          "path": ".htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 61,
+          "sha1": "e8f99e6d80c6c2856c92f6774967c33a595568c3"
+        },
+        {
+          "path": "config",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "config\/Constants.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 461,
+          "sha1": "8583b00744adcae9023d7a371f8cbae158890edc"
+        },
+        {
+          "path": "config\/Firelog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 395,
+          "sha1": "866f66d874b95636972ad2e0ee7cca33de7270b4"
+        },
+        {
+          "path": "config\/Formatter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1091,
+          "sha1": "ff66a186f03a9dad1dcff0f534cf8a141667b32c"
+        },
+        {
+          "path": "config\/Mixins.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 42,
+          "sha1": "cf9debb5244d2fccb47d307f227b1120f8c022a1"
+        },
+        {
+          "path": "config\/ScanInclude.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 25,
+          "sha1": "31d441e19d1df7c6c6f567a2a8da5550da86f511"
+        },
+        {
+          "path": "config\/Time.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 655,
+          "sha1": "abe5aedcc4020f6b5a3777f9a45c1eec118fea53"
+        },
+        {
+          "path": "config\/Validate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 322,
+          "sha1": "5246c68e8feb5a219be7b5375bd5844659492de7"
+        },
+        {
+          "path": "config.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3955,
+          "sha1": "ff074ec08dc3ba75a0243477761f5a72e2a6b4d3"
+        },
+        {
+          "path": "extensions",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "extensions\/functions",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "extensions\/functions\/phase_01",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "extensions\/functions\/phase_01\/rand.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 225,
+          "sha1": "87716500ac86b0848caa45ac79abe4fb0f146fc5"
+        },
+        {
+          "path": "extensions\/functions\/phase_02",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/baseline.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 287,
+          "sha1": "267563d9f7903ba8ed8bc48f3ca78ba78e66fd78"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/baseline_round.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 356,
+          "sha1": "4c1c4ce6220fc42aa9f9d6ad61acdc7d00ca4e4b"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/calc.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 345,
+          "sha1": "5c5e7cbd8fdc629a50a01774d367b1b31d8d6a7b"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/cmyk.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 496,
+          "sha1": "2b1151a46ff1b67e58b803244df9919b8358131b"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/cmyka.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 525,
+          "sha1": "404b431c896d80796eba3d2df12e99b6651c325d"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/embed.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 395,
+          "sha1": "40d0077e06deb7d3e2903910bfcc3eafa4506276"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/enumerate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 601,
+          "sha1": "36c3e80ac032eb491e74ab7b429860e0588f0ee8"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/hsl.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1181,
+          "sha1": "a0b484878cfde048914d8b70409c1e7ff898116c"
+        },
+        {
+          "path": "extensions\/functions\/phase_02\/hsla.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1162,
+          "sha1": "f15d32a7be9c438730fb6a13fd5e8ea9477413e4"
+        },
+        {
+          "path": "extensions\/properties",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "extensions\/properties\/background-gradient.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1009,
+          "sha1": "c5d2842b17290f5927185778079320a8aff36d8b"
+        },
+        {
+          "path": "extensions\/properties\/image-replace.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1005,
+          "sha1": "2645e7e28db5752514311d0dc4d7945944c2b37d"
+        },
+        {
+          "path": "index.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2428,
+          "sha1": "08f1aefaf28454566a36587cff57c461054649ad"
+        },
+        {
+          "path": "libraries",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "libraries\/Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 397,
+          "sha1": "cfe6cf89cfcdc7fb92937112b549679ad128fb9e"
+        },
+        {
+          "path": "libraries\/Scaffold",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "libraries\/Scaffold\/Benchmark.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2670,
+          "sha1": "9fa94fa694924f1dd193e003c6a3b0c5ea06a45e"
+        },
+        {
+          "path": "libraries\/Scaffold\/Cache.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3728,
+          "sha1": "2adafcfc099df04bf7f757bc960f5ec0259ac20a"
+        },
+        {
+          "path": "libraries\/Scaffold\/CSS.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7227,
+          "sha1": "1724f7734072650801ecf8d9e4aea6f2174487a1"
+        },
+        {
+          "path": "libraries\/Scaffold\/Event.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5704,
+          "sha1": "3bb9acbffa32cda8164f529e55d8157a0e368f76"
+        },
+        {
+          "path": "libraries\/Scaffold\/Log.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1749,
+          "sha1": "f34050a8c2b06be0c58d7f12eb345909dabf1648"
+        },
+        {
+          "path": "libraries\/Scaffold\/Scaffold.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 24219,
+          "sha1": "e3e83d233ffc5b0da3d55d60a8eb94091613a308"
+        },
+        {
+          "path": "libraries\/Scaffold\/Utils.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4073,
+          "sha1": "183c98b07c0246a455ab0a2d97e1bb09c9cc5f21"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 943,
+          "sha1": "9dc797fe31cf32a2492d1b93dffb28e995281403"
+        },
+        {
+          "path": "mixins",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "mixins\/css3",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "mixins\/css3\/background-size.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 347,
+          "sha1": "e7c236aad3fe873ec803ac3dd8658541ccf25687"
+        },
+        {
+          "path": "mixins\/css3\/border-box.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 285,
+          "sha1": "f6b70b94571b8878d4e2bdc55dca034e6ffbd5d5"
+        },
+        {
+          "path": "mixins\/css3\/border-radius.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1078,
+          "sha1": "a97bba810cf9490fa3a9d86016f4bc1a53faa53b"
+        },
+        {
+          "path": "mixins\/css3\/box-shadow.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 177,
+          "sha1": "76e37586905eac093274d9d0754b647dbe7d8632"
+        },
+        {
+          "path": "mixins\/css3\/inline-block.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 212,
+          "sha1": "444265c974421985be7f626a44bc4c54e1fb69be"
+        },
+        {
+          "path": "mixins\/css3\/multi-column-layout.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 469,
+          "sha1": "65ee446f35d36e5f0db3ba07d0a1587e21c918a1"
+        },
+        {
+          "path": "mixins\/css3\/opacity.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 333,
+          "sha1": "2481ddaf6ecf996208585074465aa9b6ae564998"
+        },
+        {
+          "path": "mixins\/css3\/rotate.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 232,
+          "sha1": "bd655b902ab6c67b08b767a7167b9622b3f70dbf"
+        },
+        {
+          "path": "mixins\/css3\/text-overflow.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 221,
+          "sha1": "ce79ce47bce81f647ca9dfbf2ef51f77778ed000"
+        },
+        {
+          "path": "mixins\/layout",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "mixins\/layout\/clearfix.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 339,
+          "sha1": "3f49063ecfe1cd6436385402619056803d846ff3"
+        },
+        {
+          "path": "mixins\/layout\/float.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 220,
+          "sha1": "76a8f40c08a7fad7ee4b70f92a473d1f6769753c"
+        },
+        {
+          "path": "mixins\/layout\/has-layout.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 333,
+          "sha1": "5362b53b6bc1fce8bfdf1d2fd0b743afe6229188"
+        },
+        {
+          "path": "mixins\/layout\/min-dimensions.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 259,
+          "sha1": "d2cf985f52a229d61cd39f5f9489ed5547bfecc1"
+        },
+        {
+          "path": "mixins\/typography",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "mixins\/typography\/fancy-type.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1165,
+          "sha1": "29d7c01b9a7c9c9ef03d795a67d8ea1aaf4338e6"
+        },
+        {
+          "path": "mixins\/typography\/font-stacks.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2359,
+          "sha1": "bdbbe9c8de0d071e964ab5d53985c9fb0a7f6585"
+        },
+        {
+          "path": "mixins\/typography\/image-replace.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 172,
+          "sha1": "573af9d629760aa1722764a628d54a7e1fc3bedc"
+        },
+        {
+          "path": "mixins\/typography\/safari-fix.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 119,
+          "sha1": "e50d6481741366e9cbb5d1c8c2b11e31a36718a5"
+        },
+        {
+          "path": "mixins\/utilities",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "mixins\/utilities\/accessibility.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 141,
+          "sha1": "c48c2d7e00be5edf418e351c0714759298085806"
+        },
+        {
+          "path": "mixins\/utilities\/images.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 791,
+          "sha1": "1e9107ba15a3f25e666b40ed5c8bcba94eeacbe9"
+        },
+        {
+          "path": "mixins\/utilities\/lists.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 468,
+          "sha1": "3b27bac39646f3bd32d4cbbe67d3ebb87c8f9c22"
+        },
+        {
+          "path": "mixins\/utilities\/position.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1015,
+          "sha1": "f8989e1c533173d06fa05bbbc40b81097e43fa72"
+        },
+        {
+          "path": "mixins\/utilities\/reset.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1439,
+          "sha1": "59daf1acaec6745eee126d49e123def2438aa83d"
+        },
+        {
+          "path": "mixins\/widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "mixins\/widgets\/buttons.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1362,
+          "sha1": "e0bcfff55a422ce84157aa8265e2ff406067c052"
+        },
+        {
+          "path": "mixins\/widgets\/lightbox.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3150,
+          "sha1": "513523034db5db156c02d02eb68be26eae9dc37e"
+        },
+        {
+          "path": "mixins\/widgets\/tabs.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1179,
+          "sha1": "fa5189ba9246ff837a29a5af5d52504bf00dc65e"
+        },
+        {
+          "path": "modified",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 408,
+          "sha1": "8d51d4f69aa7c2d3ae68c9de741258371d0d1526"
+        },
+        {
+          "path": "modules",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Absolute_Urls",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Absolute_Urls\/Absolute_Urls.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4853,
+          "sha1": "965b590cbad0a91725e1b15b0907712ad49dc3ac"
+        },
+        {
+          "path": "modules\/Constants",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Constants\/Constants.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4248,
+          "sha1": "7e25db51c00f3c383451ef287c8a2a77ce5ada65"
+        },
+        {
+          "path": "modules\/Extensions",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Extensions\/Extensions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3368,
+          "sha1": "e3074e45ae004901e13ff929bfdc317b06d078ff"
+        },
+        {
+          "path": "modules\/Firelog",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Firelog\/Firelog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6487,
+          "sha1": "b07a2e3a03d49af78c9c5bd4219a88de4df2b428"
+        },
+        {
+          "path": "modules\/Firelog\/libraries",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Firelog\/libraries\/FirePHPCore",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Firelog\/libraries\/FirePHPCore\/fb.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7003,
+          "sha1": "3f167929b3946e2716a49762139d0cfbe97e6889"
+        },
+        {
+          "path": "modules\/Firelog\/libraries\/FirePHPCore\/FirePHP.class.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 48509,
+          "sha1": "94c6ec984c3a84b68105883b613f5b74dae436db"
+        },
+        {
+          "path": "modules\/Firelog\/libraries\/FirePHPCore\/LICENSE",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1568,
+          "sha1": "662ce8ff6ae793086e48231aa04972ded58c0973"
+        },
+        {
+          "path": "modules\/Flags",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Flags\/Flags.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1531,
+          "sha1": "c572ab920fd051485b6fdbff21f8d12e29ce8382"
+        },
+        {
+          "path": "modules\/Formatter",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Formatter\/Formatter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 10441,
+          "sha1": "41ab94607969ba2beb5a0c6513742895c70f60f9"
+        },
+        {
+          "path": "modules\/Gradient",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Gradient\/Gradient.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1302,
+          "sha1": "7dfb30874223d0fa92d354b099c1cd8c68b38be7"
+        },
+        {
+          "path": "modules\/Gradient\/libraries",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Gradient\/libraries\/gradientgd.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3683,
+          "sha1": "43fda470809df2f90688bdc6d1f50711de3c44b5"
+        },
+        {
+          "path": "modules\/Import",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Import\/Import.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2872,
+          "sha1": "7798877c3ae71e75d838ffd3bf60aaae73cd8234"
+        },
+        {
+          "path": "modules\/Iteration",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Iteration\/Iteration.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1403,
+          "sha1": "27be460e9da0604230a1fed0145ff6e468a70f54"
+        },
+        {
+          "path": "modules\/Layout",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Layout\/Layout.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4834,
+          "sha1": "c3b8709b7a3b2c761fce57b162320d8c8fad20fe"
+        },
+        {
+          "path": "modules\/Layout\/templates",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Layout\/templates\/classes.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 369,
+          "sha1": "1c3a75fe6bb502e428708537dfce16e1d188042d"
+        },
+        {
+          "path": "modules\/Layout\/templates\/mixins.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1053,
+          "sha1": "f04a5b56d4b539a297759b803fe9d83d002fcd24"
+        },
+        {
+          "path": "modules\/Mixins",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Mixins\/Mixins.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8738,
+          "sha1": "1f4d99b1b9147930e02bcfc153b52222407bcf06"
+        },
+        {
+          "path": "modules\/NestedSelectors",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/NestedSelectors\/NestedSelectors.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7508,
+          "sha1": "5f5c20be28e72f392550c2b39743b38d09e3a6c8"
+        },
+        {
+          "path": "modules\/Paginator",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Paginator\/Paginator.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3435,
+          "sha1": "45900c65a7b1d3f8e499aafeda5dbe14812d955d"
+        },
+        {
+          "path": "modules\/ScanInclude",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/ScanInclude\/ScanInclude.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1915,
+          "sha1": "eed36e94742952a54c1d538549e76fc472703408"
+        },
+        {
+          "path": "modules\/Time",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Time\/Time.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1905,
+          "sha1": "2311f13fb6ca20367d2af8373c7f07ae3aee9318"
+        },
+        {
+          "path": "modules\/Typography",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Typography\/Typography.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 369,
+          "sha1": "4dd730fd0698477e42f34e00d860bb3a85edff46"
+        },
+        {
+          "path": "modules\/Validate",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "modules\/Validate\/Validate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1805,
+          "sha1": "d2696128295e8cd91ae65a47b28e91be0043a64b"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scaffold_error.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 746,
+          "sha1": "cd7bb19b61be6ce99a2f9bad7cac079a31211b92"
+        },
+        {
+          "path": "views\/scaffold_typography.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 10204,
+          "sha1": "7dc144480cdba7efa200f60217a88f87cc104fb9"
+        }
+      ]
+    }
+  }
+}

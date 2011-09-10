@@ -1,0 +1,110 @@
+{
+  "type": "external",
+  "name": "mootree",
+  "version": "4.0.0",
+  "revision": "7593",
+  "path": "externals\/mootree",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Mootree",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Mootree",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/mootree": {
+      "type": "directory",
+      "path": "externals\/mootree",
+      "structure": [
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 368,
+          "sha1": "9894e975a81da6189b5d54c10d39a47498406776"
+        },
+        {
+          "path": "mootree-s.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 131,
+          "sha1": "a9852c3c286f4c46ee1c6419a9306fb2c227dc36"
+        },
+        {
+          "path": "mootree.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 345,
+          "sha1": "9e77264a462d78958e2c1563efcbef59bcca354a"
+        },
+        {
+          "path": "mootree.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1149,
+          "sha1": "606a61f3521d5afb7ee1a43de07024fde5b71508"
+        },
+        {
+          "path": "mootree.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 22019,
+          "sha1": "b99b57fe86d387036b5f08a6c294df7144d39659"
+        },
+        {
+          "path": "mootree_loader.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 584,
+          "sha1": "298a0da8d8b26a35b164135ae3269a6d9fea62c1"
+        },
+        {
+          "path": "mootree_packed.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7052,
+          "sha1": "0ca9d70ee30fa545196cde4da1934bbfef4f5a15"
+        },
+        {
+          "path": "sample_icons.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 459,
+          "sha1": "26217c14e31d8e1e91e2c5459d3602a6c3435f8d"
+        }
+      ]
+    }
+  }
+}

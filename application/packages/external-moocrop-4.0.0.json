@@ -1,0 +1,62 @@
+{
+  "type": "external",
+  "name": "moocrop",
+  "version": "4.0.0",
+  "revision": "7593",
+  "path": "externals\/moocrop",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Moocrop",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Moocrop",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/moocrop": {
+      "type": "directory",
+      "path": "externals\/moocrop",
+      "structure": [
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 368,
+          "sha1": "df02faabd030f8500a76e97782b9887265f00ff1"
+        },
+        {
+          "path": "MooCrop.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9550,
+          "sha1": "b2df9304d85518d704b693f5ae8cfbe68811870a"
+        }
+      ]
+    }
+  }
+}

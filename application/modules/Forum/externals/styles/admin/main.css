@@ -1,0 +1,140 @@
+
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+/*
+MANAGE FORUMS
+*/
+.admin_forums_create
+{
+  background-image: url(~/application/modules/Forum/externals/images/admin/forum_create.png);
+}
+.admin_forums_createcategory
+{
+  background-image: url(~/application/modules/Forum/externals/images/admin/forum_createcategory.png);
+}
+ul.admin_forum_categories
+{
+  overflow: hidden;
+}
+ul.admin_forum_categories .admin_forum_categories_info
+{
+  +foreground;
+  +rounded;
+  padding: 7px 10px 7px 10px;
+  overflow: hidden;
+}
+ul.admin_forum_categories .admin_forum_categories_options
+{
+  float: right;
+  overflow: hidden;
+  padding-top: 2px;
+  text-align: right;
+  color: #ccc;
+}
+ul.admin_forum_categories .admin_forum_categories_options a
+{
+  font-weight: bold;
+  margin: 0px 5px 0px 5px;
+}
+ul.admin_forum_categories .admin_forum_categories_title
+{
+  overflow: hidden;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+ul.admin_forum_categories > li:first-child .admin_forum_categories_info .admin_forums_moveup
+{
+  display: none;
+}
+ul.admin_forums
+{
+  overflow: hidden;
+}
+ul.admin_forums > li
+{
+  margin-left: 25px;
+  overflow: hidden;
+  padding: 12px 10px 12px 0px;
+}
+ul.admin_forums > li + li
+{
+  border-top: 1px solid #ddd;
+}
+ul.admin_forums .admin_forums_info
+{
+  overflow: hidden;
+}
+ul.admin_forums .admin_forums_title
+{
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  display: block;
+}
+ul.admin_forums .admin_forums_description
+{
+  display: block;
+}
+ul.admin_forums .admin_forums_moderators
+{
+  margin-top: 10px;
+  display: block;
+  color: #999;
+}
+ul.admin_forums .admin_forums_moderators_top
+{
+  display: block;
+}
+ul.admin_forums .admin_forums_moderators_top + span
+{
+  display: block;
+  margin-top: 3px;
+}
+ul.admin_forums .admin_forums_options
+{
+  float: right;
+  overflow: hidden;
+  padding-top: 5px;
+  text-align: right;
+  color: #ccc;
+}
+ul.admin_forums .admin_forums_options a
+{
+  font-weight: bold;
+  margin: 0px 5px 0px 5px;
+}
+ul.admin_forums > li:first-child .admin_forums_moveup
+{
+  display: none;
+}
+
+
+
+/*
+ADD MODERATOR POPUP
+*/
+.forum_admin_manage_users
+{
+  clear: both;
+  padding: 10px 10px 0 13px;
+}
+.forum_admin_manage_users ul
+{
+  display: none;
+  margin-top: 10px;
+  clear: both;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-top: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+.forum_admin_manage_users ul > li
+{
+  padding: 5px;
+}
+.forum_admin_manage_users ul > li + li
+{
+  border-top: 1px solid #ddd;
+}

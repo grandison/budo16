@@ -1,0 +1,295 @@
+
+/* $Id: mobile.css 8897 2011-04-13 22:42:20Z alex $ */
+
+
+/*
+ACTIVITY FEED COMPOSER FORM
+These styles are used for the small form that sits
+above the activity feed, allowing members to post.
+*/
+.activity-post-container
+{
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  margin: 0px 0px 10px 0px;
+  padding-right: 0px;
+  +rounded(4px);
+}
+.activity-post-container .buttonlink
+{
+  display: none;
+}
+form.activity
+{
+  padding: 7px;
+  overflow: hidden;
+}
+form.activity > div > input[type=text],
+form.activity > div > textarea
+{
+  width: 99%;
+}
+#activity_body
+{
+  width: 75%;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+#compose-submit
+{
+  width: 50px;
+}
+.compose-menu
+{
+  margin-top: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/*
+ACTIVITY FEEDS
+These styles are used for the recent activity
+feed shown on the main portal page, as well as
+any other activity feeds shown elsewhere.
+*/
+ul.feed
+{
+  clear: both;
+}
+ul.feed > li
+{
+  padding: 0px 0px 10px 0px;
+  overflow: hidden;
+}
+ul.feed > li + li
+{
+  padding-top: 10px;
+  border-top-width: 1px;
+}
+ul.feed .feed_item_generated
+{
+  color: $theme_font_color_light;
+}
+ul.feed .feed_item_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+  line-height: 0px;
+  font-size: 0px;
+}
+ul.feed .feed_item_photo > a
+{
+  text-decoration: none;
+}
+ul.feed .feed_item_photo > a > img
+{
+  display: block;
+}
+ul.feed .feed_item_body
+{
+  overflow: hidden;
+}
+ul.feed .feed_item_username
+{
+  font-weight: bold;
+}
+ul.feed .feed_item_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+  padding-top: 1px;
+}
+ul.feed .feed_item_date > ul
+{
+  line-height: 1em;
+}
+ul.feed .feed_item_date > ul > li
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.feed .feed_item_icon
+{
+  margin-top: 3px;
+  padding: 1px 0px 3px 0px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+ul.feed .feed_item_bodytext
+{
+  display: inline;
+  word-wrap: break-word;
+}
+ul.feed .feed_item_attachments
+{
+  overflow: hidden;
+  padding: 10px 10px 3px 10px;
+}
+ul.feed .feed_attachment_core_link
+{
+  overflow: hidden;
+}
+ul.feed .feed_attachment_core_link > div
+{
+  overflow: hidden;
+  width: auto;
+}
+ul.feed .feed_attachment_core_link > div > a
+{
+  display: block;
+  float: left;
+}
+ul.feed .feed_attachment_core_link > div > a > img
+{
+  display: block;
+  max-width: 100px;
+}
+ul.feed .feed_attachment_core_link > div > a + div
+{
+  overflow: hidden;
+  padding-left: 8px;
+}
+ul.feed .feed_attachment_core_link > div > a + div > a
+{
+  font-weight: bold;
+}
+ul.feed .feed_attachment_photo
+{
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px 0px 5px 0px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_photo a
+{
+  display: block;
+  float: left;
+}
+ul.feed .feed_attachment_photo a > img
+{
+  display: inline-block;
+  max-width: 90px;
+  max-height: 90px;
+  vertical-align: top;
+}
+ul.feed .feed_item_link_title
+{
+  font-size: .8em;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+ul.feed .feed_item_link_desc
+{
+  font-size: 0.8em;
+}
+ul.feed .comments
+{
+  width: 360px;
+}
+ul.feed .comments textarea
+{
+  font-size: 8pt;
+}
+ul.feed .comments textarea + button
+{
+  display: none;
+  font-size: .8em;
+}
+ul.feed .comments textarea:focus + button
+{
+  display: block;
+}
+ul.feed .comments > ul > li > div > a > img
+{
+  width: 32px;
+  height: 32px;
+}
+ul.feed .comments ul.comments_date > li
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.feed span.view_more .view_more_link
+{
+  display: inline-block;
+  background-image: url(~/application/modules/Activity/externals/images/more.png);
+  background-repeat: no-repeat;
+  padding-left: 10px;
+}
+ul.feed span.view_more .view_less_link
+{
+  display: inline-block;
+  background-image: url(~/application/modules/Activity/externals/images/less.png);
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  margin-left: 7px;
+}
+ul.feed .feed_item_posted .view_more_link,
+ul.feed .feed_item_posted .view_less_link
+{
+  font-size: .8em;
+}
+div.feed_viewmore
+{
+  border-top-width: 1px;
+  padding-top: 5px;
+}
+
+
+
+
+/* activity feed items and comments */
+ul.feed .feed_item_date > ul > li.feed_item_option_delete,
+ul.feed .feed_item_date > ul > li.feed_item_option_share,
+ul.feed .comments ul.comments_date .comments_delete
+{
+  display: none;
+}
+ul.feed > li
+{
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.feed .comments
+{
+  width: 100%;
+}
+ul.feed .comments li
+{
+  border: none;
+}
+ul.feed .activity-comment-form > textarea
+{
+  font-size: 1.1em;
+  width: 99%;
+}
+ul.feed .activity-comment-form > button
+{
+  margin-top: 3px;
+}
+.comments
+{
+  width: auto;
+}
+.comments .comments_options
+{
+  text-align: center;
+}
+.comments > ul > li
+{
+  border: none;
+}
+.comments > form textarea
+{
+  width: 99%;
+  font-size: 11pt;
+}
+.comments > form button
+{
+  font-size: 11pt;
+}

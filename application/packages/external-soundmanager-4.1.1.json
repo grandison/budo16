@@ -1,0 +1,332 @@
+{
+  "type": "external",
+  "name": "soundmanager",
+  "version": "4.1.1",
+  "revision": "7785",
+  "path": "externals\/soundmanager",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "SoundManager",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.1": {
+      "manifest.php": "Incremented version",
+      "soundmanager2.js": "Added console logging in development mode",
+      "soundmanager2-nodebug-jsmin.js": "Added console logging in development mode"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "SoundManager",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/soundmanager": {
+      "type": "directory",
+      "path": "externals\/soundmanager",
+      "structure": [
+        {
+          "path": "doc",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "doc\/download",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "doc\/download\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 49793,
+          "sha1": "c886b1cd58e4d57c1bfae6efeafbbfadce7091bc"
+        },
+        {
+          "path": "doc\/getstarted",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "doc\/getstarted\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 22671,
+          "sha1": "8cc7767e2999670b80f0d664142902567cff98ed"
+        },
+        {
+          "path": "doc\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 84013,
+          "sha1": "548306beba545f34b15b752f26184f7f60fec5b6"
+        },
+        {
+          "path": "doc\/resources",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "doc\/resources\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9499,
+          "sha1": "f6b579a7a155ad0ae2fce2764a3f5c481cc7e595"
+        },
+        {
+          "path": "doc\/technotes",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "doc\/technotes\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 14576,
+          "sha1": "b5709fc4ba590cc2047735a7c0816966c9cef656"
+        },
+        {
+          "path": "license.txt",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1595,
+          "sha1": "7fafb4f1798fe3c2f9da4fa768a8e9a110546fdc"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 667,
+          "sha1": "6715e53ad2d5d830a5888763e6d27e140bece33f"
+        },
+        {
+          "path": "script",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "script\/animator.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 23496,
+          "sha1": "1f123a500e0a488458504a8f437e8d47cfcdd99b"
+        },
+        {
+          "path": "script\/soundmanager2-nodebug-jsmin.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 26531,
+          "sha1": "187492ffbcf7d88389d9ad4ece6daade7a020987"
+        },
+        {
+          "path": "script\/soundmanager2.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 67527,
+          "sha1": "3aaa5a321779150f0cd7bc1dab2e7c510ba81e65"
+        },
+        {
+          "path": "script\/ThreeSixtyPlayer.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 42718,
+          "sha1": "9a3e00c2a83c16de61a72d75049b6a288ec98c72"
+        },
+        {
+          "path": "src",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "src\/make-flash8.bat",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 153,
+          "sha1": "0e715442f4ebdfaa84860aae62294ab5d573555d"
+        },
+        {
+          "path": "src\/make-flash8.sh",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 120,
+          "sha1": "9bd21a58cc064144879b2745a41f565f5b77cc9b"
+        },
+        {
+          "path": "src\/make-flash9.bat",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 227,
+          "sha1": "ecffd4c7765724778c00b539004e86aa2aa75f99"
+        },
+        {
+          "path": "src\/make-flash9.sh",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 133,
+          "sha1": "d2a6e2516d6d721fff588735d0122b7af5056762"
+        },
+        {
+          "path": "src\/SoundManager2.as",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 16245,
+          "sha1": "582d4c097fc9eb279884604871fef5372e355972"
+        },
+        {
+          "path": "src\/SoundManager2_AS3.as",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 41524,
+          "sha1": "d4ce2f77e16c094ac7724444f4bd37d42d55db05"
+        },
+        {
+          "path": "src\/SoundManager2_SMSound_AS3.as",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11710,
+          "sha1": "d4b9152dc283b2d55aa9042ff9aefb04cf48faad"
+        },
+        {
+          "path": "swf",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "swf\/soundmanager2.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3349,
+          "sha1": "0085119a1d9d5074592573b2929454f058667e5f"
+        },
+        {
+          "path": "swf\/soundmanager2_flash9.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 10576,
+          "sha1": "7389be265cc913b189ca581a2c6a9b5236da0b37"
+        },
+        {
+          "path": "swf\/soundmanager2_flash_xdomain.zip",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 14222,
+          "sha1": "54413c1748a366928488e6c443fa52253efd62e1"
+        },
+        {
+          "path": "troubleshoot",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "troubleshoot\/debug.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2412,
+          "sha1": "6c15916956d359357ceddce547bf9d785ce3e6de"
+        },
+        {
+          "path": "troubleshoot\/debug.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7730,
+          "sha1": "9c2b8f38449c110c6bff85ec0293d6b12133eb85"
+        },
+        {
+          "path": "troubleshoot\/fpgss-add-location.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 25513,
+          "sha1": "5e025d1c09bd1e66e8991e2d4b6d4cf7affd2b98"
+        },
+        {
+          "path": "troubleshoot\/fpgss-added-location.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 24125,
+          "sha1": "72f56414772a4e3cc62f7599836236ec4caa608c"
+        },
+        {
+          "path": "troubleshoot\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8841,
+          "sha1": "a19309172a700f18cf60a752d30323478def6f5f"
+        }
+      ]
+    }
+  }
+}

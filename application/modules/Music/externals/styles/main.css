@@ -1,0 +1,792 @@
+
+/* $Id: main.css 8340 2011-01-29 05:30:38Z john $ */
+
+
+@include "~/application/modules/Core/externals/styles/constants.css";
+
+
+
+
+
+
+/*
+BROWSE MUSIC
+Styles the music browse page.
+*/
+ul.music_browse > li + li
+{
+  margin-top: 15px;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+.music_browse_author_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.music_browse_author_photo img
+{
+  display: block;
+}
+.music_browse_options
+{
+  float: right;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.music_browse_options a
+{
+  clear: both;
+  margin: 5px;
+  font-size: .8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.music_browse_info
+{
+  overflow: hidden;
+}
+.music_browse_info_title
+{
+  font-weight: bold;
+}
+.music_browse_info_title h3
+{
+  margin-bottom: 0px;
+}
+.music_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+.music_browse_info_desc
+{
+  margin-top: 7px;
+}
+.music_browse_info_songs
+{
+  padding: 10px 5px 5px 5px;
+  overflow: hidden;
+}
+.music_browse_info_art
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.music_browse_info_art img
+{
+  display: block;
+  max-width: 90px;
+  border: 1px solid $theme_border_color;
+}
+.music_browse_info_songlist
+{
+  overflow: hidden;
+}
+.music_browse_info_songlist li
+{
+  font-size: .8em;
+}
+.music_browse_info_songlist li + li
+{
+  margin-top: 3px;
+}
+.music_browse_info_songlist li object,
+.music_browse_info_songlist li embed,
+.music_browse_info_songlist li .playlist_song_actions
+{
+  padding-left: 25px;
+}
+.music_browse_info_songlist li > a
+{
+  display: inline-block;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.music_browse_info_songlist li > a.playlist_song
+{
+  background-image: url(~/application/modules/Music/externals/images/play.png);
+}
+.music_browse_info_songlist li .music_browse_info_plays
+{
+  display: block;
+  color: $theme_font_color_light;
+  margin-left: 24px;
+}
+.music_browse_info_songlist li .music_player_small
+{
+  margin: 5px 0px 5px 0px;
+}
+.music_browse_info_viewmore
+{
+  font-weight: bold;
+  padding-left: 12px;
+  background-image: url(~/application/modules/Music/externals/images/more.png);
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: .8em;
+}
+
+
+
+/*
+VIEW PLAYLIST
+Styles the view playlist page, where a single
+playlist is viewed.
+*/
+.music_playlist
+{
+  overflow: hidden;
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+.music_playlist_art
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.music_playlist_art img
+{
+  max-width: 200px;
+  max-height: 200px;
+  border: 1px solid $theme_photo_border_color;
+}
+.music_playlist_info
+{
+  overflow: hidden;
+}
+.music_playlist_info_title h3
+{
+  margin-bottom: 0px;
+}
+.music_playlist_info_date
+{
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+.music_playlist_info_songs li
+{
+  margin: 10px 0px 10px 0px;
+}
+.music_playlist_info_song
+{
+  font-weight: bold;
+  font-size: .8em;
+}
+.music_playlist_info_plays
+{
+  display: block;
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+.music_playlist_info .comments
+{
+  margin-top: 15px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+.music_playlist_options
+{
+  float: right;
+  overflow: hidden;
+  width: 200px;
+  padding-left: 20px;
+}
+.music_playlist_options a
+{
+  display: block;
+  margin: 5px;
+  font-size: .8em;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+.music_playlist_stats
+{
+  margin-bottom: 10px;
+}
+.music_playlist_stats > a
+{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/*
+MUSIC PLAYER SKIN
+*/
+.music_player
+{
+  +rounded;
+  width: 400px;
+  background-color: #5f5f5f;
+  border: 4px solid #aaaaaa;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+}
+.music_player_top
+{
+  overflow: hidden;
+}
+.music_player_art
+{
+  float: left;
+  overflow: hidden;
+}
+.music_player_art img
+{
+  +rounded(3px);
+  max-width: 100px;
+  max-height: 90px;
+  border: 3px solid #494949;
+  margin-right: 8px;
+}
+.music_player_info
+{
+  overflow: hidden;
+}
+.music_player_controls_wrapper
+{
+  overflow: hidden;
+}
+.music_player_controls_left
+{
+  overflow: hidden;
+}
+.music_player_controls_right
+{
+  float: right;
+  overflow: hidden;
+  text-align: right;
+}
+.music_player_controls_volume
+{
+  float: left;
+  overflow: hidden;
+  width: 40px;
+  height: 30px;
+  margin-left: 10px;
+}
+.music_player_controls_volume_toggle
+{
+  display: block;
+  float: left;
+  width: 8px;
+  height: 12px;
+  margin-top: 12px;
+  margin-right: 3px;
+  background-image: url(~/application/modules/Music/externals/images/player_volume.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.music_player_controls_volume_toggle_mute
+{
+  background-image: url(~/application/modules/Music/externals/images/player_volume_mute.png);
+}
+.music_player_controls_volume_bar
+{
+  display: block;
+  float: left;
+  margin-top: 8px;
+  height: 20px;
+  width: 4px;
+  cursor: pointer;
+  padding: 0px 1px 0px 0px;
+}
+.music_player_controls_volume_bar > span
+{
+  width: 3px;
+  display: block;
+  background-color: #ccc;
+}
+.music_player_controls_volume_enabled > span,
+.music_player_controls_volume_hover > span,
+.music_player_controls_volume_bar:hover > span
+{
+  background-color: #fff;
+}
+.volume_bar_1
+{
+  margin-top: 8px;
+  height: 4px;
+}
+.volume_bar_2
+{
+  margin-top: 6px;
+  height: 8px;
+}
+.volume_bar_3
+{
+  margin-top: 4px;
+  height: 12px;
+}
+.volume_bar_4
+{
+  margin-top: 2px;
+  height: 16px;
+}
+.volume_bar_5
+{
+  margin-top: 0px;
+  height: 20px;
+}
+.music_player_button_launch_tooltip
+{
+  +rounded(3px);
+  display: none;
+  position: absolute;
+  background: #222;
+  opacity: .9;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  width: 90px;
+  font-size: .8em;
+  margin-top: -25px;
+  margin-left: -35px;
+}
+.music_player_button_launch_wrapper:hover .music_player_button_launch_tooltip
+{
+  display: block;
+}
+.music_player_button_prev,
+.music_player_button_play,
+.music_player_button_pause,
+.music_player_button_next,
+.music_player_button_launch
+{
+  +rounded(6px);
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #565656;
+  background-color: #6e6e6e;
+  margin-top: 4px;
+  font-size: 1px;
+  outline: none;
+}
+.music_player_button_prev
+{
+  background-image: url(~/application/modules/Music/externals/images/player_last.png);
+  background-repeat: no-repeat;
+}
+.music_player_button_next
+{
+  background-image: url(~/application/modules/Music/externals/images/player_next.png);
+  background-repeat: no-repeat;
+}
+.music_player_button_launch
+{
+  margin-top: 4px;
+  background-image: url(~/application/modules/Music/externals/images/player_launch.png);
+  background-repeat: no-repeat;
+}
+.music_player_button_play
+{
+  background-image: url(~/application/modules/Music/externals/images/player_play.png);
+  background-repeat: no-repeat;
+  margin: 0px 3px 0px 3px;
+  width: 33px;
+  height: 33px;
+}
+.music_player_button_pause
+{
+  background-image: url(~/application/modules/Music/externals/images/player_pause.png);
+}
+.music_player_button_prev:hover,
+.music_player_button_play:hover,
+.music_player_button_next:hover,
+.music_player_button_launch:hover
+{
+  border: 2px solid #aaa;
+  background-color: #777;
+  cursor: pointer;
+}
+.music_player_trackname
+{
+  margin-top: 5px;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+}
+.music_player_scrub
+{
+  +rounded(3px);
+  margin-top: 7px;
+  background-color: #7f7f7f;
+  font-size: 1px;
+  width: 100%;
+  height: 15px;
+}
+.music_player_scrub_downloaded
+{
+  +rounded(3px);
+  width: 0;
+  height: 11px;
+  background-color: #aaa;
+}
+.music_player_scrub_cursor
+{
+  +rounded(2px);
+  position: absolute;
+  background-color: #fff;
+  width: 5px;
+  height: 15px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+.music_player_time
+{
+  overflow: hidden;
+  margin-top: 2px;
+}
+.music_player_time_elapsed,
+.music_player_time_total
+{
+  float: left;
+  overflow: hidden;
+  font-size: 7pt;
+  text-transform: uppercase;
+  color: #bfbfbf;
+}
+.music_player_time_total
+{
+  float: none;
+  overflow: hidden;
+  text-align: right;
+}
+.music_player_tracks
+{
+  border: 1px solid #444;
+  margin-top: 5px;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 95px;
+}
+.music_player_tracks > li
+{
+  overflow: hidden;
+  background-color: #767676;
+  padding: 5px 7px 5px 7px;
+}
+.music_player_tracks > li + li
+{
+  margin-top: 1px;
+}
+.music_player_tracks > li:hover,
+.music_player_tracks > li.song_playing
+{
+  background-color: #888;
+  cursor: pointer;
+}
+.music_player_tracks > li > div
+{
+  font-size: 8pt;
+  color: #eee;
+}
+.music_player_tracks .music_player_tracks_name
+{
+  overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.music_player_tracks .music_player_tracks_name a
+{
+  text-decoration: none;
+  color: #eee;
+  outline: none;
+}
+.music_player_tracks .music_player_tracks_plays
+{
+  display: inline-block;
+  color: #bbb;
+  margin-left: 5px;
+  font-size: .9em;
+}
+.music_player_tracks .music_player_tracks_add_wrapper
+{
+  float: right;
+  overflow: hidden;
+  text-align: right;
+  font-weight: normal;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.music_player_tracks .music_player_tracks_add_tooltip
+{
+  +rounded(3px);
+  display: none;
+  position: absolute;
+  background: #222;
+  opacity: .9;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  width: 90px;
+  font-size: .8em;
+  margin-top: -25px;
+  margin-left: -35px;
+}
+.music_player_tracks .music_player_tracks_add_wrapper:hover .music_player_tracks_add_tooltip
+{
+  display: block;
+}
+.music_player_tracks .music_player_tracks_add_wrapper:hover .music_player_tracks_add
+{
+  background-image: url(~/application/modules/Music/externals/images/player_add_active.png);
+}
+.music_player_tracks .music_player_tracks_add
+{
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url(~/application/modules/Music/externals/images/player_add.png);
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 9px;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*
+ATTACHED MUSIC LAUNCH SKIN
+This is a small version of the player. It doesn't actually play
+tracks itself, but when clicked, loads the full player and initiates
+playback of the first track. Some of its styles are inherited from
+the full music player's skin.
+*/
+.playlist_short_player
+{
+  border: none;
+  padding: 3px 0px 3px 0px;
+  cursor: pointer;
+}
+.playlist_short_player .music_player_top
+{
+  padding: 0px;
+}
+.playlist_short_player .music_player_button_play
+{
+  margin-right: 5px;
+}
+.playlist_short_player_title
+{
+  margin-top: 4px;
+  color: #fff;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.playlist_short_player_tracks
+{
+  font-size: .8em;
+  color: #bbb;
+  font-weight: normal;
+  padding-bottom: 2px;
+}
+
+
+
+
+
+/*
+ADD SONG TO PLAYLIST FORM
+Styles the form that pops up when you click to add a song
+to your playlist via a music player.
+*/
+#form-playlist-append .form-label
+{
+  margin-bottom: 2px;
+}
+#form-playlist-append #title-wrapper
+{
+  margin-top: 10px;
+}
+#form-playlist-append #submit-wrapper
+{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/*
+UPLOAD MUSIC FORM
+*/
+#form-upload-music #demo-list li.file
+{
+  background-image: url(~/application/modules/Music/externals/images/upload_waiting.png);
+}
+#form-upload-music #demo-list li.file-success
+{
+  background-image: url(~/application/modules/Music/externals/images/upload.png);
+}
+#form-upload-music #demo-list li.file-uploading
+{
+  background-image: url(~/application/modules/Music/externals/images/upload_loading.gif);
+}
+#form-upload-music #demo-list li.file-success
+{
+  background-image: url(~/application/modules/Music/externals/images/upload_success.png);
+}
+#form-upload-music #demo-list span.file-name
+{
+  display: inline;
+}
+#form-upload-music #demo-status .buttonlink + .buttonlink
+{
+  margin-left: 20px;
+}
+html[dir="rtl"] #form-upload-music #demo-status .buttonlink + .buttonlink
+{
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_music,
+.item_icon_music_playlist,
+.item_icon_music_song,
+.activity_icon_music_playlist_new
+{
+  background-image: url(~/application/modules/Music/externals/images/types/music.png);
+}
+
+#compose-music-activator,
+#compose-music-menu span
+{
+  background-repeat: no-repeat;
+  background-image: url(~/application/modules/Music/externals/images/types/music.png);
+}
+#compose-music-form-fancy-file
+{
+  background-image: url(~/application/modules/Music/externals/images/new.png);
+}
+a.compose-music-link
+{
+  background-image: url(~/application/modules/Music/externals/images/play.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+a.compose-music-link-playing
+{
+  background-image: url(~/application/modules/Music/externals/images/upload_loading.gif);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+html[dir="rtl"] a.compose-music-link,
+html[dir="rtl"] a.compose-music-link-playing
+{
+  background-position: 100% 0%;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+
+/*
+POPUP MUSIC PLAYER SKIN
+Opens the player in a small new window.
+*/
+.music_player_popup
+{
+  background-color: #444;
+  padding-top: 20px;
+}
+
+body#global_page_music-index-playlist #global_content_simple {
+  width: 100%;
+}
+
+body#global_page_music-index-playlist #global_content_simple .music_playlist_popout_wrapper{
+  margin-left:auto;
+  margin-right:auto;
+  width: 430px;
+}
+
+
+
+
+/*
+PROFILE MUSIC PLAYER
+Styles the mini-player that only shows up on the member profile page.
+*/
+.layout_music_profile_player
+{
+  margin-top: 20px;
+}
+#profile_music_player
+{
+  margin-top: 5px;
+}
+#profile_music_player h3
+{
+  display: none;
+}
+#profile_music_player .music_player_art
+{
+  display: none;
+}
+#profile_music_player .music_player_button_prev,
+#profile_music_player .music_player_button_next
+{
+  display: none;
+}
+#profile_music_player .music_player_button_play
+{
+  margin: 0px;
+}
+#profile_music_player .music_player_trackname
+{
+  font-weight: normal;
+}
+
+
+
+
+/* ICONS */
+.icon_music_new
+{
+  background-image: url(~/application/modules/Music/externals/images/new.png);
+}
+.icon_music_edit
+{
+  background-image: url(~/application/modules/Music/externals/images/edit.png);
+}
+.icon_music_delete
+{
+  background-image: url(~/application/modules/Music/externals/images/delete.png);
+}
+.icon_music_playonprofile,
+.icon_music_disableonprofile
+{
+  background-image: url(~/application/modules/Music/externals/images/upload.png);
+}
+.icon_music_upload
+{
+  background-image: url(~/application/modules/Music/externals/images/upload.png);
+}

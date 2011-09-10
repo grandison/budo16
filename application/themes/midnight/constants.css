@@ -1,0 +1,287 @@
+
+/* $Id: constants.css 7244 2010-09-01 01:49:53Z john $ */
+
+
+
+/*
+DEFAULT STYLES FOR THIS THEME
+*/
+@constants
+{
+
+  /*
+  PAGE WIDTHS & BACKGROUND COLOR
+  Specify the top bar wrapper width (which contains the mini menu, logo, and main menu
+  by default), the footer width, and the width of left & right-side columns.
+  */
+  theme_topbar_width: 950px;
+  theme_topbar_minimenu_width: 950px;
+  theme_topbar_logo_width: 950px;
+  theme_topbar_menu_width: 950px;
+  theme_footer_width: 930px;
+  theme_content_width: 950px;
+  theme_content_columns_left_width: 190px;
+  theme_content_columns_right_width: 190px;
+  theme_body_background_color: #262c36;
+
+  /* 
+  HEADER AND FOOTER COLORS
+  These values are only used to style the site-wide header and footer.
+  */
+  theme_topbar_background_color: #262c36;
+  theme_topbar_menu_background_color: #266da5;
+  theme_topbar_menu_background_color_hover: transparent;
+  theme_topbar_menu_link_color: #fff;
+  theme_topbar_menu_link_decoration: none;
+  theme_topbar_menu_link_hover_color: #fff;
+  theme_topbar_menu_link_hover_decoration: underline;
+  theme_topbar_menu_link_size: 1.2em;
+  theme_topbar_menu_link_background_color: transparent;
+  theme_topbar_menu_link_background_color_hover: transparent;
+  theme_topbar_menu_border: none;
+  theme_topbar_minimenu_background_color: transparent;
+  theme_topbar_minimenu_border: none;
+  theme_topbar_minimenu_link_size: .9em;
+  theme_topbar_minimenu_link_color: #b4bbc8;
+  theme_topbar_minimenu_link_hover_color: #eee;
+  theme_topbar_minimenu_link_hover_decoration: none;
+  theme_topbar_minimenu_link_hover_background_color: transparent;
+  theme_topbar_border: 0px solid transparent;
+
+  /* 
+  TEXT & LINKS
+  These values affect the size and colors of your text and links throughout your layout.
+  */
+  theme_font_family: arial, verdana, sans-serif;
+  theme_font_size: 13px;
+  theme_font_color: #ddd;
+  theme_font_color_light: #aaa;
+  theme_text_align: left;
+  theme_link_color: #4587C0;
+  theme_link_color_hover: #fff;
+  theme_link_decoration: none;
+  theme_link_decoration_hover: underline;
+  theme_headline_color: #ffffff;
+  theme_headline_size_large: 1.7em;
+  theme_headline_size_medium: 1.2em;
+  theme_small_text_size: .9em;
+
+  /* 
+  BORDER COLORS
+  These colors are mostly applied to borders that separate items in lists of content.
+  */
+  theme_border_color: #333743;
+  theme_border_medium_color: #333743;
+  theme_border_dark_color: #333743;
+
+  /*
+  WIDGET BOX BORDER COLORS
+  These colors are applied to borders around or within boxes that have a background color,
+  like widgets.
+  */
+  theme_foreground_border_color: transparent;
+  theme_foreground_border_color_light: #4c525b;
+  theme_foreground_background_color: #3b424e;
+
+  /*
+  INPUT FIELDS AND BUTTONS
+  These values style input fields and buttons that appear throughout the layout.
+  */
+  theme_input_background_color: #5e6f7e;
+  theme_input_font_color: #fff;
+  theme_input_border_colors: #2B313D;
+  theme_button_background_color: #3e82b1;
+  theme_button_background_color_hover: #5ea1d0;
+  theme_button_font_color: #fff;
+  theme_button_border_color: none;
+
+  /*
+  PHOTO BORDERS
+  These colors are applied to the borders drawn around most images and thumbnails.
+  */
+  theme_photo_border_color: #1c1f25;
+  theme_photo_border_color_hover: transparent;
+
+  /* 
+  FORMS
+  These colors are applied to most forms throughout the layout.
+  */
+  theme_form_border_color: transparent;
+  theme_form_background_color: #3b424e;
+  theme_form_label_font_color: #ddd;
+
+  /*
+  TABS (BUTTON-STYLE)
+  These colors are applied to the button-style tab menus which are often shown
+  on browse pages.
+  */
+  theme_buttontabs_font_color: #fff;
+  theme_buttontabs_font_color_hover: #fff;
+  theme_buttontabs_font_color_active: #d2d6de;
+  theme_buttontabs_background_color: transparent;
+  theme_buttontabs_background_color_hover: #5E6B79;
+  theme_buttontabs_background_color_active: #545F6B;
+
+  /*
+  TABS
+  These colors are applied to tab menus (as seen on several pages, including
+  the member profile page).
+  */
+  theme_tabs_background_color: #3b424e;
+  theme_tabs_border_color: #7c8892;
+  theme_tabs_border_color_hover: #7c8892;
+  theme_tabs_font_color: #fff;
+  theme_tabs_font_color_active: #eee;
+  theme_tabs_background_color_active: #5e6f7e;
+  theme_tabs_background_color_hover: #545F6B;
+
+  /*
+  LISTS
+  These colors are applied to some lists, especially in pull-down menus.
+  */
+  theme_list_background_color: #262c36;
+  theme_list_background_color_alt: #424B55;
+  theme_list_background_color_hover: #3F4857;
+
+  /*
+  TAGS
+  These colors are applied to tags, which appear on blogs, messages, etc.
+  */
+  theme_tag_background_color: #2D3541;
+
+  /*
+  INLINE PULLDOWN MENUS
+  These colors style the inline pulldown menus that appear throughout the layout.
+  */
+  theme_pulldown_background_color: #4E586C;
+  theme_pulldown_background_color_hover: #787C89;
+  theme_pulldown_background_color_active: #4E586C;
+  theme_pulldown_font_color_active: #fff;
+  theme_pulldown_border_color: #4E586C;
+  theme_pulldown_contents_background_color: #262c36;
+  theme_pulldown_contents_background_color_alt: #343C4C;
+  theme_pulldown_contents_list_background_color_hover: #3F4857;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Global member photos and icons */
+img.main
+{
+  max-width: 720px;
+  max-height: 720px;
+}
+img.thumb_normal
+{
+  max-width: 140px;
+  max-height: 160px;
+}
+img.thumb_profile
+{
+  max-width: 200px;
+  max-height: 400px;
+}
+img.thumb_icon
+{
+  width: 48px;
+  height: 48px;
+}
+img.main,
+img.thumb_normal,
+img.thumb_profile,
+img.thumb_icon
+{
+  border: 1px solid $theme_photo_border_color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+GLOBAL MIXINS
+These groups of styles called "mixins" are included in other
+classes throughout the stylesheet.
+*/
+
+/* Gives an element a background and/or border */
+=foreground
+{
+  background-color: $theme_foreground_background_color;
+  border: 1px solid $theme_foreground_border_color;
+}
+
+/* Gives an element a drop shadow */
+=shadow($offset_x = 0, $offset_y = 0, $blur_radius = 0, $spread_radius = 0, $shadow_color = "#aaa")
+{
+  -moz-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  -webkit-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+}
+
+/* Gives an element rounded corners. */
+=rounded($radius = 3px, $hidecorner1 = false, $hidecorner2 = false, $hidecorner3 = false, $hidecorner4 = false)
+{
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+
+  @if($hidecorner1 == true)
+  {
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-radius-topleft: 0px;
+  }
+  @if($hidecorner2 == true)
+  {
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-radius-topright: 0px;
+  }
+  @if($hidecorner3 == true)
+  {
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-radius-bottomright: 0px;
+  }
+  @if($hidecorner4 == true)
+  {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-radius-bottomleft: 0px;
+  }
+}
+
+/* Prevents users from selecting contents */
+=noselect
+{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+
+
+
+
+

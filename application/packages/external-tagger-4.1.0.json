@@ -1,0 +1,75 @@
+{
+  "type": "external",
+  "name": "tagger",
+  "version": "4.1.0",
+  "revision": "8176",
+  "path": "externals\/tagger",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Tagger",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.0": {
+      "manifest.php": "Incremented version",
+      "tagger.js": "Fixes issue where exception is thrown when tagging someone twice"
+    },
+    "4.0.2": {
+      "manifest.php": "Incremented version",
+      "tagger.js": "Fixes issue with overflow hiding extra items"
+    },
+    "4.0.1": {
+      "manifest.php": "Incremented version",
+      "tagger.js": "Added missing translation"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Tagger",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/tagger": {
+      "type": "directory",
+      "path": "externals\/tagger",
+      "structure": [
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 857,
+          "sha1": "a218e2f80504e013ae11ff2719c5f75faa5d724a"
+        },
+        {
+          "path": "tagger.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 12622,
+          "sha1": "23e3b72fb6f0776e1c79e04004bb10bf0ef74788"
+        }
+      ]
+    }
+  }
+}

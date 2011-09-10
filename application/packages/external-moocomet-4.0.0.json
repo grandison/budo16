@@ -1,0 +1,62 @@
+{
+  "type": "external",
+  "name": "moocomet",
+  "version": "4.0.0",
+  "revision": "7593",
+  "path": "externals\/moocomet",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Moocomet",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Moocomet",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/moocomet": {
+      "type": "directory",
+      "path": "externals\/moocomet",
+      "structure": [
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 372,
+          "sha1": "d271ea0ddc7515cabbd5f866973b3657395578e9"
+        },
+        {
+          "path": "request.comet.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5107,
+          "sha1": "50217353bbdc178e668bd9bc3eb9a4969911dc27"
+        }
+      ]
+    }
+  }
+}

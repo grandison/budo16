@@ -1,0 +1,18 @@
+
+# $Id: .htaccess 8220 2011-01-15 00:21:51Z john $
+
+<FilesMatch "\.(avi|flv|mov|wmv|wma|mp3|mp4|m4a|mkv|swf|pdf|doc|ppt|ico|jpg|jpeg|png|gif|js|css)$">
+  <IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault A29030400
+    <IfModule mod_headers.c>
+      Header append Cache-Control "public"
+    </IfModule>
+  </IfModule>
+  <IfModule !mod_expires.c>
+    <IfModule mod_headers.c>
+        Header set Expires "Sun, 1 Jan 2012 00:00:00 GMT"
+        Header append Cache-Control "max-age=172800, public"
+    </IfModule>
+  </IfModule>
+</FilesMatch>

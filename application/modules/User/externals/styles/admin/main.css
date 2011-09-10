@@ -1,0 +1,19 @@
+
+/* $Id: main.css 8822 2011-04-09 00:30:46Z john $ */
+
+body table.admin_table tbody tr.admin_logins_error
+{
+  background-color: #f2e3e1;
+}
+body table.admin_table tbody tr.admin_logins_error > td
+{
+  border-bottom: none;
+}
+body table.admin_table tbody tr.admin_logins_okay
+{
+  background-color: #e3f2e1;
+}
+body table.admin_table tbody tr.admin_logins_okay > td
+{
+  border-bottom: none;
+}

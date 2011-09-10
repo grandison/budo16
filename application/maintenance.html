@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <!-- $Id: maintenance.html 7539 2010-10-04 04:41:38Z john $ -->
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+*
+{
+  font-family: tahoma, arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+#content
+{
+  width: 500px;
+  margin: 250px auto 0px auto;
+}
+#message
+{
+  display: block;
+  font-size: 18pt;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-align: center;
+}
+#message .caption
+{
+  display: block;
+  font-size: .8em;
+}
+#code
+{
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff9e2;
+  border: 3px dashed #dad1b0;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#code > span
+{
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+}
+#code .codebox
+{
+  padding: 3px;
+}
+#code .submit
+{
+  padding: 5px;
+  font-weight: bold;
+  margin-left: 3px;
+}
+#code .submit:hover
+{
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+
+    <div id="content">
+      <span id="message">
+        Sorry! We're down for maintenance.
+        <span class="caption">Please check back soon.</span>
+      </span>
+      <form id="code" method="get">
+        <span>
+          Access Code:
+        </span>
+        <input type="password" class="codebox" name="en4_maint_code" value="">
+        <input type="submit" class="submit" value="Log In">
+      </form>
+    </div>
+
+  </body>
+</html>

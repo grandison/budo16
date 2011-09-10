@@ -1,0 +1,70 @@
+{
+  "type": "widget",
+  "name": "branding",
+  "version": "4.0.0",
+  "revision": "8822",
+  "path": "application\/widgets\/branding",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "SocialEngine Branding",
+  "description": "Displays a \"powered by SocialEngine\" link.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "SocialEngine Branding",
+    "description": "Displays a \"powered by SocialEngine\" link.",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/widgets\/branding": {
+      "type": "directory",
+      "path": "application\/widgets\/branding",
+      "structure": [
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 581,
+          "sha1": "60c37f8cd710e2157c6ec9ecc07a5821d43da3a7"
+        },
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 445,
+          "sha1": "3fce0c34f37b608710b86b84ff11d3df90ffd1ee"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 995,
+          "sha1": "969062ba3e2fc51df5da159501bf490f75d16793"
+        }
+      ]
+    }
+  }
+}

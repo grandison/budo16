@@ -1,0 +1,48 @@
+
+/* $Id: constants.css 7904 2010-12-03 03:36:14Z john $ */
+
+=foreground
+{
+  background-color: #e9f4fa;
+}
+
+/* Gives an element a drop shadow */
+=shadow($offset_x = 0, $offset_y = 0, $blur_radius = 0, $spread_radius = 0, $shadow_color = "#aaa")
+{
+  -moz-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  -webkit-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+}
+
+=rounded($radius = 5px, $hidecorner1 = false, $hidecorner2 = false, $hidecorner3 = false, $hidecorner4 = false)
+{
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+
+  @if($hidecorner1 == true)
+  {
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-radius-topleft: 0px;
+  }
+  @if($hidecorner2 == true)
+  {
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-radius-topright: 0px;
+  }
+  @if($hidecorner3 == true)
+  {
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-radius-bottomright: 0px;
+  }
+  @if($hidecorner4 == true)
+  {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-radius-bottomleft: 0px;
+  }
+
+}

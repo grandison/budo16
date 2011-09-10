@@ -1,0 +1,102 @@
+{
+  "type": "external",
+  "name": "flowplayer",
+  "version": "4.0.0",
+  "revision": "7593",
+  "path": "externals\/flowplayer",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Flow Player",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Flow Player",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/flowplayer": {
+      "type": "directory",
+      "path": "externals\/flowplayer",
+      "structure": [
+        {
+          "path": "flashembed-1.0.1.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8444,
+          "sha1": "193b930684bfa9da3572a20b2d8ddb3c65f8fa39"
+        },
+        {
+          "path": "flashembed-1.0.1.pack.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4433,
+          "sha1": "944e760076da33a27e3bebdb5e8613d4ced58434"
+        },
+        {
+          "path": "flowplayer-3.1.5.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 110762,
+          "sha1": "b20c2e16dd7cfdef4373794fd4405457b715192b"
+        },
+        {
+          "path": "flowplayer.controls-3.1.5.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 27007,
+          "sha1": "0fe051b5ceec4c931a8a8267520b01ff81308e21"
+        },
+        {
+          "path": "LICENSE.txt",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 37497,
+          "sha1": "bde9b71a1e133bff47d972a9f4d1dac056200a70"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 381,
+          "sha1": "9d0ebf0c1c64ff281bb92e50af531aff83c90781"
+        },
+        {
+          "path": "README.txt",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 15553,
+          "sha1": "d668d65c4579b8ce31ed5c5320eed257897a29bf"
+        }
+      ]
+    }
+  }
+}

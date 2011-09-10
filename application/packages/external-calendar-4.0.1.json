@@ -1,0 +1,147 @@
+{
+  "type": "external",
+  "name": "calendar",
+  "version": "4.0.1",
+  "revision": "7593",
+  "path": "externals\/calendar",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Calendar",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.0.1": {
+      "manifest.php": "Incremented version",
+      "styles.css": "Improved localization and RTL support"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Calendar",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/calendar": {
+      "type": "directory",
+      "path": "externals\/calendar",
+      "structure": [
+        {
+          "path": "calendar.compat.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 35063,
+          "sha1": "f3952138be90c7b825c8900a6a1c69f94fc9ceea"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/event_calendar_active.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 380,
+          "sha1": "d2a7c1d5fa9c1b033f7dcc32131d051aae75c72c"
+        },
+        {
+          "path": "images\/event_calendar_bg.original.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 18310,
+          "sha1": "90506398ae5c751c7464e40d51276d88bc8bc860"
+        },
+        {
+          "path": "images\/event_calendar_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 19354,
+          "sha1": "4a068c90c13d4c4483c7da44ace7d5f5c90dfd23"
+        },
+        {
+          "path": "images\/event_calendar_icon.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 546,
+          "sha1": "472bfa10fe30c9f28bd2a870f8d45e5ea16d5664"
+        },
+        {
+          "path": "images\/event_calendar_inactive.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 378,
+          "sha1": "c33cd987349df28311220972fb609f7b95f0c8eb"
+        },
+        {
+          "path": "images\/event_calendar_invalid.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 494,
+          "sha1": "09a90bbcd716c8e8d4059216b81e4745358ecb91"
+        },
+        {
+          "path": "images\/event_calendar_next.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1115,
+          "sha1": "3d7582586e0f4ffb8a46670e663b0de347d34e68"
+        },
+        {
+          "path": "images\/event_calendar_prev.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1088,
+          "sha1": "663ce38bbbd4f2635524cab83a7fcd3e32375660"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 552,
+          "sha1": "217aa066230e16210950cd08743da4ca3abd348f"
+        },
+        {
+          "path": "styles.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4386,
+          "sha1": "9a211f654022c3db2f69b75d686139cc8c0a8f2b"
+        }
+      ]
+    }
+  }
+}

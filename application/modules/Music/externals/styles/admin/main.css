@@ -1,0 +1,68 @@
+
+#music-home-playlist-search-results
+{
+  clear: both;
+  padding: 10px 10px 0 13px;
+}
+#music-home-playlist-search-results ul
+{
+  margin-top: 10px;
+  clear: both;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-top: 10px;
+  max-height: 100px;
+  min-width: 200px;
+  overflow-y: auto;
+}
+#music-home-playlist-search-results ul > li
+{
+  padding: 5px;
+}
+#music-home-playlist-search-results ul > li + li
+{
+  border-top: 1px solid #ddd;
+}
+
+#music-home-playlist-selected
+{
+  +foreground;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+#music-home-playlist-selected .photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 8px;
+}
+html[dir="rtl"] #music-home-playlist-selected .photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+#music-home-playlist-selected .photo img
+{
+  border: 1px solid $theme_photo_border_color;
+  max-width: 120px;
+  max-height: 120px;
+}
+#music-home-playlist-selected .title
+{
+  font-weight: bold;
+}
+#music-home-playlist-selected .description
+{
+  font-size: .8em;
+  margin-top: 3px;
+}
+#music-home-playlist-form
+{
+  overflow: hidden;
+}
+#music-home-playlist-search > *
+{
+  margin-bottom: 5px;
+}

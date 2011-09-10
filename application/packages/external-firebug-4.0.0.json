@@ -1,0 +1,62 @@
+{
+  "type": "external",
+  "name": "firebug",
+  "version": "4.0.0",
+  "revision": "7593",
+  "path": "externals\/firebug",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Firebug Lite",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Firebug Lite",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/firebug": {
+      "type": "directory",
+      "path": "externals\/firebug",
+      "structure": [
+        {
+          "path": "firebug-lite-compressed.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 78704,
+          "sha1": "09b6f73ca74a41f31580441d7f7633ff6753259d"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 373,
+          "sha1": "ef7175136842589dbf37c5db6d3ba616ddaed963"
+        }
+      ]
+    }
+  }
+}

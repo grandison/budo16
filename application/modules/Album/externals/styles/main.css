@@ -1,0 +1,399 @@
+
+/* $Id: main.css 8369 2011-02-01 06:14:57Z john $ */
+@include "~/application/modules/Core/externals/styles/constants.css";
+
+
+
+
+
+/*
+BROWSE ALBUMS, VIEW ALBUM
+Styles for the browse and view album pages.
+*/
+.album_options
+{
+  margin: 5px 0px 12px 0px;
+  overflow: hidden;
+}
+.album_options a
+{
+  margin-right: 15px;
+}
+html[dir="rtl"] .album_options a
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+
+
+.icon_photos_new
+{
+  background-image: url(~/application/modules/Album/externals/images/add.png);
+}
+
+
+
+
+/*
+ACTIVITY FEED COMPOSER PHOTO
+These styles are used for the attachment composer above the
+main feed.
+*/
+#compose-photo-activator,
+#compose-photo-menu span
+{
+  background-repeat: no-repeat;
+  background-image: url(~/application/modules/Album/externals/images/album_upload.png);
+}
+#compose-photo-preview-image
+{
+  max-width: 160px;
+}
+#compose-photo-form-fancy-file
+{
+  background-image: url(~/application/modules/Album/externals/images/add.png);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+VIEW MY ALBUMS
+Styles for the member's own albums
+management page.
+*/
+ul.albums_manage
+{
+  clear: both;
+  overflow: hidden;
+}
+ul.albums_manage > li
+{
+  overflow: hidden;
+}
+ul.albums_manage > li + li
+{
+  padding-top: 10px;
+  border-top-width: 1px;
+  margin-top: 10px;
+}
+ul.albums_manage .albums_manage_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+}
+html[dir="rtl"] ul.albums_manage .albums_manage_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+ul.albums_manage .albums_manage_photo img
+{
+  width: 170px;
+  margin: 3px;
+  display: block;
+}
+ul.albums_manage .albums_manage_info
+{
+  overflow: hidden;
+}
+html[dir="rtl"] ul.albums_manage .albums_manage_info
+{
+  float: right;
+}
+ul.albums_manage .albums_manage_info > a
+{
+  font-weight: bold;
+}
+ul.albums_manage .albums_manage_info_photos
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.albums_manage .albums_manage_info_desc
+{
+  margin-top: 3px;
+}
+ul.albums_manage .albums_manage_options
+{
+  float: right;
+  overflow: hidden;
+  padding-left: 20px;
+}
+html[dir="rtl"] ul.albums_manage .albums_manage_options
+{
+  padding-left: 0px;
+  padding-right: 20px;
+  width: 120px;
+}
+ul.albums_manage .albums_manage_options > a
+{
+  clear: both;
+  display: block;
+  font-size: 0.8em;
+  margin: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+ul.albums_editphotos
+{
+  width: 600px;
+}
+ul.albums_editphotos > li
+{
+  padding-top: 15px;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+ul.albums_editphotos > li .albums_editphotos_photo
+{
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.albums_editphotos > li .albums_editphotos_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 15px;
+}
+ul.albums_editphotos > li .albums_editphotos_photo img
+{
+  display: block;
+  margin: 3px;
+  width: 170px;
+}
+ul.albums_editphotos > li .albums_editphotos_info
+{
+  overflow: hidden;
+}
+ul.albums_editphotos > li .albums_editphotos_title_input input,
+ul.albums_editphotos > li .album_editphotos_caption_input textarea
+{
+  margin: 2px 0px 6px 0px;
+  width: 25em;
+}
+ul.albums_editphotos > li .album_editphotos_caption_input textarea
+{
+  height: 2.5em;
+}
+ul.albums_editphotos > li .albums_editphotos_label,
+ul.albums_editphotos > li .albums_editphotos_cover,
+ul.albums_editphotos > li .photo-delete-wrapper,
+ul.albums_editphotos > li .photo-delete-wrapper > label
+{
+  float: left;
+}
+html[dir="rtl"] ul.albums_editphotos > li .albums_editphotos_label,
+html[dir="rtl"] ul.albums_editphotos > li .albums_editphotos_cover,
+html[dir="rtl"] ul.albums_editphotos > li .photo-delete-wrapper,
+html[dir="rtl"] ul.albums_editphotos > li .photo-delete-wrapper > label
+{
+  float: right;
+}
+ul.albums_editphotos > li .photo-delete-wrapper
+{
+  margin-right: 15px;
+}
+html[dir="rtl"] ul.albums_editphotos > li .photo-delete-wrapper
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+ul.albums_editphotos > li .photo-delete-wrapper > label
+{
+  display: block;
+}
+
+
+
+
+/*
+VIEW PHOTO
+These styles are used on the view photo page within
+an album.
+*/
+div.albums_viewmedia
+{
+  margin: 25px auto 0px auto;
+  max-width: 750px;
+  min-width: 400px;
+  overflow: visible;
+}
+div.albums_viewmedia #media_photo
+{
+  border: 1px solid $theme_photo_border_color;
+  margin: auto;
+  display: block;
+  max-width: 720px;
+}
+div.albums_viewmedia .albums_viewmedia_nav
+{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+div.albums_viewmedia .albums_viewmedia_nav > div
+{
+  float: left;
+  overflow: visible;
+}
+html[dir="rtl"] div.albums_viewmedia .albums_viewmedia_nav > div
+{
+  float: right;
+}
+div.albums_viewmedia .albums_viewmedia_nav > div + div
+{
+  float: none;
+  text-align: right;
+}
+html[dir="rtl"] div.albums_viewmedia .albums_viewmedia_nav > div + div
+{
+  text-align: left;
+  float: left;
+}
+div.albums_viewmedia .albums_viewmedia_nav > div + div > a + a
+{
+  margin-left: 20px;
+}
+html[dir="rtl"] div.albums_viewmedia .albums_viewmedia_nav > div + div > a + a
+{
+  margin-left: 0px;
+  margin-right: 20px;
+}
+div.albums_viewmedia_info
+{
+  +foreground;
+  +rounded;
+  text-align: center;
+  padding: 10px;
+  border: 5px solid $theme_foreground_border_color;
+}
+div.album_viewmedia_container
+{
+  position: relative;
+  display: inline-block;
+}
+html[dir="rtl"] div.album_viewmedia_container,
+html[dir="rtl"] div.albums_viewmedia_info
+{
+  text-align: center;
+}
+div.album_viewmedia_container a:link
+{
+  text-decoration: none;
+}
+div.albums_viewmedia_info p
+{
+  text-align: left;
+}
+div.albums_viewmedia > span + div > a
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.albums_viewmedia > span + div > a:link
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_title
+{
+  margin-top: 5px;
+  font-weight: bold;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_caption
+{
+  margin-top: 3px;
+  font-size: .8em;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_title + .albums_viewmedia_info_tags,
+div.albums_viewmedia_info .albums_viewmedia_info_caption + .albums_viewmedia_info_tags
+{
+  margin-top: 15px;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_tags
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_date
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.albums_viewmedia > div.comments
+{
+  margin-top: 15px;
+}
+span.albums_tag_listcontainer > a
+{
+  font-weight: bold;
+}
+
+/*
+POPULAR/RECENT ALBUMS/PHOTOS WIDGETS
+Lists the most popular or recent photos or albums.
+*/
+.layout_album_list_popular_albums,
+.layout_album_list_popular_photos,
+.layout_album_list_recent_albums,
+.layout_album_list_recent_photos
+{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_album,
+.activity_icon_comment_album_photo
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_album,
+.item_icon_album_photo
+{
+  background-image: url(~/application/modules/Album/externals/images/types/album.png);
+}
+
+
+
+
+/* ICONS */
+.icon_photos_new
+{
+  background-image: url(~/application/modules/Album/externals/images/add.png);
+}
+.icon_photos_manage
+{
+  background-image: url(~/application/modules/Album/externals/images/album_manage.png);
+}
+.icon_photos_settings
+{
+  background-image: url(~/application/modules/Album/externals/images/album_editinfo.png);
+}
+.icon_photos_delete
+{
+  background-image: url(~/application/modules/Album/externals/images/album_delete.png);
+}

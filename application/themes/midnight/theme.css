@@ -1,0 +1,1539 @@
+
+@include "constants.css";
+@include "~/application/modules/Core/externals/styles/main.css";
+@scan "application/modules" "externals/styles/main.css" "Core";
+
+/*
+GLOBAL STYLES, FONTS & RESETS
+*/
+html
+{
+  min-height: 100%;
+  margin-bottom: 1px;
+  overflow-y: scroll;
+}
+body
+{
+  background-color: $theme_body_background_color;
+  overflow-x: hidden;
+}
+*
+{
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-style: solid;
+  border-width: 0px;
+  border-color: $theme_border_color;
+}
+table
+{
+  border-collapse: collapse;
+}
+br
+{
+  clear: both;
+}
+ul
+{
+  list-style-type: none;
+}
+a:link,
+a:visited
+{
+  color: $theme_link_color;
+  text-decoration: $theme_link_decoration;
+}
+a:hover
+{
+  color: $theme_link_color_hover;
+  text-decoration: $theme_link_decoration_hover;
+}
+*
+{
+  font-family: $theme_font_family;
+}
+div,
+td
+{
+  font-size: $theme_font_size;
+  color: $theme_font_color;
+  text-align: $theme_text_align;
+}
+h2,
+h3,
+h4
+{
+  color: $theme_headline_color;
+}
+h2
+{
+  font-size: $theme_headline_size_large;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+h3
+{
+  font-size: $theme_headline_size_medium;
+  text-transform: uppercase;
+}
+h4
+{
+  font-weight: bold;
+  border-bottom: 1px solid $theme_border_color;
+  padding: .5em 0px .5em 0px;
+  margin-bottom: 10px;
+}
+h4 > span
+{
+  display: inline-block;
+  position: absolute;
+  background-color: $theme_body_background_color;
+  padding-right: 6px;
+  margin-top: -1px;
+}
+h3.sep
+{
+  display: block;
+  border-bottom: 1px solid $theme_border_color;
+  overflow: hidden;
+  margin-bottom: 1em;
+  height: 1em;
+}
+h3.sep > span
+{
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  background: $theme_body_background_color;
+  padding: 5px 10px 5px 0px;
+  font-weight: bold;
+}
+
+
+
+
+/*
+GENERAL LAYOUT
+*/
+.generic_layout_container h3
+{
+  margin-bottom: 6px;
+}
+
+.layout_left
+{
+  float: left;
+  width: $theme_content_columns_left_width;
+  padding: 0px 15px 0px 0px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.layout_middle
+{
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+  vertical-align: top;
+}
+
+.layout_right
+{
+  float: right;
+  width: $theme_content_columns_right_width;
+  padding: 0px 0px 10px 15px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+#global_wrapper
+{
+  text-align: center;
+  padding-top: 20px;
+}
+
+#global_content
+{
+  width: $theme_content_width;
+  margin: 0px auto 0px auto;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+/* Header */
+.layout_page_header
+{
+  background-color: $theme_topbar_background_color;
+  text-align: center;
+  padding: 0px;
+  clear: both;
+  border-bottom: $theme_topbar_border;
+}
+.layout_page_header .layout_main
+{
+  width: $theme_topbar_width;
+  text-align: right;
+  margin: 0px auto 0px auto;
+}
+
+/* Footer */
+.layout_page_footer
+{
+  clear: both;
+  text-align: center;
+  overflow: hidden;
+}
+.layout_page_footer .layout_main
+{
+  +rounded;
+  +foreground;
+  width: $theme_footer_width;
+  margin: 20px auto 0px auto;
+  text-align: left;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 10px;
+}
+.layout_page_footer select
+{
+  font-size: 1em;
+}
+.layout_core_menu_footer
+{
+  font-size: $theme_small_text_size;
+  color: $theme_font_color_light;
+}
+
+
+
+
+
+
+
+
+
+/*
+MAIN MENU WIDGET
+*/
+.layout_core_menu_main
+{
+  +rounded;
+  width: $theme_topbar_width;
+  margin: 0px auto 0px auto;
+  text-align: left;
+  overflow: hidden;
+  background-color: $theme_topbar_menu_background_color;
+  border: $theme_topbar_menu_border;
+  border-left: none;
+  border-right: none;
+  background-image: url(~/application/themes/midnight/images/topbar_menu_bg.png);
+  background-repeat: repeat-x;
+  -moz-box-shadow: 0px 2px 3px rgba(0,0,0,.6);
+  -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,.6);
+}
+.layout_core_menu_main ul
+{
+  width: $theme_topbar_menu_width;
+  margin: 0px auto 0px auto;
+  padding: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 3px 10px 3px 15px;
+}
+.layout_core_menu_main li
+{
+  float: left;
+  font-size: $theme_topbar_menu_link_size;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.layout_core_menu_main li:hover
+{
+  background: $theme_topbar_menu_background_color_hover;
+}
+.layout_core_menu_main ul a
+{
+  +noselect;
+  outline: none;
+  display: block;
+  padding: .4em 0em .4em 0em;
+  background-color: $theme_topbar_menu_link_background_color;
+}
+.layout_core_menu_main ul a:link,
+.layout_core_menu_main ul a:visited
+{
+   color: $theme_topbar_menu_link_color;
+   text-decoration: $theme_topbar_menu_link_decoration;
+}
+.layout_core_menu_main ul a:hover
+{
+  color: $theme_topbar_menu_link_hover_color;
+  text-decoration: $theme_topbar_menu_link_hover_decoration;
+  background: $theme_topbar_menu_link_background_color_hover;
+}
+
+
+
+
+
+
+/*
+MINI MENU + SEARCH WIDGET + UPDATES LINK
+Shows the mini menu and search widget and updates link
+*/
+.layout_core_menu_mini
+{
+  width: $theme_topbar_minimenu_width;
+  margin: 0px auto 0px auto;
+  overflow: hidden;
+}
+.layout_core_menu_mini > div > ul
+{
+  +rounded(4px, true, true, false, false);
+  float: right;
+  overflow: hidden;
+  background: $theme_topbar_minimenu_background_color;
+  padding: .5em;
+  border: $theme_topbar_minimenu_border;
+  border-top: none;
+}
+.layout_core_menu_mini > div > ul > li
+{
+  float: left;
+  overflow: hidden;
+}
+.layout_core_menu_mini > div > ul > li + li
+{
+  margin-right: 3px;
+}
+.layout_core_menu_mini #core_menu_mini_menu
+{
+  text-align: right;
+  padding: 2px 0px 5px 10px;
+  font-size: $theme_topbar_minimenu_link_size;
+  overflow: hidden;
+}
+.layout_core_menu_mini #core_menu_mini_menu > ul > li > a
+{
+  display: block;
+  color: $theme_topbar_minimenu_link_color;
+  font-weight: bold;
+  padding: 3px 7px 5px 7px;
+}
+.layout_core_menu_mini #core_menu_mini_menu > ul > li > a:hover
+{
+  +rounded(3px);
+  background: $theme_topbar_minimenu_link_hover_background_color;
+  color: $theme_topbar_minimenu_link_hover_color;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+.layout_core_menu_mini #core_menu_mini_menu_updates
+{
+  margin-right: 5px;
+}
+
+#core_menu_mini_menu_update .updates_pulldown_active a#updates_toggle {
+  +rounded(4px, false, false, true, true);
+  background-color: $theme_pulldown_background_color_active;
+  color: $theme_pulldown_font_color_active;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+
+
+
+
+
+
+#core_menu_mini_menu #global_search_form
+{
+  padding: 1px 0px;
+  margin-left: 10px;
+}
+#core_menu_mini_menu #global_search_field
+{
+  +rounded(3px);
+  width: 100px;
+  font-size: 1.2em;
+  outline: none;
+}
+#core_menu_mini_menu .overTxtLabel
+{
+  padding-top: 1px;
+  padding-left: 2px;
+  font-size: 1.2em;
+}
+
+
+
+/*
+SITE LOGO WIDGET
+*/
+.layout_core_menu_logo
+{
+  width: $theme_topbar_logo_width;
+  font-size: 23pt;
+  font-weight: bold;
+  margin: 0px auto 10px auto;
+  text-align: left;
+  letter-spacing: -2px;
+  overflow: hidden;
+}
+.layout_core_menu_logo a
+{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+GLOBAL NOTICES (OUTSIDE FORMS)
+Used to show a message or notice with an icon on a page,
+usually above content, not within a form.
+*/
+.tip
+{
+  overflow: hidden;
+  clear: both;
+}
+.tip > span
+{
+  +rounded;
+  +foreground;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+  padding: 6px;
+  padding-left: 27px;
+  float: left;
+  margin-bottom: 15px;
+  background-image: url(~/application/modules/Core/externals/images/tip.png);
+}
+
+
+
+/*
+GLOBAL FORM RESPONSES
+Used to show feedback from form submissions, i.e.
+error/result messages.
+*/
+ul.form-errors,
+ul.form-notices
+{
+  margin: 0px 0px 20px 0px;
+  overflow: hidden;
+}
+* + ul.form-errors,
+* + ul.form-notices
+{
+  margin-top: 20px;
+}
+ul.form-errors > li,
+ul.form-notices > li
+{
+  +rounded;
+  margin: 7px 5px 7px 5px;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 10px;
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  float: left;
+  clear: left;
+  overflow: hidden;
+}
+ul.form-errors > li {
+  background-color: #262c36;
+  background-image: url(~/application/modules/Core/externals/images/error.png);
+}
+ul.form-notices > li {
+  +foreground;
+  background-image: url(~/application/modules/Core/externals/images/notice.png);
+}
+
+
+/*
+GLOBAL FORM ELEMENTS
+Used for most forms throughout the site.
+*/
+button
+{
+  +rounded;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  background-color: $theme_button_background_color;
+  border: 1px solid $theme_button_border_color;
+  color: $theme_button_font_color;
+  background-image: url(~/application/modules/Core/externals/images/buttonbg.png);
+  background-repeat: repeat-x;
+  background-position: 0px 1px;
+}
+button:hover
+{
+  background-color: $theme_button_background_color_hover;
+  cursor: pointer;
+}
+input[type=text],
+input[type=password],
+input.text,
+textarea
+{
+  +rounded(2px);
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  padding: 2px;
+  font-size: 10pt;
+  resize: none;
+}
+input[type=checkbox],
+input[type=radio]
+{
+  border: none;
+  padding: 0px;
+  margin: 2px 5px 0px 0px;
+  width: auto;
+  display: block;
+  float: left;
+}
+input[type=checkbox] + label,
+input[type=radio] + label
+{
+  display: block;
+  cursor: pointer;
+}
+textarea
+{
+  width: 300px;
+  resize: none;
+}
+textarea.codebox
+{
+  width: 95%;
+  min-height: 200px;
+  font-family: courier new, courier, serif;
+}
+select
+{
+  +rounded(3px);
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  padding: 1px;
+  padding-right: 0px;
+  font-size: 10pt;
+  max-width: 250px;
+}
+select option
+{
+  padding: 0px 10px 0px 3px;
+}
+a.buttonlink
+{
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  padding: 2px 0px 2px 21px;
+  font-weight: bold;
+  display: inline-block;
+}
+a.buttonlink_right
+{
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-right: 19px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+/*
+LARGE BOX FORM
+These styles are for large forms that are given an exclusive page.
+They are not intended for smaller forms that are embedded elsewhere.
+Examples: Signup form, member settings form, etc.
+*/
+/* form container */
+.global_form
+{
+  clear: both;
+  overflow: hidden;
+}
+/* external form border */
+.global_form > div
+{
+  float: left;
+  overflow: hidden;
+  margin: 0px auto 0px auto;
+}
+/* internal form border */
+.global_form > div > div
+{
+  +rounded(8px);
+  border: 5px solid $theme_form_border_color;
+  padding: 12px 12px 12px 12px;
+  background-color: $theme_form_background_color;
+}
+/* form headline */
+.global_form div.form-wrapper-heading
+{
+  font-weight: bold;
+  border-bottom: 1px solid $theme_foreground_border_color_light;
+  height: 1em;
+  margin-bottom: 15px;
+}
+.global_form div.form-wrapper-heading > span
+{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  padding: 4px 6px 4px 0px;
+  background: $theme_form_background_color;
+}
+.global_form div.form-wrapper + div.form-wrapper-heading
+{
+  margin-top: 10px;
+}
+/* form instructions (after title) */
+.global_form > div > div > h3 + p
+{
+  padding: 2px;
+  margin-top: 2px;
+  max-width: 550px;
+}
+/* add some space above form elements if title/instructions precede */
+.global_form > div > div > h3 + div,
+.global_form > div > div > h3 + p + div
+{
+  margin-top: 20px;
+}
+/* container for form label/element rows */
+.global_form > div > div
+{
+  overflow: hidden;
+}
+/* container row for a label (left) and element (right) */
+.global_form div.form-wrapper
+{
+  clear: both;
+  overflow: hidden;
+}
+/* left-side element label container */
+.global_form div.form-label
+{
+  width: 150px;
+  text-align: right;
+  padding: 4px 15px 0px 2px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  float: left;
+  clear: left;
+  font-size: .9em;
+  font-weight: bold;
+  color: $theme_form_label_font_color;
+}
+/* right-side form element container */
+.global_form div.form-element
+{
+  min-width: 150px;
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 10px;
+  overflow: hidden;
+  float: left;
+  clear: none;
+}
+/* all paragraphs of text in the form */
+.global_form div > p
+{
+  max-width: 450px;
+  padding-bottom: 10px;
+}
+/* paragraphs of text that come after an input element */
+.global_form div > input + p
+{
+  margin-top: 3px;
+  font-size: 7pt;
+}
+/* all text inputs in form */
+.global_form input[type=text],
+.global_form input[type=password]
+{
+  padding: 2px;
+  font-size: 10pt;
+  width: 200px;
+}
+/* only for text inputs that come after other text inputs */
+/* i.e. for when there is a vertical list of text inputs */
+.global_form input[type=text] + input[type=text]
+{
+  display: block;
+  margin-top: 5px;
+}
+/* all checkboxes and radios in form */
+.global_form input[type=checkbox],
+.global_form input[type=radio]
+{
+  clear: left;
+}
+/* for clickable labels that appear to the right of elements */
+/* such as checkboxes or radios */
+.global_form input + label
+{
+  float: left;
+  display: block;
+  margin-top: 0px;
+  margin-left: 2px;
+}
+/* all select boxes in form */
+.global_form select
+{
+  padding: 1px;
+  padding-right: 0px;
+  font-size: 10pt;
+  max-width: 250px;
+}
+/* all textareas in form */
+.global_form textarea
+{
+  padding: 4px;
+  font-size: 10pt;
+  max-width: 300px;
+  min-height: 100px;
+}
+.global_form p.description {
+  margin: 3px 0px 10px 0px;
+  padding: 0px;
+}
+.global_form #submit-element
+{
+  margin-bottom: 0px;
+}
+.global_form button[type=submit]
+{
+  margin-right: 3px;
+}
+
+
+
+
+
+
+/*
+SMALL BOX FORM
+These styles are for small box forms, such
+as the login box found by default on the main
+index page. Form names and inputs are stacked
+vertically (not floated) to fit into small-width
+content areas.
+*/
+.global_form_box
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+  width: auto;
+}
+.global_form_box .form-wrapper
+{
+  margin-top: 10px;
+}
+.global_form_box .form-label
+{
+  padding: 0px;
+  width: auto;
+  float: none;
+  clear: both;
+  margin: 0px;
+}
+.global_form_box label
+{
+  text-align: left;
+  display: block;
+  font-size: .8em;
+  margin-bottom: 2px;
+}
+.global_form_box .form-element
+{
+  overflow: hidden;
+}
+
+
+
+/*
+FILTER FORM
+These styles are for small, transparent forms
+that contain search boxes or filter fields. They
+are usually found on browse pages.
+*/
+form.filters
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+}
+form.filters div.form-label
+{
+  margin-bottom: 3px;
+  font-size: .7em;
+  text-transform: uppercase;
+}
+form.filters div.form-element
+{
+  margin-top: 2px;
+}
+form.filters button
+{
+  margin-top: 4px;
+}
+form.filters dt
+{
+  font-size: .7em;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+}
+form.filters dd
+{
+  margin-bottom: 8px;
+}
+
+
+
+
+/*
+POPUP FORM
+These are used to style popup (i.e. smoothbox) forms.
+Also used to style popup response messages, etc.
+*/
+.global_form_popup
+{
+  padding: 10px 10px 10px 13px;
+  float: left;
+  overflow: hidden;
+}
+.global_form_popup #submit-wrapper,
+.global_form_popup #cancel-wrapper
+{
+  float: left;
+  overflow: hidden;
+}
+.global_form_popup #buttons-wrapper
+{
+  margin-top: 10px;
+}
+.global_form_popup #buttons-wrapper button
+{
+  margin-right: 4px;
+}
+.global_form_popup_message
+{
+  padding: 5px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+
+
+
+/*
+UPLOAD FORM
+Styles the file upload form.
+*/
+#form-upload #submit-wrapper
+{
+  display: none;
+}
+#form-upload #demo-status a.buttonlink
+{
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+/*
+SEARCH PAGE
+Used to style the main search page.
+*/
+#searchform
+{
+  float: left;
+  clear: right;
+  padding: 5px;
+}
+#searchform input[type=text]
+{
+  width: 300px;
+}
+#searchform #query-label
+{
+  display: none;
+}
+#searchform #query-wrapper
+{
+  float: left;
+  overflow: hidden;
+  padding: 3px;
+}
+#searchform #submit-label
+{
+  display: none;
+}
+#searchform #submit-wrapper
+{
+  float: left;
+  overflow: hidden;
+  margin-left: 1px;
+}
+.search_result
+{
+  overflow: hidden;
+  width: 500px;
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+.search_result .search_photo
+{
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+.search_result .search_icon
+{
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 48px;
+  margin-right: 7px;
+}
+.search_result img
+{
+  margin: auto;
+  display: block;
+}
+.search_result .search_info
+{
+  display: block;
+  overflow: hidden;
+}
+.search_result .search_title
+{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+/*
+COMMENTS
+These styles are used everywhere comments appear.
+*/
+.feed_item_date + .comments
+{
+  margin-top: 10px;
+}
+.comments
+{
+  width: 450px;
+}
+.comments > ul
+{
+  overflow: hidden;
+}
+.comments > ul > li
+{
+  +foreground;
+  background-image: none;
+  border: none;
+  padding: 5px;
+  border-top: 1px solid $theme_foreground_border_color;
+  overflow: hidden;
+  margin-bottom: 1px;
+}
+.comments .comments_author a
+{
+  font-weight: bold;
+  margin-right: 2px;
+}
+.comments .comments_author_photo
+{
+  float: left;
+  overflow: hidden;
+}
+.comments .comments_author_photo img
+{
+  display: block;
+}
+.comments .comments_options
+{
+  font-weight: bold;
+  font-size: 1em;
+  color: $theme_font_color_light;
+  margin-bottom: 6px;
+}
+.comments .comments_info
+{
+  font-size: .9em;
+  padding-top: 2px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+.comments .comments_date
+{
+  font-size: .9em;
+  margin-top: 3px;
+  color: $theme_font_color_light;
+  overflow: hidden;
+}
+.comments .comments_likes,
+.comments .comments_viewall
+{
+  font-size: .8em;
+}
+.comments .comments_likes a,
+.comments .comments_viewall a
+{
+  font-weight: bold;
+}
+.comments > form
+{
+  +foreground;
+  background-image: none;
+  border: none;
+  padding: 5px;
+  padding-right: 10px;
+  border-top: 1px solid $theme_foreground_border_color;
+}
+.comments > form > textarea
+{
+  width: 100%;
+}
+.comments > form > button
+{
+  display: block;
+  margin-top: 7px;
+}
+
+
+
+
+
+/*
+HEADLINE
+Used at the top of most browse pages. Often contains button-style tabs.
+*/
+.headline
+{
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.headline h2
+{
+  overflow: hidden;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+
+
+
+/* TABS (BUTTON STYLE, DEFAULT) */
+.tabs
+{
+  margin-top: 5px;
+  +foreground;
+  +rounded;
+  overflow: hidden;
+  border: none;
+}
+.tabs > ul li
+{
+  float: left;
+  overflow: hidden;
+}
+.tabs > ul li > a
+{
+  display: block;
+  padding: .6em 1em .6em 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: $theme_buttontabs_font_color;
+  background-color: $theme_buttontabs_background_color;
+}
+.tabs > ul li:first-child > a
+{
+  +rounded(3px, false, true, true, false);
+}
+.tabs > ul li > a:hover
+{
+  background-color: $theme_buttontabs_background_color_hover;
+  text-decoration: none;
+  color: $theme_buttontabs_font_color_hover;
+}
+.tabs > ul li + li
+{
+}
+.tabs > ul li.active > a
+{
+  background-color: $theme_buttontabs_background_color_active;
+  color: $theme_buttontabs_font_color_active;
+}
+.tabs > ul li.active > a:hover
+{
+  text-decoration: none;
+}
+
+
+
+
+
+/*
+TABS (TAB STYLE, NON-DEFAULT)
+*/
+.tabs_alt
+{
+  background-color: $theme_tabs_background_color;
+  background-image: none;
+  +rounded(3px, false, false, true, true);
+  margin: 5px 0px 15px 0px;
+  padding-top: 2px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.tabs_alt > ul
+{
+  margin: 0px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid $theme_tabs_border_color;
+  padding: 3px 0px 5px 7px;
+}
+.tabs_alt > ul > li
+{
+  display: inline-block;
+  padding: 0px;
+  *display: inline; /* fix for IE7 */
+}
+.tabs_alt > ul > li.tab_active > a,
+.tabs_alt > ul > li.active > a
+{
+  +rounded(3px, false, false, true, true);
+  border: 1px solid $theme_tabs_border_color;
+  border-bottom: none;
+  background-color: $theme_tabs_background_color_active;
+  color: $theme_tabs_font_color_active;
+  position: relative;
+  top: 1px;
+  padding: 5px 6px 5px 6px;
+}
+.tabs_alt > ul > li > a
+{
+  padding: 5px 7px 5px 7px;
+  text-decoration: none;
+  color: $theme_tabs_font_color;
+  border-bottom: none;
+  outline: none;
+}
+.tabs_alt > ul > li > a span
+{
+  font-size: .8em;
+  font-weight: normal;
+  margin-left: 4px;
+  border: none;
+}
+.tabs_alt > ul > li > a:hover
+{
+  background: $theme_tabs_background_color_hover;
+  padding: 5px 6px 5px 6px;
+  +rounded(3px, false, false, true, true);
+  border: 1px solid $theme_tabs_border_color_hover;
+  border-bottom: none;
+}
+.tab_container_inactive
+{
+  display: none;
+}
+.tabs_alt > ul > li.tab_closed
+{
+}
+.tabs_alt > ul > li.tab_open > a
+{
+  +rounded(3px, false, false, true, true);
+  border: 1px solid $theme_pulldown_border_color;
+  border-bottom: none;
+  background-color: $theme_pulldown_background_color_active;
+  color: $theme_pulldown_font_color_active;
+  position: relative;
+  top: 1px;
+  padding: 5px 6px 5px 6px;
+}
+.tab_pulldown_contents_wrapper
+{
+  display: none;
+  +rounded(3px, true, false, false, false);
+  overflow: hidden;
+  position: absolute;
+  padding: 2px;
+  margin-top: 21px;
+  background-color: $theme_pulldown_border_color;
+  z-index: 99;
+}
+.tab_pulldown_contents
+{
+  overflow: hidden;
+  background: $theme_pulldown_contents_background_color;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.tab_pulldown_contents > ul > li
+{
+  padding: 5px;
+  font-size: .8em;
+  min-width: 100px;
+  max-width: 250px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.tab_pulldown_contents > ul > li + li
+{
+  border-top: 1px solid $theme_border_color;
+}
+.tab_pulldown_contents > ul > li:hover
+{
+  background-color: $theme_pulldown_contents_list_background_color_hover;
+  cursor: pointer;
+}
+.tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper
+{
+  display: block;
+}
+
+
+
+
+
+
+
+/*
+PULLDOWN SELECT BOX
+Styles the inline pulldown select popup box that is used
+as an alternative to regular input select boxes in some places.
+*/
+.pulldown > a,
+.pulldown_active > a
+{
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 7px 5px 18px;
+  background-position: 6px 5px;
+  outline: none;
+  font-size: .8em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  background-image: url(~/application/modules/Core/externals/images/more.png);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.pulldown > a
+{
+  +rounded(4px);
+  background-color: $theme_pulldown_background_color;
+  text-decoration: none;
+}
+.pulldown > a:hover
+{
+  background-color: $theme_pulldown_background_color_hover;
+  color: #fff;
+}
+.pulldown_active > a
+{
+  +rounded(4px, false, false, true, true);
+  background-color: $theme_pulldown_background_color_active;
+  color: $theme_pulldown_font_color_active;
+  text-decoration: none;
+  background-image: url(~/application/modules/Core/externals/images/more_active.png);
+}
+.pulldown_contents_wrapper
+{
+  display: none;
+  +rounded(5px, true, false, false, false);
+  overflow: hidden;
+  position: absolute;
+  min-width: 100px;
+  max-width: 300px;
+  padding: 4px;
+  background-color: $theme_pulldown_border_color;
+  z-index: 99;
+  margin-top: 22px;
+}
+.pulldown_active .pulldown_contents_wrapper
+{
+  display: block;
+}
+.pulldown_contents
+{
+  overflow: hidden;
+  background: $theme_pulldown_contents_background_color;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.pulldown_contents ul > li
+{
+  width: 100%;
+  padding: 5px;
+  font-size: .8em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.pulldown_contents ul > li + li
+{
+  border-top: 1px solid $theme_border_color;
+}
+.pulldown_contents ul > li:hover
+{
+  background-color: $theme_pulldown_contents_list_background_color_hover;
+  cursor: pointer;
+}
+.pulldown_options {
+  margin: 4px 0px;
+}
+.pulldown_options a
+{
+  color: $theme_pulldown_font_color_active;
+  font-size: .8em;
+  padding: 3px 3px 3px 6px;
+  text-decoration: none;
+  border-left: 1px solid $theme_border_color;
+}
+.pulldown_options a:first-child {
+  border-left: none;
+}
+.pulldown_options a:hover
+{
+  color: $theme_pulldown_font_color_active;
+}
+/*
+PULLDOWN SELECT BOX FOR UPDATES
+Styles the inline pulldown select popup box used for updates that is used
+as an alternative to regular input select boxes in some places.
+*/
+
+.updates_pulldown > a,
+.updates_pulldown_active > a
+{
+  display: block;
+  color: $theme_topbar_minimenu_link_color;
+  font-weight: bold;
+  padding: 3px 7px 5px 7px;
+}
+.updates_pulldown > a
+{
+  display: block;
+  +rounded(3px);
+  color: #E1E5F0;
+  background: $theme_pulldown_background_color_active;
+  font-weight: bold;
+  padding: 3px 7px 5px 7px;
+}
+.updates_pulldown > a:hover
+{
+  +rounded(3px);
+  background: #5C6981;
+  color: #fff;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+.updates_pulldown > a.new_updates
+{
+  +rounded(3px);
+  background: #C83148;
+  color: #fff;
+}
+.updates_pulldown > a.new_updates:hover
+{
+  +rounded(3px);
+  background: #E13D48;
+  color: #fff;
+}
+
+.updates_pulldown_active > a
+{
+  +rounded(4px, false, false, true, true);
+  background-color: $theme_pulldown_background_color_active;
+  color: $theme_pulldown_font_color_active;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+.updates_pulldown_active .pulldown_contents_wrapper
+{
+  display: block;
+}
+ul.notifications_menu > li,
+ul.notifications_menu > div
+{
+  color: $theme_topbar_minimenu_link_color;
+  padding: .5em;
+  min-width: 160px;
+}
+ul.notifications_menu > li
+{
+  overflow: hidden;
+  clear: both;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  float: left;
+  width: 100%;
+}
+ul.notifications_menu > li + li
+{
+  border-top-width: 1px;
+}
+ul.notifications_menu > li.notifications_unread
+{
+  font-weight: bold;
+  background-color: $theme_pulldown_contents_background_color_alt;
+}
+.pulldown_contents > ul > li.notifications_unread:hover {
+  background-color: $theme_pulldown_contents_list_background_color_hover;
+}
+ul.notifications_menu > li > span
+{
+  display: block;
+  padding-left: 22px;
+  background-repeat: no-repeat;
+  float: none;
+  padding-top: 2px;
+  min-height: 16px;
+}
+ul.notifications_menu > li > span > a
+{
+  display: inline;
+  float: none;
+}
+ul.notifications_menu > li > a
+{
+
+}
+
+
+
+/*
+TAGS
+Styles lists of tags that are used for message recipients, lists of friend
+lists, etc. Each tag has its own remove link.
+*/
+.tag
+{
+  +rounded(3px);
+  display: inline-block;
+  background-color: $theme_tag_background_color;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+  padding: 5px 5px 5px 5px;
+  margin: 0px 10px 5px 0px;
+  font-size: .9em;
+}
+.tag a
+{
+  text-decoration: none;
+  margin-left: 3px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+/*
+OVERRIDES
+*/
+.layout_core_statistics ul > li span
+{
+  font-size: 1.5em;
+}
+#im_container
+{
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.im_item_tooltip_settings
+{
+  background-color: #000;
+  color: #fff;
+}
+.compose-container .overTxtLabel,
+#core_menu_mini_menu .overTxtLabel
+{
+  color: #b4bbc8;
+}
+.global_form_box label
+{
+  font-size: .9em;
+}
+ul.forum_categories .forum_topics > span + span,
+ul.forum_categories .forum_posts > span + span
+{
+  font-size: .8em;
+}
+form.filters dt
+{
+  font-size: .9em;
+  text-transform: none;
+}
+
+.layout_page_footer .layout_main
+{
+  padding: 7px 10px 7px 10px;
+}
+
+ul#demo-list li.file {
+  background-color: $theme_body_background_color;
+  border: none;
+}
+
+ul.feed .feed_item_photo {
+  margin-right: 12px;
+}
+
+.comments .comments_date {
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+#TB_window {
+  background-color: $theme_body_background_color;
+}
+
+.quicklinks {
+  padding: 8px 0px;
+}
+
+.quicklinks li {
+  padding: 0px 6px 0px 6px;
+}

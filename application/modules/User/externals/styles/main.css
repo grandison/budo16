@@ -1,0 +1,1082 @@
+
+/* $Id: main.css 8825 2011-04-09 01:34:20Z john $ */
+
+
+
+/*
+SIGN IN OR JOIN WIDGET
+Used to style the mini login form, usually
+diplayed on the main portal page.
+*/
+.layout_user_login_or_signup
+{
+  margin-bottom: 15px;
+}
+.layout_user_login_or_signup div.form-element input[type=text],
+.layout_user_login_or_signup div.form-element input[type=password]
+{
+  width: 95%;
+}
+.layout_user_login_or_signup #fieldset-buttons
+{
+  margin-top: 8px;
+  overflow: hidden;
+}
+.layout_user_login_or_signup #submit-wrapper
+{
+  float: left;
+  overflow: hidden;
+}
+.layout_user_login_or_signup #remember-wrapper
+{
+  float: left;
+  overflow: hidden;
+}
+.layout_user_login_or_signup #remember-wrapper input
+{
+  display: block;
+  float: left;
+  margin-top: 4px;
+  margin-left: 3px;
+}
+.layout_user_login_or_signup #remember-wrapper label
+{
+  display: block;
+  float: left;
+}
+.layout_user_login_or_signup #submit-label,
+.layout_user_login_or_signup #remember,
+.layout_user_login_or_signup #facebook-label
+{
+  display: none;
+}
+.layout_user_login_or_signup .form-description
+{
+  display: none;
+}
+.forgot-element, #forgot-label
+{
+  margin-bottom: 0px;
+}
+.layout_user_login_or_signup #facebook-wrapper
+{
+  padding-top:10px;
+  margin-top: 10px;
+  border-top: 1px solid $theme_foreground_border_color_light;
+}
+.global_form #facebook-element
+{
+  width: 200px;
+}
+
+
+
+/*
+QUICK LINKS WIDGET
+Small widget, used to show convenient, static links
+to a signed-in member such as 'view my profile',
+'edit my profile', 'search for people', etc. Often
+visible on plugin browse pages to prompt members
+to create new content.
+*/
+
+.layout_user_home_links
+{
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.quicklinks
+{
+  +foreground;
+  +rounded;
+  overflow: hidden;
+}
+.quicklinks li
+{
+  padding: 6px;
+}
+.quicklinks li + li
+{
+  border-color: $theme_foreground_border_color;
+  border-top-width: 1px;
+  padding-top: 6px;
+}
+form + .quicklinks
+{
+  margin-top: 15px;
+}
+
+
+/*
+WELCOME WIDGET
+Small widget, only available when member is
+signed-in, that shows their profile photo,
+a short welcome message and a sign out link.
+*/
+.layout_user_home_photo
+{
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.layout_user_home_photo > div
+{
+  +foreground;
+  +rounded;
+  padding: 7px;
+  overflow: hidden;
+}
+.layout_user_home_photo > div *
+{
+  text-align: center;
+}
+.layout_user_home_photo > div > a
+{
+  display: block;
+  text-decoration: none;
+}
+.layout_user_home_photo > div > a > img
+{
+  width: 99%;
+  display: block;
+  margin: 0px auto 0px auto;
+}
+.layout_user_home_photo > div > p
+{
+  font-weight: normal;
+  margin-top: 7px;
+}
+
+
+
+/*
+WHOS ONLINE WIDGET
+Small widget that lists members that are
+currently online, usually displayed on the
+main portal or member home pages.
+*/
+.layout_user_list_online
+{
+  margin-bottom: 15px;
+  overflow: hidden;
+  clear: both;
+}
+.layout_user_list_online > div
+{
+  +foreground;
+  +rounded;
+  padding: 7px;
+  overflow: hidden;
+}
+.layout_user_list_online .whosonline_thumb
+{
+  float: left;
+  line-height: 0px;
+  font-size: 0px;
+  margin: 4px;
+}
+html[dir="rtl"] .layout_user_list_online .whosonline_thumb
+{
+  float: right;
+}
+.layout_user_list_online .whosonline_thumb img
+{
+  display: block;
+}
+.layout_user_list_online .online_guests
+{
+  clear: both;
+  padding: 4px 0px 3px 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+POPULAR MEMBERS WIDGET
+Lists the most popular members, typically placed
+on the main home page.
+*/
+.layout_user_list_popular
+{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.layout_user_list_popular > ul
+{
+  +foreground;
+  +rounded;
+  padding: 5px;
+}
+.layout_user_list_popular > ul > li
+{
+  clear: both;
+  overflow: hidden;
+  padding: 3px 5px 3px 5px;
+}
+.layout_user_list_popular a.popularmembers_thumb
+{
+  float: left;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+.layout_user_list_popular a.popularmembers_thumb > span
+{
+  display: block;
+}
+.layout_user_list_popular .popularmembers_info
+{
+  padding: 0px 0px 0px 6px;
+  overflow: hidden;
+}
+.layout_user_list_popular .popularmembers_name
+{
+  font-weight: bold;
+}
+.layout_user_list_popular .popularmembers_friends
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+/*
+NEWEST MEMBERS WIDGET
+Lists the most recent signups, typically placed
+on the main home page.
+*/
+.layout_user_list_signups
+{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.layout_user_list_signups > ul
+{
+  +foreground;
+  +rounded;
+  padding: 5px;
+}
+.layout_user_list_signups > ul > li
+{
+  clear: both;
+  overflow: hidden;
+  padding: 3px 5px 3px 5px;
+}
+.layout_user_list_signups a.newestmembers_thumb
+{
+  float: left;
+  display: block;
+  width: 48px;
+}
+.layout_user_list_signups a.newestmembers_thumb > img
+{
+  display: block;
+}
+.layout_user_list_signups .newestmembers_info
+{
+  padding: 0px 0px 0px 6px;
+  overflow: hidden;
+}
+.layout_user_list_signups .newestmembers_name
+{
+  font-weight: bold;
+}
+.layout_user_list_signups .newestmembers_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+/*
+MUTUAL FRIENDS WIDGET
+Lists the friends common to the subject and viewer.
+*/
+.layout_user_profile_friends_common
+{
+  margin-top: 20px;
+}
+.layout_user_profile_friends_common > ul
+{
+  +foreground;
+  +rounded;
+  padding: 7px 7px 9px 7px;
+  overflow: hidden;
+}
+.layout_user_profile_friends_common > ul > li
+{
+  float: left;
+  overflow: hidden;
+  margin: 4px 4px 0px 4px;
+}
+.layout_user_profile_friends_common h3
+{
+  font-size: .8em;
+  letter-spacing: 0px;
+}
+
+
+
+
+
+/* VIEW PROFILE */
+#profile_post
+{
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#profile_status
+{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+#profile_status > h2
+{
+  display: inline;
+  margin: 0px;
+}
+#profile_status > span
+{
+  display: inline;
+  padding: 0px;
+}
+.profile_status_field
+{
+  padding: 5px;
+  font-size: 12pt;
+  width: 96%;
+  height: 17px;
+}
+.profile_status_text
+{
+  display: inline-block;
+  margin-top: -0.5em;
+}
+.profile_status_clear
+{
+  display: inline-block;
+  margin-top: -1px;
+  font-size: .8em;
+}
+#profile_options ul
+{
+  padding: 0px;
+  margin: 0px;
+  white-space: nowrap;
+}
+#profile_options li
+{
+  font-weight: bold;
+  padding: 6px 0px 6px 0px;
+}
+#profile_options li + li
+{
+  border-top-width: 1px;
+}
+.profile_fields
+{
+  margin-top: 10px;
+  overflow: hidden;
+}
+.profile_fields > ul
+{
+  padding: 10px;
+}
+.profile_fields > ul > li
+{
+  overflow: hidden;
+}
+.profile_fields > ul > li + li
+{
+  margin-top: 8px;
+}
+.profile_fields > ul > li > span
+{
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 175px;
+  margin-right:15px;
+}
+html[dir="rtl"] .profile_fields > ul > li > span
+{
+  float: right;
+}
+.profile_fields > ul > li > span + span
+{
+  min-width: 0px;
+  display: block;
+  float: none;
+  overflow: hidden;
+  width:400px;
+}
+.profile_fields li > .tip > span {
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.profile_info_category
+{
+  margin-bottom: 3px;
+}
+.profile_info_row
+{
+  clear: both;
+  overflow: hidden;
+  margin: 4px 0px 6px 0px;
+}
+.profile_info_left
+{
+  width: 100px;
+  float: left;
+  vertical-align: top;
+}
+.profile_info_right
+{
+  vertical-align: top;
+  overflow: hidden;
+}
+#profile_photo img
+{
+  width: 100%;
+}
+
+
+
+/* PROFILE STATS WIDGET */
+.layout_user_profile_info
+{
+  margin-top: 20px;
+  overflow: hidden;
+}
+.layout_user_profile_info > ul
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+}
+.layout_user_profile_info > ul > li
+{
+  font-size: .8em;
+}
+.layout_user_profile_info > ul > li + li
+{
+  margin-top: 5px;
+}
+.layout_user_profile_info > h3
+{
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+
+
+
+
+/*
+LINKS TAB
+*/
+ul.profile_links > li
+{
+  overflow: hidden;
+}
+ul.profile_links > li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.profile_links .profile_links_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+html[dir="rtl"] ul.profile_links .profile_links_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+ul.profile_links .profile_links_photo img
+{
+  display: block;
+  border: 1px solid $theme_photo_border_color;
+  width: 90px;
+}
+ul.profile_links .profile_links_info
+{
+  overflow: hidden;
+}
+ul.profile_links .profile_links_title
+{
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+ul.profile_links .profile_links_description
+{
+  font-size: .8em;
+}
+ul.profile_links .profile_links_author
+{
+  margin-top: 2px;
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+
+/*
+EDIT PROFILE
+*/
+.profile_layouts
+{
+  overflow: hidden;
+}
+.profile_layouts_item
+{
+  float: left;
+  margin: 0px 15px 15px 0px;
+}
+.profile_layouts_item td
+{
+  vertical-align: middle;
+  height: 140px;
+}
+.profile_layouts_wrapper
+{
+  padding: 13px;
+  border: 1px solid $theme_photo_border_color;
+  margin-right: 5px;
+  float: left;
+}
+.profile_layouts_thumb
+{
+  border-width: 1px;
+  float: left;
+}
+.profile_layouts img
+{
+  float: left;
+}
+.profile_layouts_wrapper:hover
+{
+  border: 1px solid $theme_photo_border_color_hover;
+}
+.profile_layouts_item_title
+{
+  clear: both;
+  padding-top: 3px;
+  text-align: center;
+}
+
+
+
+
+/*
+EDIT PROFILE PHOTO
+Some extra styles to override the global
+form styles for the profile photo upload
+form.
+*/
+#EditPhoto .form-label,
+#EditPhoto .form-element,
+#SignupForm .form-label,
+#SignupForm .form-element
+{
+  float: none;
+  clear: both;
+  text-align: left;
+}
+#EditPhoto .form-label,
+#SignupForm .form-label
+{
+  margin-bottom: 4px;
+}
+#lassoImg,
+#lassoMask
+{
+  border: 1px solid $theme_photo_border_color;
+  display: block;
+}
+#EditPhoto #preview-thumbnail img,
+#SignupForm #preview-thumbnail img
+{
+  margin-right: 5px;
+  font-size: 0px;
+  line-height: 0px;
+}
+/* Avoid changing these as they are needed for cropping tool */
+#EditPhoto #preview-thumbnail img,
+#SignupForm #preview-thumbnail img
+{
+  position: relative;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  float: left;
+  overflow: hidden;
+}
+#EditPhoto #done-wrapper div,
+#SignupForm #done-wrapper div
+{
+  margin: 0px;
+  padding: 0px;
+}
+div.preview-thumbnail
+{
+  border: 1px solid $theme_photo_border_color;
+  margin-right: 5px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  font-size: 0px;
+  line-height: 0px;
+  visibility: visible;
+  opacity: 1;
+  float: left;
+}
+img.loading_icon
+{
+  float: left;
+  margin-right: 5px;
+  border: none;
+}
+
+#thumbnail-controller
+{
+  float: left;
+}
+
+
+
+
+/*
+EDIT PROFILE STYLE
+Used to style the edit profile style form.
+*/
+#style-wrapper .form-label
+{
+  text-align: left;
+  float: none;
+  clear: both;
+  display: none;
+}
+#style-wrapper .form-element
+{
+  float: none;
+  clear: both;
+}
+#done-wrapper .form-label
+{
+  display: none;
+}
+
+
+
+
+
+
+/*
+PROFILE (FRIENDS TAB)
+Used for listing a member's friends within
+the friends profile tab
+*/
+ul.profile_friends
+{
+  margin-bottom: 8px;
+}
+ul.profile_friends > li
+{
+  overflow: hidden;
+}
+ul.profile_friends > li + li
+{
+  margin: 10px 0px 10px 0px;
+  padding-top: 10px;
+  border-top-width: 1px;
+}
+ul.profile_friends .profile_friends_icon
+{
+  float: left;
+  display: block;
+}
+html[dir="rtl"] ul.profile_friends .profile_friends_icon
+{
+  float: right;
+}
+ul.profile_friends .profile_friends_icon > img
+{
+  display: block;
+}
+ul.profile_friends .profile_friends_body
+{
+  overflow: hidden;
+  padding-left: 7px;
+}
+html[dir="rtl"] ul.profile_friends .profile_friends_body
+{
+  padding-left: 0px;
+  padding-right: 7px;
+}
+ul.profile_friends .profile_friends_lists
+{
+  margin-top: 3px;
+  overflow: hidden;
+}
+ul.profile_friends .profile_friends_status > span
+{
+  font-weight: bold;
+}
+ul.profile_friends .profile_friends_options
+{
+  float: right;
+  width: 200px;
+  overflow: hidden;
+  padding-left: 15px;
+  text-align: right;
+}
+html[dir="rtl"] ul.profile_friends .profile_friends_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+  text-align: left;
+}
+ul.profile_friends .profile_friends_options a.buttonlink
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size: .8em;
+}
+ul.profile_friends .profile_friends_options div
+{
+  text-align: right;
+}
+html[dir="rtl"] ul.profile_friends .profile_friends_options div
+{
+  text-align: left;
+}
+.profile_friends_lists .pulldown label
+{
+  font-size: 1.2em;
+}
+.profile_friends_lists li
+{
+  overflow: hidden;
+  padding: 0px;
+}
+.profile_friends_lists li > span
+{
+  display: block;
+  float: right;
+  overflow: hidden;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+html[dir="rtl"] .profile_friends_lists li > span
+{
+  float: left;
+}
+.profile_friends_lists li > span > a
+{
+  display: block;
+  padding: 0px 5px 0px 5px;
+}
+.profile_friends_lists li > div
+{
+  overflow: hidden;
+  font-size: 1em;
+}
+.profile_friends_lists li.friend_list_joined,
+.profile_friends_lists li.friend_list_unjoined
+{
+  background-color: $theme_list_background_color;
+  background-repeat: no-repeat;
+  background-position: 2px 4px;
+  padding-left: 20px;
+}
+html[dir="rtl"] .profile_friends_lists li.friend_list_joined,
+html[dir="rtl"] .profile_friends_lists li.friend_list_unjoined
+{
+  background-position: right center;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+.profile_friends_lists li.friend_list_joined:hover,
+.profile_friends_lists li.friend_list_unjoined:hover
+{
+  background-color: $theme_list_background_color_hover;
+  cursor: pointer;
+}
+.profile_friends_lists li.friend_list_joined
+{
+  background-image: url(~/application/modules/User/externals/images/friends/list_joined.png);
+}
+.profile_friends_lists li.friend_list_unjoined
+{
+  background-image: url(~/application/modules/User/externals/images/friends/list_unjoined.png);
+}
+.profile_friends_lists .overTxtLabel
+{
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+/*
+BROWSE MEMBERS
+Used to style the browse members page,
+including the search from and results.
+*/
+.browsemembers_criteria
+{
+  +rounded;
+  +foreground;
+  padding: 7px;
+}
+.browsemembers_criteria > ul > li
+{
+  font-size: .8em;
+  overflow: hidden;
+  clear: both;
+}
+.browsemembers_criteria > ul > li + li
+{
+  margin-top: 7px;
+}
+.browsemembers_criteria > ul > li > span
+{
+  display: block;
+  margin-bottom: 3px;
+}
+.browsemembers_criteria ul li input[type=checkbox]
+{
+  display: block;
+  float: left;
+  margin: 0px 4px 0px 0px;
+  clear: left;
+}
+html[dir="rtl"] .browsemembers_criteria ul li input[type=checkbox]
+{
+  float: right;
+  margin: 0px 0px 0px 4px;
+}
+.browsemembers_criteria > ul > li > label
+{
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+html[dir="rtl"] .browsemembers_criteria > ul > li > label
+{
+  float: right;
+}
+.browsemembers_criteria button
+{
+  margin-top: 10px;;
+}
+.browsemembers_results > ul > li
+{
+  overflow: hidden;
+  border-top-width: 1px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.browsemembers_results > ul > li > a
+{
+  display: block;
+  float: left;
+}
+html[dir="rtl"] .browsemembers_results > ul > li > a
+{
+  float: right;
+}
+.browsemembers_results > ul > li > a > img
+{
+  border: 1px solid $theme_photo_border_color;
+}
+.browsemembers_results div.browsemembers_results_info
+{
+  padding-left: 5px;
+  overflow: hidden;
+}
+html[dir="rtl"] .browsemembers_results div.browsemembers_results_info
+{
+  padding-left: 0px;
+  padding-right: 5px;
+}
+.browsemembers_results div.browsemembers_results_info > a
+{
+  font-weight: bold;
+}
+.browsemembers_results div.browsemembers_results_info > div
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+.browsemembers_results div.browsemembers_results_links
+{
+  float: right;
+  overflow: hidden;
+  width: 175px;
+  text-align: right;
+}
+html[dir="rtl"] .browsemembers_results div.browsemembers_results_links
+{
+  float: left;
+  text-align: left;
+}
+.browsemembers_results_links a.buttonlink
+{
+  font-size: .8em;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+.browsemembers_results div.browsemembers_viewmore,
+.browsemembers_results div.browsemembers_loading
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+
+
+
+
+
+/*
+DELETE ACCOUNT
+Used to style the delete account form
+in the member settings area.
+*/
+#user_form_settings_delete #submit-label,
+#user_form_settings_delete #cancel-label
+{
+  display: none;
+}
+#user_form_settings_delete #submit-wrapper,
+#user_form_settings_delete #cancel-wrapper
+{
+  padding: 0px;
+  margin: 0px;
+  float: left;
+}
+
+
+
+
+
+
+
+/*
+ADD YOUR PHOTO
+Part of the signup process.
+*/
+#SignupForm #current-label,
+#SignupForm #Filedata-label
+{
+  float: none;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_status,
+.activity_icon_post,
+.activity_icon_post_self
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+.activity_icon_profile_photo_update
+{
+  background-image: url(~/application/modules/User/externals/images/types/photo.png);
+}
+.activity_icon_friends
+{
+  background-image: url(~/application/modules/User/externals/images/types/friend.png);
+}
+.activity_icon_login,
+.activity_icon_logout,
+.activity_icon_signup
+{
+  background-image: url(~/application/modules/User/externals/images/types/user.png);
+}
+body .activity_icon_tagged
+{
+  background-image: url(~/application/modules/User/externals/images/types/tag.png);
+}
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_user
+{
+  background-image: url(~/application/modules/User/externals/images/types/user.png);
+}
+
+
+
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_post_user
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+.notification_type_friend_accepted
+{
+  background-image: url(~/application/modules/User/externals/images/friends/accepted.png);
+}
+.notification_type_friend_request
+{
+  background-image: url(~/application/modules/User/externals/images/friends/request.png);
+}
+.notification_type_friend_follow
+{
+  background-image: url(~/application/modules/User/externals/images/friends/accepted.png);
+}
+.notification_type_friend_follow_request
+{
+  background-image: url(~/application/modules/User/externals/images/friends/request.png);
+}
+.notification_type_friend_follow_accepted
+{
+  background-image: url(~/application/modules/User/externals/images/friends/accepted.png);
+}
+.notification_type_tagged
+{
+  background-image: url(~/application/modules/User/externals/images/types/tag.png);
+}

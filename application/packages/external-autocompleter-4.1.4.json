@@ -1,0 +1,95 @@
+{
+  "type": "external",
+  "name": "autocompleter",
+  "version": "4.1.4",
+  "revision": "8744",
+  "path": "externals\/autocompleter",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Autocompleter",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.4": {
+      "Autocompleter.js": "Added option to ignore the overlay fix",
+      "manifest.php": "Incremented version"
+    },
+    "4.1.0": {
+      "Autocompleter.js": "Resolved select\/hover bug with Google Chrome; fixed tagging issues with Internet Explorer",
+      "manifest.php": "Incremented version"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Autocompleter",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/autocompleter": {
+      "type": "directory",
+      "path": "externals\/autocompleter",
+      "structure": [
+        {
+          "path": "Autocompleter.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 23734,
+          "sha1": "49d1c5f0e1b9caa08ff2009bf6dc7dd4515b76be"
+        },
+        {
+          "path": "Autocompleter.Local.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 491,
+          "sha1": "55fd971327e153e39450d77e102499115ee034a5"
+        },
+        {
+          "path": "Autocompleter.Request.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2622,
+          "sha1": "fa8ac0058fc6d85a216e5ba172be17ba4acd43bd"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 785,
+          "sha1": "38846188f20322187ee314eeb53c9353e901ea39"
+        },
+        {
+          "path": "Observer.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1521,
+          "sha1": "759e3dd2508c24ba9b65cfa9ffbe3af66cf34a78"
+        }
+      ]
+    }
+  }
+}

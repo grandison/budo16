@@ -1,0 +1,608 @@
+
+/* $Id: mobile.css 8825 2011-04-09 01:34:20Z john $ */
+
+
+
+/*
+VIEW MESSAGES
+Used to list members' messages in their inbox
+and outbox.
+*/
+.messages_list > ul > li
+{
+  +foreground;
+  clear: both;
+  overflow: hidden;
+  padding: 10px;
+}
+.messages_list > ul > li + li
+{
+  margin-top: 1px;
+}
+.messages_list > ul > li.messages_list_new *
+{
+  font-weight: bold;
+}
+.messages_list .messages_list_checkbox
+{
+  float: left;
+  overflow: hidden;
+}
+.messages_list .messages_list_photo
+{
+  float: left;
+  overflow: hidden;
+  padding-left: 5px;
+}
+.messages_list .messages_list_photo img
+{
+  display: block;
+}
+.messages_list .messages_list_from
+{
+  float: left;
+  overflow: hidden;
+  padding-left: 10px;
+  width: 170px;
+}
+.messages_list .messages_list_from > .messages_list_from_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+  text-transform: lowercase;
+  margin-top: 5px;
+}
+.messages_list .messages_list_info
+{
+  overflow: hidden;
+}
+.messages_list .messages_list_info > .messages_list_info_body
+{
+  font-size: .8em;
+  margin-top: 5px;
+  padding-left: 1px;
+}
+
+/*
+VIEW MESSAGE
+Styles the view message thread page.
+*/
+#global_page_messages-messages-view #global_content > h3,
+.message_view_between
+{
+  text-align: center;
+}
+.message_view_between
+{
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+ul.message_view > li
+{
+  clear: both;
+  overflow: hidden;
+  border-top-width: 1px;
+  padding: 10px 0px 10px 0px;
+}
+ul.message_view .message_view_leftwrapper
+{
+  float: left;
+}
+ul.message_view .message_view_photo
+{
+  float: left;
+  overflow: hidden;
+  width: 70px;
+}
+ul.message_view .message_view_photo img
+{
+  display: block;
+}
+ul.message_view .message_view_from
+{
+  width: 150px;
+  float: left;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+}
+.message_view_actions
+{
+  display: none;
+}
+ul.message_view .message_view_from .small
+{
+  font-weight: normal;
+}
+ul.message_view .message_view_info
+{
+  overflow: hidden;
+}
+ul.message_view .message_view_reply
+{
+  clear: both;
+  overflow: hidden;
+  padding-top: 5px;
+}
+ul.message_view .message_view_info .buttons
+{
+  margin-top: 10px;
+}
+ul.message_view .message_view_info textarea
+{
+  width: 400px;
+  height: 100px;
+}
+ul.message_view .message_view_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+  font-weight: normal;
+}
+ul.message_view .message_attachment
+{
+  overflow: hidden;
+  margin: 10px;
+  padding-left: 22px;
+  background-image: url(~/application/modules/Messages/externals/images/attachment.png);
+  background-repeat: no-repeat;
+}
+ul.message_view .message_attachment_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+ul.message_view .message_attachment_info
+{
+  overflow: hidden;
+}
+ul.message_view .message_attachment_title
+{
+  font-size: .8em;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+ul.message_view .message_attachment_desc
+{
+  font-size: .8em;
+}
+
+
+
+
+
+/*
+REPLY FORM
+Shown on view mesage page.
+*/
+#messages_form_reply > div
+{
+  width: 400px;
+}
+#messages_form_reply .form-label
+{
+  display: none;
+}
+#messages_form_reply #submit-element
+{
+  overflow: visible;
+  margin: 0px;
+}
+#messages_form_reply #body-element
+{
+  width: 100%;
+}
+#messages_form_reply .compose-container,
+#messages_form_reply .compose-content
+{
+  width: 98%;
+}
+#messages_form_reply #compose-menu
+{
+  margin-top: 10px;
+}
+#messages_form_reply #compose-menu a
+{
+  font-size: .8em;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  margin-right: 10px;
+}
+#messages_form_reply .compose-menu
+{
+  margin-top: 0px;
+}
+#messages_form_reply .compose-menu > span
+{
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  display: block;
+}
+#messages_form_reply .compose-body
+{
+  overflow: visible;
+}
+#messages_form_reply #submit-element
+{
+  float: none;
+  overflow: hidden;
+}
+
+
+/*
+COMPOSE MESSAGE FORM
+*/
+#messages_compose #submit-element
+{
+  float: none;
+  overflow: hidden;
+}
+#messages_compose .compose-content
+{
+  width: 400px;
+  min-height: 4em;
+}
+#messages_compose #compose-menu
+{
+  margin-top: 10px;
+}
+#messages_compose .compose-menu > span
+{
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  display: block;
+}
+#messages_compose #compose-menu a
+{
+  font-size: .8em;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+#messages_compose .compose-menu
+{
+  margin-top: 0px;
+}
+#messages_compose #compose-menu .buttonlink
+{
+  margin-right: 15px;
+}
+
+
+
+/*
+MESSAGES AUTOSUGGEST
+Used to style the autosuggest pulldown
+shown when you are entering a recipient
+on the compose message page.
+*/
+ul.message-autosuggest
+{
+  position: absolute;
+  padding: 0px;
+  width: 300px;
+  list-style: none;
+  z-index: 50;
+  border: 1px solid $theme_border_dark_color;
+  margin: 0px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background: $theme_body_background_color;
+}
+ul.message-autosuggest > li
+{
+  padding: 3px;
+  overflow: hidden;
+}
+ul.message-autosuggest > li + li
+{
+  border-top-width: 1px;
+}
+ul.message-autosuggest > li img
+{
+  width: 25px;
+  height: 25px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+ul.message-autosuggest > li.autocompleter-selected
+{
+  background-color: $theme_list_background_color;
+}
+ul.message-autosuggest > li.autocompleter-choices
+{
+  font-size: .8em;
+}
+ul.message-autosuggest > li.autocompleter-choices .autocompleter-choice
+{
+  line-height: 25px;
+}
+ul.message-autosuggest > li:hover
+{
+  background-color: $theme_list_background_color_hover;
+}
+ul.message-autosuggest > li span.autocompleter-queried
+{
+  font-weight: bold;
+}
+ul.message-autosuggest .search-working
+{
+  background-image: none;
+}
+ul.message-autosuggest .friendlist
+{
+  background-image: url(~/application/modules/User/externals/images/friends/list.png);
+  background-repeat: no-repeat;
+  padding-left: 28px;
+  background-position: 5px center;
+}
+#messages_compose #toValues-wrapper
+{
+  height: 0px;
+}
+#messages_compose #toValues-element
+{
+  width: 400px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+
+
+
+/*
+MESSAGES HOME WIDGET
+Shows recent messages on the member home page.
+*/
+.layout_messages_home_messages
+{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+.layout_messages_home_messages > ul
+{
+  +foreground;
+  +rounded;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.layout_messages_home_messages > ul > li
+{
+  clear: both;
+  overflow: hidden;
+  padding: 3px 0px 3px 0px;
+  margin: 0px 5px 0px 5px;
+  border-top-width: 1px;
+}
+.layout_messages_home_messages > ul > li:first-child
+{
+  border-top-width: 0px;
+}
+.layout_messages_home_messages > li.new .title
+{
+  font-weight: bold;
+}
+.layout_messages_home_messages .from
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+  margin-bottom: 4px;
+}
+.layout_messages_home_messages .title
+{
+  font-size: .8em;
+  margin-bottom: 3px;
+}
+.layout_messages_home_messages .body
+{
+  font-size: .8em;
+  margin-bottom: 5px;
+}
+
+
+
+
+/*
+TAGS FOR MESSAGE RECIPIENTS
+*/
+.tag.tag_friend
+{
+  background-image: url(~/application/modules/User/externals/images/friends/list.png);
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+}
+
+
+
+
+
+
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_message_new
+{
+  background-image: url(~/application/modules/Messages/externals/images/send.png);
+}
+
+
+
+
+
+
+
+/* message list */
+#global_page_messages-messages-inbox #global_content .headline + div,
+#global_page_messages-messages-outbox #global_content .headline + p
+{
+  text-align: center;
+}
+.messages_list > ul > li
+{
+  border: none;
+  background: none;
+  padding: 0px;
+  border-top: 1px solid $theme_border_color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.messages_list > ul > li + li
+{
+}
+.messages_list > ul > li.messages_list_new *
+{
+  font-weight: normal;
+}
+.messages_list > ul > li.messages_list_new
+{
+  background-color: $theme_foreground_background_color;
+}
+.messages_list .messages_list_checkbox,
+#global_page_messages-messages-inbox #global_content #delete,
+#global_page_messages-messages-outbox #global_content #delete,
+#global_page_messages-messages-inbox #global_content .tip,
+#global_page_messages-messages-outbox #global_content .tip
+{
+  display: none;
+}
+.messages_list .messages_list_photo
+{
+  margin-right: 7px;
+}
+.messages_list .messages_list_from
+{
+  float: none;
+  width: auto;
+  padding: 0px;
+}
+.messages_list .messages_list_from > .messages_list_from_name
+{
+  font-size: .9em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.messages_list .messages_list_from > .messages_list_from_date
+{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1px 0px 0px 1px;
+}
+.messages_list .messages_list_info > .messages_list_info_title
+{
+  margin-top: 2px;
+}
+.messages_list .messages_list_info > .messages_list_info_title > a
+{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.messages_list .messages_list_info > .messages_list_info_body
+{
+  margin-top: 0px;
+  display: none;
+}
+
+/* view message */
+#global_page_messages-messages-view h3
+{
+  font-size: 1.4em;
+  border-top: 1px solid $theme_border_color;
+  padding-top: 10px;
+}
+.message_view_between
+{
+  margin: 0px;
+}
+ul.message_view > li
+{
+  border: none;
+  margin-top: 0px;
+}
+ul.message_view .message_view_leftwrapper
+{
+  float: none;
+  overflow: hidden;
+  background-color: $theme_foreground_background_color;
+  padding: 5px;
+}
+ul.message_view .message_view_photo
+{
+  width: auto;
+  margin-right: 7px;
+}
+ul.message_view .message_view_from
+{
+  width: auto;
+  text-align: left;
+  font-size: 1.2em;
+}
+ul.message_view .message_view_info
+{
+  clear: both;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+ul.message_view .message_quick_entry > .message_view_leftwrapper
+{
+  display: none;
+}
+#messages_form_reply > div
+{
+  width: auto;
+  float: none;
+  background-color: $theme_foreground_background_color;
+  margin: 0px 0px 10px 0px;
+  border: 1px solid $theme_foreground_border_color_light;
+  padding: 5px;
+}
+#messages_form_reply > div > div
+{
+  +rounded(0px);
+  background: none;
+  border: none;
+  padding: 0px;
+}
+#messages_form_reply textarea
+{
+  width: 99%;
+  height: 70px;
+  max-width: none;
+  min-height: 0px;
+  font-size: 1.2em;
+}
+#messages_form_reply #compose-menu
+{
+  display: none;
+}
+.message_view_info .global_form div.form-element
+{
+  margin-bottom: 3px;
+}
+
+/* compose message */
+#messages_compose h3,
+#messages_compose .form-description,
+#messages_compose #compose-menu,
+#messages_compose #toValues-label,
+#messages_compose #submit-label
+{
+  display: none;
+}
+#messages_compose #to-element
+{
+  margin-bottom: 5px;
+}
+#messages_compose .tag
+{
+  font-size: 11pt;
+}
+#messages_compose .overTxtLabel
+{
+  padding: 10px 0px 0px 5px;
+  color: $theme_font_color_light;
+}

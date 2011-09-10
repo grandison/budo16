@@ -1,0 +1,84 @@
+
+/* $Id: main.css 8825 2011-04-09 01:34:20Z john $ */
+
+
+
+/*
+NETWORK SETTINGS
+Used to style the networks page in the member's
+settings area.
+*/
+.networks_left{
+  float:left;
+  width: 380px;
+  padding-right: 30px;
+}
+.networks_right{
+  float:left;
+  width: 380px;
+}
+ul.networks
+{
+  width: 350px;
+  margin: 15px 0px 15px 0px;
+}
+ul.networks > li
+{
+  overflow: hidden;
+  border: 1px solid $theme_border_medium_color;
+  padding: 10px;
+}
+ul.networks > li + li
+{
+  border-top:none;
+}
+ul.networks > li > div
+{
+  float: left;
+  overflow: hidden;
+  font-weight: bold;
+}
+html[dir="rtl"] ul.networks > li > div
+{
+  float: right;
+}
+ul.networks > li > div > span
+{
+  font-weight: normal;
+  font-size: .8em;
+}
+ul.networks > li > a
+{
+  display: block;
+  overflow: hidden;
+  float: right;
+}
+html[dir="rtl"] ul.networks > li > a
+{
+  text-align: left;
+}
+
+
+
+/* USER NETWORK SETTINGS */
+
+form#network-form input.network_join_selected
+{
+  background-color: #eee;
+}
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_network
+{
+  background-image: url(~/application/modules/Network/externals/images/types/network.png);
+}
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_network_join
+{
+  background-image: url(~/application/modules/Network/externals/images/types/network.png);
+}

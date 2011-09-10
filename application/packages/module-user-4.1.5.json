@@ -1,0 +1,2846 @@
+{
+  "type": "module",
+  "name": "user",
+  "version": "4.1.5",
+  "revision": "8942",
+  "path": "application\/modules\/User",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Members",
+  "description": "Members",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.1.5": {
+      "controllers\/AdminManageController.php": "Fixed pagination issue",
+      "controllers\/SignupController.php": "Fixed issue with members being disabled after signup when payment is enabled",
+      "Form\/Login.php": "Added autofocus to email field (HTML5)",
+      "Form\/Signup\/Account.php": "Fixed language list display issue",
+      "Model\/User.php": "Fixed error with default timezones when new members are created",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.4-4.1.5.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/friends\/request-follow.tpl": "Fixed escaping issue",
+      "views\/scripts\/friends\/request-friend.tpl": "Fixed escaping issue"
+    },
+    "4.1.4": {
+      "\/application\/languages\/en\/user.csv": "Added phrases",
+      "controllers\/AdminLoginsController.php": "Added",
+      "controllers\/AdminManageController.php": "Fixed issue with editing a member",
+      "controllers\/AdminSignupController.php": "Fixed issue with editing signup steps",
+      "controllers\/AuthController.php": "Added login tracking (viewable under Banning & Spam)",
+      "controllers\/SettingsController.php": "Fixes issue with updating displayname when profile address can be changed; Members can now leave hidden networks",
+      "externals\/styles\/admin\/main.css": "Added",
+      "externals\/styles\/main.css": "Added svn:keywords Id",
+      "externals\/styles\/mobile.css": "Added",
+      "Form\/Signup\/Account.php": "Hides language option when there is only one",
+      "Model\/DbTable\/Logins.php": "Added",
+      "Model\/User.php": "Fixed error caused when checking if unregistered visitor is an admin; Sets member name as the email is displayname or username is not set",
+      "Plugin\/Signup\/Fields.php": "Fixes issue with profile type not being pre-populated when signup order is changed",
+      "Plugin\/Signup\/Photo.php": "Step is disabled now for mobile browsers",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.3-4.1.4.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/UserFriendship.php": "Fixed issues with friendship link showing up incorrectly in browse members page",
+      "views\/scripts\/admin-logins\/clear.tpl": "Added",
+      "views\/scripts\/admin-logins\/index.tpl": "Added",
+      "views\/scripts\/admin-manage\/index.tpl": "Added missing localization",
+      "views\/scripts\/admin-manage\/stats.tpl": "Added neutering for demo mode",
+      "views\/scripts\/settings\/network.tpl": "Fixes network selection issue with Internet Explorer",
+      "widgets\/profile-friends-followers\/index.tpl": "Fixes issues with pagaination",
+      "widgets\/profile-friends-following\/index.tpl": "Fixes issues with pagaination",
+      "widgets\/profile-options\/Controller.php": "Fixes issue with profile-options widget rendering when member is not logged in"
+    },
+    "4.1.3": {
+      "\/application\/languages\/en\/user.csv": "Added phrases",
+      "controllers\/AdminManageController.php": "Fixed issue with showing a member before paying for a subscription",
+      "controllers\/AuthController.php": "Fixed issue with showing a member before paying for a subscription, Lost password mail template no longer includes the host and scheme in the object_link placeholder. Use http:\/\/[host][object_link] to specify resource URL",
+      "controllers\/FriendsController.php": "Fixed issues with one-way friendships",
+      "controllers\/ProfileController.php": "Fixed issue with showing a member before paying for a subscription",
+      "controllers\/SettingsController.php": "Improvements to network settings page",
+      "controllers\/SignupController.php": "Fixed issue with signup activity not showing up for members in the same networks when feed content is set My Friends & Networks",
+      "Form\/Admin\/Manage\/Edit.php": "Fixed issue with showing a member before paying for a subscription",
+      "Form\/Settings\/Network.php": "Improvements to network settings page",
+      "Form\/Signup\/Photo.php": "Remove the image size cap for initial signup",
+      "Model\/DbTable\/Membership.php": "Fixes rare issue with deleting members",
+      "Model\/User.php": "Fixed issue with showing a member before paying for a subscription",
+      "Plugin\/Core.php": "Fixed issue with showing a member before paying for a subscription",
+      "Plugin\/Menus.php": "Fixed issues with one-way friendships",
+      "Plugin\/Signup\/Account.php": "Fixed issue with signup activity not showing up for members in the same networks when feed content is set My Friends & Networks",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Fixed issues with one-way friendships",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.2-4.1.3.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "View\/Helper\/UserFriendship.php": "Fixed issues with one-way friendships",
+      "views\/scripts\/friends\/follow.tpl": "Added",
+      "views\/scripts\/friends\/request-follow.tpl": "Fixed issues with one-way friendships",
+      "views\/scripts\/settings\/network.tpl": "Improvements to network settings page",
+      "widgets\/list-online\/Controller.php": "Fixed issue with showing a member before paying for a subscription",
+      "widgets\/list-popular\/Controller.php": "Fixed issue with showing a member before paying for a subscription",
+      "widgets\/list-signups\/Controller.php": "Fixed issue with showing a member before paying for a subscription",
+      "widgets\/profile-friends-common\/Controller.php": "Fixed issues with one-way friendships",
+      "widgets\/profile-friends-followers\/Controller.php": "Added",
+      "widgets\/profile-friends-followers\/index.tpl": "Added",
+      "widgets\/profile-friends-following\/Controller.php": "Added",
+      "widgets\/profile-friends-following\/index.tpl": "Added",
+      "widgets\/profile-friends\/Controller.php": "Fixed issues with one-way friendships",
+      "widgets\/profile-friends\/index.tpl": "Fixed issues with one-way friendships"
+    },
+    "4.1.2": {
+      "\/application\/languages\/en\/user.csv": "Added phrases",
+      "controllers\/AdminManageController.php": "Fixed issue with deleted networks, editing a member now closes smoothbox on confirmation; Now sends approval email when the approve selected button is used",
+      "controllers\/AuthController.php": "Added ability to base64 encode return URL",
+      "controllers\/EditController.php": "Added ability to remove profile photo",
+      "controllers\/FriendsController.php": "Fixed issue with friend suggestion",
+      "controllers\/SettingsController.php": "Hides profile posting privacy option on form if there are less than one option",
+      "externals\/styles\/main.css": "Added styles",
+      "Form\/Admin\/Account.php": "Added ability to disable profile address",
+      "Form\/Admin\/Manage\/Edit.php": "Added ability to disable profile address",
+      "Form\/Admin\/Settings\/Level.php": "Added ability to disable profile address",
+      "Form\/Admin\/Signup\/Account.php": "Added ability to disable profile address",
+      "Form\/Edit\/Photo.php": "Added ability to remove profile photo",
+      "Form\/Edit\/RemovePhoto.php": "Added",
+      "Form\/Settings\/General.php": "Added ability to disable profile address",
+      "Form\/Settings\/Privacy.php": "Fixed issue with saving privacy options when the options are hidden",
+      "Form\/Signup\/Account.php": "Added ability to disable profile address",
+      "Plugin\/Menus.php": "Fixed incorrect profile URL; added return URL to mini menu login link",
+      "Plugin\/Signup\/Account.php": "Added save notice to admin form",
+      "Plugin\/Signup\/Invite.php": "Added save notice to admin form",
+      "Plugin\/Signup\/Photo.php": "Now works on distributed hosting",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added preliminary layout editor enhancements",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.1-4.1.2.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_formSignupImage.tpl": "Now works on distributed hosting",
+      "views\/scripts\/admin-signup\/index.tpl": "Fixed javascript error",
+      "views\/scripts\/edit\/remove-photo.tpl": "Added",
+      "views\/scripts\/settings\/privacy.tpl": "Fixes link to unblock members",
+      "views\/scripts\/signup\/form\/account.tpl": "Fixed javascript error",
+      "widgets\/list-online\/Controller.php": "Added guest count option",
+      "widgets\/list-online\/index.tpl": "Added guest count option",
+      "widgets\/list-popular\/Controller.php": "Added configuration options"
+    },
+    "4.1.1": {
+      "controllers\/AdminManageController.php": "Added network management to edit user",
+      "controllers\/AuthController.php": "Added http_host to lost password link",
+      "controllers\/SettingsController.php": "Removes collate command from passwordAction since it is done at database level now",
+      "controllers\/SignupController.php": "Added welcome email after verification",
+      "externals\/.htaccess": "Added keywords; removed deprecated code",
+      "externals\/styles\/main.css": "CSS tweak for displaying long field names on profile info tab",
+      "Form\/Admin\/Facebook.php": "Fixed language",
+      "Form\/Admin\/Manage\/Edit.php": "Added network management to edit user",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.0-4.1.1.sql": "Added",
+      "settings\/my.sql": "Incremented version; changes password and salt columns to UTF-8 for collation compatibility"
+    },
+    "4.1.0": {
+      "\/application\/languages\/en\/user.csv": "Replacing friend list description for admin; fixed phrases with stray double-quotes",
+      "Api\/Core.php": "Fixed issue with numeric usernames",
+      "Bootstrap.php": "Disabled users are logged out immediately",
+      "controllers\/AdminManageController.php": "Added new edit user options; users are email when they are enabled",
+      "controllers\/AdminSettingsController.php": "Added notice on form save",
+      "controllers\/AdminSignupController.php": "Account step is no longer required to be first to allow for subscription step to be placed first; fixed bugs with step selection",
+      "controllers\/AuthController.php": "Added code to handle subscriptions; tweak to allow for CLI support; added pre\/post login hooks; fixed reset password email link",
+      "controllers\/EditController.php": "Optimization for profile photos",
+      "controllers\/FriendsController.php": "Fixed incorect notification parameters",
+      "controllers\/IndexController.php": "Silencing notices in the content system; unverified users no longer appear in browse members; fixed issue with user name search",
+      "controllers\/ProfileController.php": "Silencing notices in the content system; admins do not require verification",
+      "controllers\/SettingsController.php": "Added logging to Facebook exceptions; removed signup feed item type from settings form",
+      "controllers\/SignupController.php": "Fixed undefined variables for $confirmSession",
+      "Form\/Admin\/Manage\/Edit.php": "Added option to reset a member password",
+      "Form\/Admin\/Manage\/Filter.php": "Added filtering options; fixed issue with parameter propagation",
+      "Form\/Admin\/Signup\/Account.php": "Fixed issues with signup step selection in admin edit page",
+      "Form\/Admin\/Signup\/Fields.php": "Fixed issues with signup step selection in admin edit page",
+      "Form\/Admin\/Signup\/Invite.php": "Fixed issues with signup step selection in admin edit page",
+      "Form\/Admin\/Signup\/Photo.php": "Fixed issues with signup step selection in admin edit page",
+      "Form\/Settings\/General.php": "Fixed incorrect regex that allowed numeric usernames",
+      "Form\/Signup\/Account.php": "Fixed incorrect regex that allowed numeric usernames",
+      "Form\/Signup\/Fields.php": "Added form title",
+      "Form\/Signup\/Invite.php": "Fixed incorrect submit button label",
+      "Form\/Signup\/Photo.php": "Added form title",
+      "Model\/DbTable\/Online.php": "Different",
+      "Model\/User.php": "Tweak to allow for CLI support; added isAdmin() method; fixed issue with resetting password after v3 migration",
+      "Plugin\/Job\/Maintenance\/RebuildPrivacy.php": "Added",
+      "Plugin\/Menus.php": "Fixed active class for home menu item",
+      "Plugin\/Signup\/Account.php": "Added support for the account step to not be the first step",
+      "Plugin\/Signup\/Fields.php": "Added support for the account step to not be the first step",
+      "Plugin\/Signup\/Invite.php": "Added support for the account step to not be the first step",
+      "Plugin\/Signup\/Photo.php": "Added support for the account step to not be the first step",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Removed",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added pagination\/item count limits to widgets",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.0rc1-4.0.0rc2.sql": "Backwards compatibility fix for tasks modifications",
+      "settings\/my-upgrade-4.0.3p1-4.0.4.sql": "Backwards compatibility fix for tasks modifications",
+      "settings\/my-upgrade-4.0.4-4.0.5.sql": "Backwards compatibility fix for tasks modifications",
+      "settings\/my-upgrade-4.0.5-4.1.0.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_browseUsers.tpl": "Fixed pagination issues on browse members",
+      "views\/scripts\/admin-manage\/index.tpl": "Fixed pagination issues; added link to member stats page",
+      "views\/scripts\/admin-manage\/stats.tpl": "Added",
+      "views\/scripts\/admin-signup\/index.tpl": "Fixed issues with signup step selection in admin edit page",
+      "views\/scripts\/edit\/photo.tpl": "Fixed notices caused by invalid variable comparison",
+      "views\/scripts\/edit\/style.tpl": "Fixed notices caused by invalid variable comparison",
+      "views\/scripts\/index\/search.tpl": "Code formatting",
+      "views\/scripts\/settings\/network.tpl": "Fixed autosuggest issue",
+      "views\/scripts\/settings\/privacy.tpl": "Fixed issue where blocked users that had been deleted could cause exceptions",
+      "widgets\/list-online\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/list-popular\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/list-signups\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/profile-friends-common\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/profile-friends\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/profile-friends\/index.tpl": "Added pagination\/item count limit",
+      "widgets\/profile-info\/Controller.php": "Fixed networks member belongs to",
+      "widgets\/profile-tags\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/profile-tags\/index.tpl": "Added pagination\/item count limit"
+    },
+    "4.0.5": {
+      "Api\/Core.php": "Auth now stored user id instead of email to prevent issues with changing email addresses",
+      "Bootstrap.php": "Removed code that could cause javascript errors",
+      "controllers\/AuthController.php": "Fixed security issue with forgot password",
+      "controllers\/BlockController.php": "Removed deprecated context switch code",
+      "controllers\/FriendsController.php": "Removed deprecated context switch code",
+      "controllers\/IndexController.php": "Name search now searches through username; added dependent field support to browse members",
+      "controllers\/SettingsController.php": "Disabled action and notification types no longer show; added network join activity feed item; fixed issue with disabling friendship feed item",
+      "controllers\/SignupController.php": "Resend verification now creates a new code if missing",
+      "Form\/Block\/Add.php": "Fixed issue with context switch",
+      "Form\/Block\/Remove.php": "Fixed issue with context switch",
+      "Form\/Friends\/Add.php": "Fixed issue with context switch",
+      "Form\/Friends\/Cancel.php": "Fixed issue with context switch",
+      "Form\/Friends\/Confirm.php": "Fixed issue with context switch",
+      "Form\/Friends\/Reject.php": "Fixed issue with context switch",
+      "Form\/Friends\/Remove.php": "Fixed issue with context switch",
+      "Form\/Search.php": "Added dependent field support to browse members",
+      "Form\/Settings\/Privacy.php": "Code formatting",
+      "Form\/Signup\/Fields.php": "Added support for disabling fields on signup",
+      "Form\/Signup\/Photo.php": "Added missing .jpeg extension to allowed extension list",
+      "Model\/DbTable\/Facebook.php": "Logging tweak",
+      "Model\/DbTable\/Forgot.php": "Changed garbage collect to 24 hours",
+      "Model\/User.php": "Added missing translation",
+      "Plugin\/Task\/Cleanup.php": "Added idle support",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Added idle support",
+      "settings\/changelog.php": "Added",
+      "settings\/content.php": "Added ability to configure the number of items displayed for certain widgets",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.3p1-4.0.4.sql": "Fixed missing category for cleanup task",
+      "settings\/my-upgrade-4.0.4-4.0.5.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/edit\/profile.tpl": "Fixed errors caused by object comparison method",
+      "views\/scripts\/index\/browse.tpl": "Added dependent field support",
+      "views\/scripts\/signup\/resend.tpl": "Added better error messages",
+      "widgets\/home-links\/Controller.php": "Fixed issues with caching regardless of language\/locale",
+      "widgets\/home-photo\/Controller.php": "Fixed issues with caching regardless of language\/locale",
+      "widgets\/list-online\/Controller.php": "Count no longer includes disabled\/unverified members; fixed issues with caching regardless of language\/locale; added ability to configure the number of items displayed for certain widgets",
+      "widgets\/list-online\/index.tpl": "Count no longer includes disabled\/unverified members",
+      "widgets\/list-popular\/Controller.php": "Fixed issues with caching regardless of language\/locale; added ability to configure the number of items displayed for certain widgets",
+      "widgets\/list-popular\/index.tpl": "Fixed issues with caching regardless of language\/locale; added ability to configure the number of items displayed for certain widgets",
+      "widgets\/list-signups\/Controller.php": "Fixed issues with caching regardless of language\/locale; added ability to configure the number of items displayed for certain widgets",
+      "widgets\/list-signups\/index.tpl": "Fixed issues with caching regardless of language\/locale; added ability to configure the number of items displayed for certain widgets",
+      "widgets\/profile-friends\/index.tpl": "Removed deprecated code",
+      "\/application\/languages\/en\/user.csv": "Added missing phrases"
+    },
+    "4.0.4": {
+      "controllers\/AuthController.php": "Added params to lost password email",
+      "controllers\/SettingsController.php": "Fixed checking of permissions for showing delete account tab",
+      "controllers\/SignupController.php": "Added params to resend verification email; improved confirmation redirection handling; improved verification error reporting",
+      "externals\/styles\/main.css": "Improved RTL support",
+      "Form\/Search.php": "Fixed javascript error",
+      "Form\/Settings\/Privacy.php": "Fixed comment option type; adjusted network privacy label",
+      "Form\/Settings\/Delete.php": "Removed deprecated code",
+      "Form\/Signup\/Account.php": "Code formatting; fixed bug in invite code checking",
+      "Form\/Signup\/Invite.php": "Code formatting; added email validation; removed deprecated code",
+      "Form\/Signup\/Photo.php": "Removed deprecated code",
+      "Model\/User.php": "Fixed non-optimal level check; now cleans out fields values on delete; fixed issue with resetting password after migration",
+      "Plugin\/Menus.php": "Fixed checking of permissions for showing delete account tab",
+      "Plugin\/Signup\/Account.php": "Added params to signup emails; fixed bug in invite code checking",
+      "Plugin\/Signup\/Invite.php": "Code formatting; uses common method",
+      "Plugin\/Task\/Cleanup.php": "Added docblock",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Added to fix migration problems",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.3p1-4.0.4.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_formButtonCancel.tpl": "Removing deprecated code",
+      "views\/scripts\/auth\/reset.tpl": "Added missing translation",
+      "views\/scripts\/index\/browse.tpl": "Fixed broken smoothbox binding after searching",
+      "views\/scripts\/signup\/confirm.tpl": "Fixed incorrect link",
+      "views\/scripts\/signup\/index.tpl": "Fixed warning message",
+      "views\/scripts\/signup\/verify.tpl": "Added error messages",
+      "widgets\/list-online\/Controller.php": "Fixed locale problems caused by incorrect cache key; now properly excludes members that have opted out",
+      "widgets\/list-popular\/Controller.php": "Fixed locale problems caused by incorrect cache key",
+      "widgets\/list-signups\/Controller.php": "Fixed locale problems caused by incorrect cache key",
+      "\/application\/languages\/en\/user.csv": "Added phrases"
+    },
+    "4.0.3": {
+      "Api\/Core.php": "Fixes for empty viewers",
+      "controllers\/IndexController.php": "Disabled members do not show up in browse members page",
+      "controllers\/ProfileController.php": "Admins and moderators can now see disabled member profiles",
+      "controllers\/SettingsController.php": "Proper handling of delete auth; moved notifications to another tab",
+      "Form\/Settings\/General.php": "Moved notifications to another tab; added missing translation",
+      "Form\/Settings\/Privacy.php": "Respects subject instead of viewer",
+      "Model\/User.php": "Better handling of empty display names",
+      "Model\/DbTable\/Facebook.php": "Fixed typo in javascript",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.2-4.0.3.sql": "Added",
+      "settings\/my.sql": "Incremented version; moved notifications to another tab",
+      "views\/scripts\/admin-manage\/index.tpl": "Style tweak",
+      "views\/scripts\/settings\/notifications.tpl": "Moved notifications to another tab",
+      "views\/scripts\/signup\/index.tpl": "Fixed missing translation",
+      "widgets\/list-popular\/Controller.php": "No longer displays disabled or unverified users",
+      "widgets\/list-signups\/Controller.php": "No longer displays disabled or unverified users",
+      "widgets\/profile-info\/index.tpl": "Removed link around member type; added missing translation",
+      "\/application\/languages\/en\/user.csv": "Added phrases"
+    },
+    "4.0.2": {
+      "controllers\/AdminManageController.php": "Added log in as user action",
+      "controllers\/AuthController.php": "Added authentication against SE3 table (if migration tool used)",
+      "controllers\/EditController.php": "Fix for unselected menu",
+      "controllers\/FriendsController.php": "Missing translations",
+      "controllers\/SettingsController.php": "Fixed missing check for invisible networks; fix for unselected menu",
+      "externals\/scripts\/composer_facebook.js": "IE compatibility fix",
+      "Form\/Edit\/Photo.php": "Removed arbitrary limit on profile photo size",
+      "Form\/Settings\/Privacy.php": "Cast element options to array",
+      "Form\/Signup\/Account.php": "Fixed a problem with validating the invite code if more than one invite sent to the same email",
+      "Model\/DbTable\/Facebook.php": "Facebook ex-user bug fix",
+      "Model\/User.php": "Fixed incorrect photo being used when setting a photo as your profile photo",
+      "Plugin\/Signup\/Photo.php": "Fixed notice",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.1-4.0.2.sql": "Added",
+      "settings\/my.sql": "Various level settings fixes and enhancements",
+      "views\/scripts\/_formButtonSkipInvite.tpl": "Missing translation",
+      "views\/scripts\/_formButtonSkipPhoto.tpl": "Missing translation",
+      "views\/scripts\/admin-manage\/index.tpl": "Added log in as user action",
+      "widgets\/profile-friends\/index.tpl": "Fix for orphaned rows in membership table",
+      "widgets\/profile-info\/Controller.php": "Fixed missing check for invisible networks",
+      "widgets\/profile-info\/index.tpl": "Fixed missing check for invisible networks"
+    },
+    "4.0.1": {
+      "Api\/Core.php": "Adjustments for trial",
+      "controllers\/AdminManageController.php": "Delete now run in transaction",
+      "controllers\/AdminSettingsController.php": "Fixed problem in level select",
+      "controllers\/AuthController.php": "Facebook fixes; adjustments for trial; faster sending of verification email",
+      "controllers\/EditController.php": "Better cleanup of temporary files and bug fix for making a profile picture",
+      "controllers\/IndexController.php": "Better exception throwing in Facebook module",
+      "controllers\/SettingsController.php": "Fixes forced logout bug when changing email address",
+      "controllers\/SignupController.php": "Fixed bug in resend of verification email",
+      "externals\/styles\/main.css": "Style fixes",
+      "Form\/Login.php": "Facebook login bug fixes",
+      "Model\/User.php": "Better cleanup of temporary files",
+      "Model\/DbTable\/Facebook.php": "Facebook login refresh bug fix; Facebook wall post fix",
+      "Plugin\/Signup\/Photo.php": "Better cleanup of temporary files",
+      "settings\/manifest.php": "Incremented version",
+      "widgets\/profile-tags\/Controller.php": "Fixed typos"
+    }
+  },
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Members",
+    "description": "Members",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Module",
+    "priority": 3000
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.3",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/User": {
+      "type": "directory",
+      "path": "application\/modules\/User",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7965,
+          "sha1": "623e1042749121a6507e60543269a7532d8490c1"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1300,
+          "sha1": "ba80e5fc8f0043ae56e8ec3742eb00e9fb1e722f"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminFieldsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 613,
+          "sha1": "14d429aca3b777a457a67c4aa9252fb4c5212c0b"
+        },
+        {
+          "path": "controllers\/AdminLoginsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2362,
+          "sha1": "622e1f1a50e7e1681109e68edb5ad8ee43b8ed50"
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 10371,
+          "sha1": "bb12f7bacbf5dfc454d301da3499598c97d372f8"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3668,
+          "sha1": "a07131d00b2a928b219bfa9b7bc5ee82dc5702c4"
+        },
+        {
+          "path": "controllers\/AdminSignupController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2315,
+          "sha1": "56367fbd92f356afe997b0a066c19e7766800c9f"
+        },
+        {
+          "path": "controllers\/AjaxController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2078,
+          "sha1": "79ceaa38a93fbe9f7ed7f5689e8e1a20e3ed5112"
+        },
+        {
+          "path": "controllers\/AuthController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 22719,
+          "sha1": "32be2665ea12fe862c9f102f723c3d8d4a373aa7"
+        },
+        {
+          "path": "controllers\/BlockController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4257,
+          "sha1": "f010928b708614f56fadb011ba54c0e48191481c"
+        },
+        {
+          "path": "controllers\/EditController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 15011,
+          "sha1": "253820e25190be3db14be7340600f8d5024a50ba"
+        },
+        {
+          "path": "controllers\/FriendsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 27906,
+          "sha1": "ea84a7f4d58b2a0a2e8aa66fdaf9e35dd1e2edd1"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4185,
+          "sha1": "948a527be11530a1e8e2ff327687aae1747daa54"
+        },
+        {
+          "path": "controllers\/ProfileController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2783,
+          "sha1": "b654669c5d9b69ce86a60bfde245575dd8a1ccf5"
+        },
+        {
+          "path": "controllers\/SettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 17393,
+          "sha1": "714181b1c44aaaf69c141868ced2b9acbf5287e8"
+        },
+        {
+          "path": "controllers\/SignupController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 10007,
+          "sha1": "02ba029065288185a7d9a3e2aea92ffe23b131cb"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 71,
+          "sha1": "a137936c85f4bba6a98f924e9a6e367bd8b20ada"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/activity",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/activity\/friend_accepted.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 746,
+          "sha1": "56a6f12c36ef9e5220b070830a3d36b23450ff22"
+        },
+        {
+          "path": "externals\/images\/activity\/friend_request.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 793,
+          "sha1": "377b8e43aec5cb8c28d5c5bce917bca36d3473c5"
+        },
+        {
+          "path": "externals\/images\/activity\/login.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 612,
+          "sha1": "8fc73a9f2929800ab33eb6873b3fa1bd7bc549d9"
+        },
+        {
+          "path": "externals\/images\/activity\/signup.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 661,
+          "sha1": "67900c8b91389e71655043ec9b9ef592f2cbfbee"
+        },
+        {
+          "path": "externals\/images\/block.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 715,
+          "sha1": "8f0ebcb45d7ba71a541d4781329f4a6900c7ee65"
+        },
+        {
+          "path": "externals\/images\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 450,
+          "sha1": "62a1b41ac5eefbf3d0ad578a19572d4096d88146"
+        },
+        {
+          "path": "externals\/images\/friends",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/friends\/accepted.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 746,
+          "sha1": "56a6f12c36ef9e5220b070830a3d36b23450ff22"
+        },
+        {
+          "path": "externals\/images\/friends\/add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 746,
+          "sha1": "56a6f12c36ef9e5220b070830a3d36b23450ff22"
+        },
+        {
+          "path": "externals\/images\/friends\/add_list.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 201,
+          "sha1": "6197eb13b4254f77f16833e1a9a8640e939d574c"
+        },
+        {
+          "path": "externals\/images\/friends\/list.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 622,
+          "sha1": "e1f2645ef808a01f6b022c272eeb360d85d96dbc"
+        },
+        {
+          "path": "externals\/images\/friends\/list_joined.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 295,
+          "sha1": "97deda5f041d16c2195e4b4db6dda79b8552a173"
+        },
+        {
+          "path": "externals\/images\/friends\/list_unjoined.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 274,
+          "sha1": "72a62d68d28d66e90fb1174eed55fa32ac7bfe75"
+        },
+        {
+          "path": "externals\/images\/friends\/remove.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 767,
+          "sha1": "7c9dfd9e984a91c5c56f0ec9b77bebcf6da3f9a2"
+        },
+        {
+          "path": "externals\/images\/friends\/request.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 793,
+          "sha1": "377b8e43aec5cb8c28d5c5bce917bca36d3473c5"
+        },
+        {
+          "path": "externals\/images\/links",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/links\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 716,
+          "sha1": "42729bbadce552466854e16f9c41ca155890d7cb"
+        },
+        {
+          "path": "externals\/images\/links\/profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 480,
+          "sha1": "0069f7b1b638dcd814526b4b8629261557910315"
+        },
+        {
+          "path": "externals\/images\/links\/search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 615,
+          "sha1": "c20b5453704cdf0643d45fa9afb1b12552fa8f7d"
+        },
+        {
+          "path": "externals\/images\/links\/updates.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 782,
+          "sha1": "5a984aa9106746df874b6c25b911b1fd13c4f5bd"
+        },
+        {
+          "path": "externals\/images\/nophoto_user_thumb_icon.bak.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1143,
+          "sha1": "cabbff4dafb43f642d8e1079d902b7c49e5e893a"
+        },
+        {
+          "path": "externals\/images\/nophoto_user_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1143,
+          "sha1": "cabbff4dafb43f642d8e1079d902b7c49e5e893a"
+        },
+        {
+          "path": "externals\/images\/nophoto_user_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5116,
+          "sha1": "b3615b572b176f5d2066c716ba3bf765880e4d85"
+        },
+        {
+          "path": "externals\/images\/remove.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 767,
+          "sha1": "7c9dfd9e984a91c5c56f0ec9b77bebcf6da3f9a2"
+        },
+        {
+          "path": "externals\/images\/types",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/types\/friend.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 746,
+          "sha1": "56a6f12c36ef9e5220b070830a3d36b23450ff22"
+        },
+        {
+          "path": "externals\/images\/types\/photo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 661,
+          "sha1": "ca8fa077f56d5a5f2b6b4bcde921eff1cb76bf94"
+        },
+        {
+          "path": "externals\/images\/types\/tag.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 586,
+          "sha1": "59ba0d678437b8b8279013d9d6be13dcae376300"
+        },
+        {
+          "path": "externals\/images\/types\/user.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 741,
+          "sha1": "69e8e7677576ef6e15e15b9c0c34b95594f83cb6"
+        },
+        {
+          "path": "externals\/images\/unblock.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 537,
+          "sha1": "d0a90047653afcdac85171e6b34d599538b89773"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/composer_facebook.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1932,
+          "sha1": "7ee65ade35fb35740048a22f60d5cbd1bb75fc83"
+        },
+        {
+          "path": "externals\/scripts\/core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4945,
+          "sha1": "fdab6faabb19d70451b0dfbc3db009af6e9fb30e"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 387,
+          "sha1": "dd28fa6f9dafeca7ec3da5ad877b5b9a7bc26bf3"
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 17908,
+          "sha1": "7b9094a3eb51d33994af6dd59026d98d12e7160b"
+        },
+        {
+          "path": "externals\/styles\/mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 18579,
+          "sha1": "207b6b39acafaf1667d64f71580f80a43e311a9f"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Activity",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Activity\/Post.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1932,
+          "sha1": "c26efb803e74ce78abd71cac1bf37b0f3cd6a0b5"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Account.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2967,
+          "sha1": "4969540e9645f3e9d595637bf836b06f752ee1fe"
+        },
+        {
+          "path": "Form\/Admin\/Facebook.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1964,
+          "sha1": "786407e83634885b9f48b72ca7bf277b6e2fedb3"
+        },
+        {
+          "path": "Form\/Admin\/Manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1356,
+          "sha1": "dd8cc70dbf472f3ed7d04d744b5d5706d475fd4c"
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3017,
+          "sha1": "58cc5b67dec4ded3e6fef0afedaff8ee18c9a522"
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Filter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3877,
+          "sha1": "5022bf4309e8e56a2f0f5e15e845ebae3a67203e"
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Friends.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5358,
+          "sha1": "815bc0ca657e98dcaba114e92afdd5c4ca28c3e9"
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4296,
+          "sha1": "cec06d8244e4f55adc1c5c2c4fb794f0809bc048"
+        },
+        {
+          "path": "Form\/Admin\/Signup",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Signup\/Account.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5604,
+          "sha1": "2c3849a81e667fe781d308bb8126a089bf019efc"
+        },
+        {
+          "path": "Form\/Admin\/Signup\/Fields.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1585,
+          "sha1": "3f49f9fc6dccb7d312eb7e7534c82228d4fae102"
+        },
+        {
+          "path": "Form\/Admin\/Signup\/Invite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1818,
+          "sha1": "a9f6e8ddaaa9247020944ddcba6dcb0dcb5773d1"
+        },
+        {
+          "path": "Form\/Admin\/Signup\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1881,
+          "sha1": "083e702164e2057635b6c8fb81f5fbfc04f78d11"
+        },
+        {
+          "path": "Form\/Auth",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Auth\/Forgot.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1713,
+          "sha1": "17a91be101c75fbeef49f59f8fa107c8af681508"
+        },
+        {
+          "path": "Form\/Auth\/Reset.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1885,
+          "sha1": "56ab20ec95c6262ee0d7b4bf13015fc66a3c1cc5"
+        },
+        {
+          "path": "Form\/Block",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Block\/Add.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1371,
+          "sha1": "9025d6f5417d9b1d317031398ac0967fd2c6b87c"
+        },
+        {
+          "path": "Form\/Block\/Remove.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1384,
+          "sha1": "cd24d8b4a6457339ec77881ffcc65c85792810f6"
+        },
+        {
+          "path": "Form\/Edit",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Edit\/ExternalPhoto.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1254,
+          "sha1": "d8a77ba886c025ca70d45c3ff36ccf7b36e68194"
+        },
+        {
+          "path": "Form\/Edit\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2189,
+          "sha1": "298bc96eab1f794336aebcb12dba0cacbbb744de"
+        },
+        {
+          "path": "Form\/Edit\/RemovePhoto.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1450,
+          "sha1": "6fb294d618ec05d466a8127ee6ac2622ac7c8109"
+        },
+        {
+          "path": "Form\/Edit\/Style.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 919,
+          "sha1": "28c3f8b5ffc9ec13ba7ffaf25690dac51e1e82dc"
+        },
+        {
+          "path": "Form\/Friends",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Friends\/Add.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1343,
+          "sha1": "f39d4552307761b2ecfe9cf4e582abb1fc0cb31b"
+        },
+        {
+          "path": "Form\/Friends\/Cancel.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1360,
+          "sha1": "0ecc7fb2f465f6c2b225a89226ede575afde5133"
+        },
+        {
+          "path": "Form\/Friends\/Confirm.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1363,
+          "sha1": "83c622ce958e2086d81e4d08423d267d67b3d08f"
+        },
+        {
+          "path": "Form\/Friends\/Reject.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1358,
+          "sha1": "786bf15933579251f526e8656c39674d6958bd87"
+        },
+        {
+          "path": "Form\/Friends\/Remove.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1368,
+          "sha1": "297ecc7e39e127c727f37e368c40b7647564dc1e"
+        },
+        {
+          "path": "Form\/Login.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3875,
+          "sha1": "f42f44ef0de7f37045d5bbf79da13fa6bdfb911a"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3568,
+          "sha1": "7c80ff04efc7b3b5bfe0ec4bb1e875218cf1df04"
+        },
+        {
+          "path": "Form\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Settings\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1634,
+          "sha1": "5cf47a8bf22846d332565eaa554263f74d5099bd"
+        },
+        {
+          "path": "Form\/Settings\/General.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7853,
+          "sha1": "c01103cb6179ebc87aa4f68a8d60ce593c350508"
+        },
+        {
+          "path": "Form\/Settings\/Network.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1114,
+          "sha1": "4abdbd267d653ca65e04338c2c4315a1e546c0ba"
+        },
+        {
+          "path": "Form\/Settings\/Password.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2101,
+          "sha1": "7b46c185afcb50531f3e472175b520a963e806f3"
+        },
+        {
+          "path": "Form\/Settings\/Privacy.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5879,
+          "sha1": "485e4892f2a29acbf7d8f8dbc288a7bcf296c0eb"
+        },
+        {
+          "path": "Form\/Signup",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Signup\/Account.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 13590,
+          "sha1": "1c79d1a6ca65ef93513ea86c53e2c45a6bdd3cad"
+        },
+        {
+          "path": "Form\/Signup\/Fields.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 753,
+          "sha1": "a668f20e060ae88dfa25a5456eaff7c488a8f3ff"
+        },
+        {
+          "path": "Form\/Signup\/Invite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3260,
+          "sha1": "f1d1d5d2c8dc6df199011ee9a59f197f3a5bc721"
+        },
+        {
+          "path": "Form\/Signup\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2393,
+          "sha1": "432b3437432dae5bcc9fdc697b0694b2b6354a73"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Api.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 868,
+          "sha1": "b8390dcec80d5521111b7d29ad4a966ceca87af8"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Block.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 506,
+          "sha1": "a3b5fe14508795484fa7a3acf8f2608cc0bba986"
+        },
+        {
+          "path": "Model\/DbTable\/Comments.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 512,
+          "sha1": "cb69d280a2cd5bf3cb8b14c1d9220e86ea5044ad"
+        },
+        {
+          "path": "Model\/DbTable\/Facebook.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5159,
+          "sha1": "2f2f9b4842d3d70f99b7e5a7b3ccd1a9b3a8d927"
+        },
+        {
+          "path": "Model\/DbTable\/Forgot.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 699,
+          "sha1": "b885e72343972147b16dd135dd7df8ce74ab87a3"
+        },
+        {
+          "path": "Model\/DbTable\/ListItems.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 559,
+          "sha1": "174cec7e23f1ca4dd4412378aa61f6bb2eebcd46"
+        },
+        {
+          "path": "Model\/DbTable\/Lists.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1935,
+          "sha1": "b56b5168146f5e493267149646b3c05a8ead82f4"
+        },
+        {
+          "path": "Model\/DbTable\/Logins.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 509,
+          "sha1": "60c2238375f0f45a61ade446d125c03e8a1c33eb"
+        },
+        {
+          "path": "Model\/DbTable\/Membership.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3452,
+          "sha1": "f02e327f135f14559bd730526f9846c418cc91cc"
+        },
+        {
+          "path": "Model\/DbTable\/Online.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1874,
+          "sha1": "508794b7e1d722102683fa90d844afb52b4265a7"
+        },
+        {
+          "path": "Model\/DbTable\/Signup.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 561,
+          "sha1": "fb77ad0f08c60177b1f24b5b76ad3dfd6ecf5cca"
+        },
+        {
+          "path": "Model\/DbTable\/Users.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 578,
+          "sha1": "5a57a374c1953d33019180fb098783d0dba8c2c2"
+        },
+        {
+          "path": "Model\/DbTable\/Verify.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1374,
+          "sha1": "b4ecb35b60a0db19b62008c5d30316e9d1e6d412"
+        },
+        {
+          "path": "Model\/Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 503,
+          "sha1": "8f37c3da99ea87ff89be8214c2863d9d3bca3fe3"
+        },
+        {
+          "path": "Model\/List.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1623,
+          "sha1": "7dd392959989bd897bbddcfc8dbb249b5e448e7f"
+        },
+        {
+          "path": "Model\/ListItem.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 509,
+          "sha1": "ee60dcf7624e057b7fcd6f30cdeaca23942fd036"
+        },
+        {
+          "path": "Model\/User.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 15340,
+          "sha1": "c5d3fb6e98fbd7d929ba7408d3e136285b523ff8"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Activity",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Activity\/Request.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 907,
+          "sha1": "d205a3c6e183c7cd2a8d257501de6871652683e1"
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5055,
+          "sha1": "29923570275c13e20d596294b5a624af1c0f314a"
+        },
+        {
+          "path": "Plugin\/Job",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job\/Maintenance",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job\/Maintenance\/RebuildPrivacy.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4061,
+          "sha1": "2aaaa07059842ae7007439851afba96cbad5e8e7"
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 13178,
+          "sha1": "d1a152e4d819a342678f356a1e3b37dbc674a584"
+        },
+        {
+          "path": "Plugin\/Signup",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Signup\/Account.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6919,
+          "sha1": "7c7be9111f4e16f9c7f3fc42a9dff202b54e3c7c"
+        },
+        {
+          "path": "Plugin\/Signup\/Fields.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5396,
+          "sha1": "06781c10cec0257b33d23c23526e3d9c073e25cf"
+        },
+        {
+          "path": "Plugin\/Signup\/Invite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2590,
+          "sha1": "72598d71f6c22a109534b99a4ac82b8b4a46cd92"
+        },
+        {
+          "path": "Plugin\/Signup\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8324,
+          "sha1": "9eeb2544ccbcd847b78120842edfb29b8899b2b9"
+        },
+        {
+          "path": "Plugin\/Task",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Task\/Cleanup.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 952,
+          "sha1": "d7d5bf63c72910879c41438b5001927db460eaf3"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/changelog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 26148,
+          "sha1": "80ac3fa062de97bfeeac104483a6005d669fba47"
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5647,
+          "sha1": "8ecc2f6fef0da65c31bcf620ac7db5cbd41f0ce7"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3687,
+          "sha1": "a04e804750971efadc44236f47b38d56b378c7ee"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0rc1-4.0.0rc2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 449,
+          "sha1": "8bee2d1317cfb662d700897761200b09b9c4595b"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.1-4.0.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6017,
+          "sha1": "a22ef68b392cfbcdd365e2335f8dff8648149044"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.2-4.0.3.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 752,
+          "sha1": "3ab8ef4c77c286cbcd4791f1d7dc9b7fec7700c6"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.3p1-4.0.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2482,
+          "sha1": "03bdad12757cc428712b94459e19405f3d9109d2"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.4-4.0.5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 436,
+          "sha1": "e1e28d4fb43b7b5ccc503944787c40bee171ffd9"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.5-4.1.0.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1189,
+          "sha1": "8ee1b5660879e0329a9eb244bf2c9f40f5621e82"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.0-4.1.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 181,
+          "sha1": "ba4ce23d836d99a1836f853620745aedbbb976e3"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.1-4.1.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 415,
+          "sha1": "6011da7faaebe830fb371a0b6d564e2c2544769e"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.2-4.1.3.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 107,
+          "sha1": "ab603e933999f0e546da2c61b5a5560482342470"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.3-4.1.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1005,
+          "sha1": "3141293bea4a991651635b20cdeecfbe2756c85e"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.4-4.1.5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 186,
+          "sha1": "68a1848472842c50a4045b6db3039553533badd6"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 29731,
+          "sha1": "c10a42a6aa1ed7b01d2525a774705208baa9e357"
+        },
+        {
+          "path": "View",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper\/User.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 715,
+          "sha1": "baf2c0d530c17692d2bd8bf9bfed40bd42c4f546"
+        },
+        {
+          "path": "View\/Helper\/UserFriendship.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4348,
+          "sha1": "ae76feb506028758e5617e6c69674a79b405cf7a"
+        },
+        {
+          "path": "View\/Helper\/Viewer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 597,
+          "sha1": "67c1b489097f1a8cca58d3b08af058e1e4e8758d"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-fields",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2232,
+          "sha1": "66691274577bc44efa7d144c1e45eb009dd76ef1"
+        },
+        {
+          "path": "views\/scripts\/admin-logins",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-logins\/clear.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 362,
+          "sha1": "7916d3ca5fcf02a455994fc25f740f87ffd66597"
+        },
+        {
+          "path": "views\/scripts\/admin-logins\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4867,
+          "sha1": "82fb7b1264b0d3910693b4b69b9abfb9797cb376"
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 363,
+          "sha1": "aad283839cad588d26ccb92b97724fbf6c30d65b"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 385,
+          "sha1": "60764d071b3a8efe745f64c88799583c53bc6035"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7729,
+          "sha1": "f0e7cbd993f2f708c06128b6ba83393ad600590b"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/stats.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2911,
+          "sha1": "033c99da8f09a853b6bd7b1321a4676a047aeb14"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/facebook.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 498,
+          "sha1": "c943eebc6b8903930283d3e1e1cd92693aa7cce9"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/friends.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 519,
+          "sha1": "0be4da2404db20172b37c63f83ccb0da0b11c41d"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 574,
+          "sha1": "26d3fd5521665762bfdb67ffe784ce082ce95cb0"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/level.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 926,
+          "sha1": "5467d0d95c173186830759bc89091773af7d6e6b"
+        },
+        {
+          "path": "views\/scripts\/admin-signup",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-signup\/account.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 354,
+          "sha1": "14d24029390b3e460f0ddb0d0df9b31d93a55b94"
+        },
+        {
+          "path": "views\/scripts\/admin-signup\/disable.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 392,
+          "sha1": "d5eacdbf5d22ed39e1abdca167b861b162ab3eb7"
+        },
+        {
+          "path": "views\/scripts\/admin-signup\/enable.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 391,
+          "sha1": "067b1f69f99e8d6528afb5ac72bab976b0879c33"
+        },
+        {
+          "path": "views\/scripts\/admin-signup\/fields.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 352,
+          "sha1": "41d5e566517227071937b7e5c2528c28b51d134e"
+        },
+        {
+          "path": "views\/scripts\/admin-signup\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3004,
+          "sha1": "8c172b5bc9d5cd6aa9741c4882e3e7d201c19ca8"
+        },
+        {
+          "path": "views\/scripts\/admin-signup\/invite.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 352,
+          "sha1": "6cfb45d5bc52fadd6ca9fd75db4cc868d8f74b74"
+        },
+        {
+          "path": "views\/scripts\/admin-signup\/photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 352,
+          "sha1": "4bf1138e222c9ad22b46580f4ec61d7321e349f7"
+        },
+        {
+          "path": "views\/scripts\/auth",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/auth\/facebook-cancel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 430,
+          "sha1": "3f1b507ec000e79d041dbe5ccd775f6ba34d3c13"
+        },
+        {
+          "path": "views\/scripts\/auth\/facebook-success.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 431,
+          "sha1": "fcdc6fb8dd1bf9f076441c8d699b06d5b196a1b8"
+        },
+        {
+          "path": "views\/scripts\/auth\/forgot.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 528,
+          "sha1": "3d8fd21ead1b7ba267bdf05613828be82a8772d9"
+        },
+        {
+          "path": "views\/scripts\/auth\/login.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 333,
+          "sha1": "0d0df6d2994ecc4f3f8e2a08ccce7e3e2378ef8c"
+        },
+        {
+          "path": "views\/scripts\/auth\/reset.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 612,
+          "sha1": "da8bd2ebadc4f5096578b67511114ce58432fce3"
+        },
+        {
+          "path": "views\/scripts\/block",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/block\/add.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 342,
+          "sha1": "69756a60f2bd0d36b705f1bb59c495f007f0e99d"
+        },
+        {
+          "path": "views\/scripts\/block\/remove.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 345,
+          "sha1": "3ce235418ed33cf2bd47d9f4b2818b3c2e82c651"
+        },
+        {
+          "path": "views\/scripts\/edit",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/edit\/external-photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 455,
+          "sha1": "e88afadbbb7f9c18846af21ab9cbf0033ddd82fc"
+        },
+        {
+          "path": "views\/scripts\/edit\/photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 818,
+          "sha1": "605b2d7e511914e7ceca94a483a0887d9a9844bb"
+        },
+        {
+          "path": "views\/scripts\/edit\/post.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 318,
+          "sha1": "d0f341db13e3eb98ed715c656ff43e0d2f3a849f"
+        },
+        {
+          "path": "views\/scripts\/edit\/profile.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1055,
+          "sha1": "ea407ff05e836fb9c020079d3a1c80d299ceb355"
+        },
+        {
+          "path": "views\/scripts\/edit\/remove-photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 327,
+          "sha1": "4d7806ff70e375ccdae44541c0a463616cc021ca"
+        },
+        {
+          "path": "views\/scripts\/edit\/status.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 320,
+          "sha1": "bf7be4ac50c503f5caada23496e181811737c44d"
+        },
+        {
+          "path": "views\/scripts\/edit\/style.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 816,
+          "sha1": "308887df1f06a19d27450e8a07fe696da44be34c"
+        },
+        {
+          "path": "views\/scripts\/friends",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/friends\/add.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 319,
+          "sha1": "b5461813802892911f1a52cbe1250a0bf570d01a"
+        },
+        {
+          "path": "views\/scripts\/friends\/assign.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 280,
+          "sha1": "a3b8b692515241f999b6a17f07eb7ebfa387a534"
+        },
+        {
+          "path": "views\/scripts\/friends\/cancel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 347,
+          "sha1": "cc32cc3e5832746ea5eedda986b04e4dafc5d934"
+        },
+        {
+          "path": "views\/scripts\/friends\/confirm.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 323,
+          "sha1": "cdb5a0e375be6867fa132ac40657362474707ac1"
+        },
+        {
+          "path": "views\/scripts\/friends\/follow.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 322,
+          "sha1": "c46e6acc84c33cecf2cee9dd0c377ed2531c2da5"
+        },
+        {
+          "path": "views\/scripts\/friends\/list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2884,
+          "sha1": "3a470e6f44cb5b664868358560bca8c889765d52"
+        },
+        {
+          "path": "views\/scripts\/friends\/reject.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 322,
+          "sha1": "f1968595642c811726e9838bb671c394f52cc5b7"
+        },
+        {
+          "path": "views\/scripts\/friends\/remove.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 322,
+          "sha1": "8c00704d5e4adcc5701111067c077633fbc18765"
+        },
+        {
+          "path": "views\/scripts\/friends\/request-follow.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2415,
+          "sha1": "0fe19506ce451bca1352ffdb4d8bf7dcf7e47eff"
+        },
+        {
+          "path": "views\/scripts\/friends\/request-friend.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2421,
+          "sha1": "10ef556b0a67f3da32e9a1bd1deda2aad8d25325"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3157,
+          "sha1": "1c42c3c17ef7b1ca1d79469f71a66cd7c4f8ba0a"
+        },
+        {
+          "path": "views\/scripts\/index\/home.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 278,
+          "sha1": "b6a8f580e90db98f04bf168e51b01b43a875007d"
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 279,
+          "sha1": "b09420d1ad2f231edc036e3210db1c3bcf904518"
+        },
+        {
+          "path": "views\/scripts\/index\/search.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5229,
+          "sha1": "6ca6061116a9b5bf666d244eee7ed60bc384e1dd"
+        },
+        {
+          "path": "views\/scripts\/profile",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/profile\/activity.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1126,
+          "sha1": "675b751301eca309f8490230acde5ebbf8e97b9f"
+        },
+        {
+          "path": "views\/scripts\/profile\/fields.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2292,
+          "sha1": "9c3ca46f162f5208416cb26ca91a10a3041339bf"
+        },
+        {
+          "path": "views\/scripts\/profile\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 279,
+          "sha1": "b09420d1ad2f231edc036e3210db1c3bcf904518"
+        },
+        {
+          "path": "views\/scripts\/profile\/info.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1288,
+          "sha1": "c1d33aa6b8cf11d128e68cec24c24272be1afa13"
+        },
+        {
+          "path": "views\/scripts\/profile\/options.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 556,
+          "sha1": "ccc439959a9981db32e8e4459c67a02415b10a90"
+        },
+        {
+          "path": "views\/scripts\/profile\/photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 377,
+          "sha1": "a56d6baac7aae7a3abec9feaf26d994b0b9b4fdb"
+        },
+        {
+          "path": "views\/scripts\/profile\/status.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 722,
+          "sha1": "dd15112260d546ac9eee1261ce43ed92a614c50d"
+        },
+        {
+          "path": "views\/scripts\/profile\/tabs.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 508,
+          "sha1": "6577676c2524028c91cd5657b9d49163fb4133d1"
+        },
+        {
+          "path": "views\/scripts\/settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/settings\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 881,
+          "sha1": "5510f1f439d110494558548b4c69b21adee3d1ce"
+        },
+        {
+          "path": "views\/scripts\/settings\/general.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1222,
+          "sha1": "c98e7102fd377d18876689a9a55413012a7f5d5b"
+        },
+        {
+          "path": "views\/scripts\/settings\/network.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6047,
+          "sha1": "1dda1f3ebff3cdaea90634649ee9de5b96ccb7a4"
+        },
+        {
+          "path": "views\/scripts\/settings\/notifications.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 321,
+          "sha1": "baaa5ea15c77609fe1d9b0ae49af639761f44174"
+        },
+        {
+          "path": "views\/scripts\/settings\/password.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 602,
+          "sha1": "5f3f58cdcd0b66c8508eba492c4d956320ce7298"
+        },
+        {
+          "path": "views\/scripts\/settings\/privacy.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1240,
+          "sha1": "5c614adfda274d4b73b47655a4478f7bf0d4be0b"
+        },
+        {
+          "path": "views\/scripts\/signup",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/signup\/complete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 333,
+          "sha1": "1cdbc06be7171e5ac60a9ebb7e19b78482f1eac5"
+        },
+        {
+          "path": "views\/scripts\/signup\/confirm.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1206,
+          "sha1": "cf6fad607e516ab83840948367cae6858e18b197"
+        },
+        {
+          "path": "views\/scripts\/signup\/form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/account.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1104,
+          "sha1": "b631fbf60609eb53fe7b0c1bb7d703ce6f14e0a3"
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/admin\/account.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 322,
+          "sha1": "4eea2964b59747a491d1b07ed404c6ef47834108"
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/admin\/fields.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 489,
+          "sha1": "6c0baf753dc8b723b29ecd00d2ef3ac0e7add5fd"
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/admin\/invite.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 321,
+          "sha1": "38b46f6078f39a96876abf7df0d08159e41fe1a8"
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/admin\/photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 320,
+          "sha1": "45b0219183b4d91b18a3117b3333141aa4829623"
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/fields.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 585,
+          "sha1": "f479ec3f4bba08268a61ab84df9c11e2cde12e0d"
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/invite.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 357,
+          "sha1": "10c6e64b167488d7474775770204d19ce07d0998"
+        },
+        {
+          "path": "views\/scripts\/signup\/form\/photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 321,
+          "sha1": "4973dc95317e4ed8244f938550482763bdf87e97"
+        },
+        {
+          "path": "views\/scripts\/signup\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 737,
+          "sha1": "e0835e2fcd09f5f2d018ef7a7b90f36f11148b6f"
+        },
+        {
+          "path": "views\/scripts\/signup\/resend.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 958,
+          "sha1": "4d80e22cd3fe9b0c989e1e2af16e1a6e6ea62c08"
+        },
+        {
+          "path": "views\/scripts\/signup\/verify.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 832,
+          "sha1": "bed763852f63e5a00262df37ecf63f538e0ae624"
+        },
+        {
+          "path": "views\/scripts\/_browseUsers.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1737,
+          "sha1": "e9c36d62299ab1e9f9ce7b4a112436468e1c00d1"
+        },
+        {
+          "path": "views\/scripts\/_composeFacebook.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1472,
+          "sha1": "bc3b688e594d1f37c0a126d3ce4365ba861adc56"
+        },
+        {
+          "path": "views\/scripts\/_formEditImage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3677,
+          "sha1": "c0ea3d1ef442407a3edf520dc491006dda1d0dea"
+        },
+        {
+          "path": "views\/scripts\/_formSignupImage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3767,
+          "sha1": "e54ec7e7a55bf5df4939b9bfb341a2bdbe54a021"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/home-links",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/home-links\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1069,
+          "sha1": "198fe37a1484a504a504904acd22735cc59eeb20"
+        },
+        {
+          "path": "widgets\/home-links\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 575,
+          "sha1": "93bc2b469a3a0afb77639f75310ef8ed815a0216"
+        },
+        {
+          "path": "widgets\/home-photo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/home-photo\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 950,
+          "sha1": "68e02360d1dc8262fb9ef4e2d9f809eaff38d0b2"
+        },
+        {
+          "path": "widgets\/home-photo\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 490,
+          "sha1": "81a15b003aab73203a14102357c69db4f5b9ac0b"
+        },
+        {
+          "path": "widgets\/list-online",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-online\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3134,
+          "sha1": "f6d295dfe1893ab64fea09766e061255e4a76d4c"
+        },
+        {
+          "path": "widgets\/list-online\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 876,
+          "sha1": "752d3e813eedd4626b1f9096ad3fef88ce177228"
+        },
+        {
+          "path": "widgets\/list-popular",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-popular\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1851,
+          "sha1": "45a5980304f33ca1fc79fce503ddad22ab4eaab9"
+        },
+        {
+          "path": "widgets\/list-popular\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 907,
+          "sha1": "2552a59ea13dd6f86aabfad1b3c31236064171ff"
+        },
+        {
+          "path": "widgets\/list-signups",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-signups\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1457,
+          "sha1": "d9c987b1ba4e0d9dd9ec80037d24df45c0658e54"
+        },
+        {
+          "path": "widgets\/list-signups\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 819,
+          "sha1": "68a913f1cbfef418c5b245621c2bd29c14a86582"
+        },
+        {
+          "path": "widgets\/login-or-signup",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/login-or-signup\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2915,
+          "sha1": "f655e1460fc9b8c48564741bd048a07b5e0815f5"
+        },
+        {
+          "path": "widgets\/login-or-signup\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 896,
+          "sha1": "db7467e19a38187dbd57e6e4191405e50450e514"
+        },
+        {
+          "path": "widgets\/profile-fields",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-fields\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2650,
+          "sha1": "cba2fd7d764d0fc4f4d6c948c4d14167634dcbda"
+        },
+        {
+          "path": "widgets\/profile-fields\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 357,
+          "sha1": "06b998b91d29c069308be7249930f51827eb542a"
+        },
+        {
+          "path": "widgets\/profile-friends",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-friends\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3711,
+          "sha1": "193658e04fcd2f2633f3daa6f83adf10461ec8f9"
+        },
+        {
+          "path": "widgets\/profile-friends\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7895,
+          "sha1": "830a5794dcaf19b49ebd1944a9276a4ef48eabf6"
+        },
+        {
+          "path": "widgets\/profile-friends-common",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-friends-common\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3421,
+          "sha1": "077bbc80b59c1f3d73c2f31a651c960c5053a591"
+        },
+        {
+          "path": "widgets\/profile-friends-common\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 576,
+          "sha1": "a6e5b46c1d507b8acb942dca26ca22bccee76107"
+        },
+        {
+          "path": "widgets\/profile-friends-followers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-friends-followers\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3712,
+          "sha1": "1df9a8beff65ccc3c7af3cce212f150270fe9dce"
+        },
+        {
+          "path": "widgets\/profile-friends-followers\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7973,
+          "sha1": "4f210285253cfe921836a7deca582b4a1204d209"
+        },
+        {
+          "path": "widgets\/profile-friends-following",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-friends-following\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3718,
+          "sha1": "28dbda62b87677c48269c85db1a15367ffcff24d"
+        },
+        {
+          "path": "widgets\/profile-friends-following\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7975,
+          "sha1": "cb4f820cb3f9c1b17adceb4cf9c47b96dd5374ac"
+        },
+        {
+          "path": "widgets\/profile-info",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-info\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1874,
+          "sha1": "2e44b144dbcffee778a3bc9be347fafd6b4f4685"
+        },
+        {
+          "path": "widgets\/profile-info\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1419,
+          "sha1": "68b250fc4e7a68e42e359561be24e215034eba8f"
+        },
+        {
+          "path": "widgets\/profile-options",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-options\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1137,
+          "sha1": "15053a7385c5ed013089e4b61ca4e7162c1c92f7"
+        },
+        {
+          "path": "widgets\/profile-options\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 554,
+          "sha1": "6baacb0cfd4541f74c990296aeb6cdadeb1e9c9e"
+        },
+        {
+          "path": "widgets\/profile-photo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-photo\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1004,
+          "sha1": "601e5ed7c0e927370b829d7073118754cb022ee6"
+        },
+        {
+          "path": "widgets\/profile-photo\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 362,
+          "sha1": "54493fc2a7b71f35e32c440c4e157e43f011bd7b"
+        },
+        {
+          "path": "widgets\/profile-status",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-status\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1051,
+          "sha1": "fb32ef651fbb54faef247a7480ce043a849e4df4"
+        },
+        {
+          "path": "widgets\/profile-status\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1053,
+          "sha1": "a98af842543a222e3994a05e1446dfcf19f7784e"
+        },
+        {
+          "path": "widgets\/profile-tags",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-tags\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1581,
+          "sha1": "f2f374dc6d750c979a9064a60c706d057bf23c89"
+        },
+        {
+          "path": "widgets\/profile-tags\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2641,
+          "sha1": "72a3c3b6851b6db346e72fa45c7439b23bc90294"
+        }
+      ]
+    },
+    "application\/languages\/en\/user.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/user.csv",
+      "structure": {
+        "path": "user.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 35966,
+        "sha1": "eac064f1fc732c748fa21dce7d34f24940dbf408"
+      }
+    }
+  }
+}

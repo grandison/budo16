@@ -1,0 +1,1094 @@
+
+/* $Id: main.css 8453 2011-02-12 02:09:18Z john $ */
+@include "~/application/modules/Core/externals/styles/constants.css";
+
+
+/*
+FEED ITEMS
+Styles items with group attachments in the feed.
+*/
+ul.feed .feed_attachment_group
+{
+  display: block;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+  vertical-align: top;
+}
+html[dir="rtl"] ul.feed .feed_attachment_group
+{
+  margin: 0px 0px 5px 5px;
+}
+ul.feed .feed_attachment_group > div > a
+{
+  display: block;
+  float: left;
+  margin-right: 7px;
+}
+html[dir="rtl"] ul.feed .feed_attachment_group > div > a
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+ul.feed .feed_attachment_group > div > a > img
+{
+  display: inline-block;
+  max-width: 90px;
+  max-height: 90px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_group > div > div
+{
+  overflow: hidden;
+}
+
+
+/*
+BROWSE GROUPS
+These styles are used on the browse groups page
+*/
+ul.groups_browse > li
+{
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+ul.groups_browse > li + li
+{
+  padding-top: 15px;
+  border-top-width: 1px;
+}
+ul.groups_browse .groups_photo
+{
+  float: left;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.groups_browse .groups_photo
+{
+  float: right;
+}
+ul.groups_browse .groups_photo img
+{
+  width: 100px;
+  display: block;
+}
+ul.groups_browse .groups_info
+{
+  padding-left: 10px;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.groups_browse .groups_info
+{
+  padding-left: 0px;
+  padding-right: 10px;
+}
+ul.groups_browse .groups_title h3
+{
+  margin: 0px;
+}
+ul.groups_browse .groups_members
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.groups_browse .groups_desc
+{
+  margin-top: 5px;
+  clear: both;
+}
+ul.groups_browse .groups_options
+{
+  float: right;
+  overflow: hidden;
+  width: 120px;
+  padding-left: 15px;
+}
+html[dir="rtl"] ul.groups_browse .groups_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+ul.groups_browse .groups_options a
+{
+  clear: both;
+  margin: 3px 0px 0px 0px;
+  font-size: .8em;
+  padding-top: 1px;
+  height: 16px;
+}
+
+
+
+
+
+
+
+/*
+VIEW GROUP
+These styles are used on the view group page, i.e.
+the group's profile page
+*/
+#group_photo > img
+{
+  width: 100%;
+}
+div.group_info > h4
+{
+  margin-bottom: 1.1em;
+}
+div.group_info > ul
+{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+div.group_info > ul > li
+{
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 5px;
+}
+div.group_info > ul > li > div
+{
+  float: left;
+  clear: left;
+  width: 120px;
+}
+div.group_info > ul > li > div + div
+{
+  float: none;
+  clear: none;
+  overflow: hidden;
+  width: auto;
+}
+.layout_group_profile_info
+{
+  margin-top: 10px;
+  overflow: hidden;
+}
+.layout_group_profile_info > ul
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+}
+.layout_group_profile_info > ul > li
+{
+  font-size: .8em;
+  overflow: hidden;
+}
+.layout_group_profile_info > ul > li + li
+{
+  margin-top: 5px;
+}
+.layout_group_profile_info .group_stats_title > span
+{
+  font-weight: bold;
+  display: block;
+}
+.layout_group_profile_info .group_stats_title > a
+{
+  font-weight: normal;
+}
+.layout_group_profile_info .group_stats_staff
+{
+  margin-top: 8px;
+}
+.layout_group_profile_info .group_stats_info
+{
+  margin-top: 8px;
+}
+.layout_group_profile_info .group_stats_info ul
+{
+  color: $theme_font_color_light;
+}
+
+
+
+/* group members tab */
+.group_members_info
+{
+  clear: both;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.group_members_info .group_members_total
+{
+  margin-top: 5px;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+.group_members_info .group_members_search
+{
+  float: right;
+  overflow: hidden;
+  text-align: right;
+  padding-bottom: 2px;
+}
+html[dir="rtl"] .group_members_info .group_members_search
+{
+  float: left;
+  text-align: left;
+}
+ul.group_members
+{
+  border-top-width: 1px;
+  margin-bottom: 8px;
+}
+ul.group_members > li
+{
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+  border-bottom-width: 1px;
+}
+ul.group_members .group_members_icon
+{
+  float: left;
+  display: block;
+}
+html[dir="rtl"] ul.group_members .group_members_icon
+{
+  float: right;
+}
+ul.group_members .group_members_icon > img
+{
+  display: block;
+}
+ul.group_members .group_members_body
+{
+  overflow: hidden;
+  padding-left: 7px;
+}
+html[dir="rtl"] ul.group_members .group_members_body
+{
+  padding-left: 0px;
+  padding-right: 7px;
+}
+ul.group_members .group_members_status
+{
+  font-weight: bold;
+  color: $theme_font_color_light;
+}
+ul.group_members .group_members_status .smoothbox
+{
+  display: inline-block;
+  width: 16px;
+  background-image: url(~/application/modules/Group/externals/images/edit.png);
+  background-repeat: no-repeat;
+}
+html[dir="rtl"] ul.group_members .group_members_status .smoothbox
+{
+  /* float: right; */
+}
+ul.group_members .group_members_options
+{
+  float: right;
+  min-width: 180px;
+  overflow: hidden;
+  padding-left: 15px;
+}
+html[dir="rtl"] ul.group_members .group_members_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+ul.group_members .group_members_options a
+{
+  display: block;
+  clear: both;
+  margin: 1px;
+}
+ul.group_members .group_members_options a.buttonlink
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size: .8em;
+}
+ul.group_members .group_members_options div
+{
+  text-align: right;
+}
+html[dir="rtl"] ul.group_members .group_members_options div
+{
+  text-align: left;
+}
+
+
+
+
+
+
+
+/* photos tab */
+div.group_photos > ul
+{
+  clear: both;
+  overflow: hidden;
+  margin: 20px 0px 20px 0px;
+}
+div.group_photos > ul > li
+{
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-right: 20px;
+  height: 170px;
+}
+div.group_photos > ul > li > div
+{
+  float: left;
+  overflow: hidden;
+  padding: 3px;
+  border: 1px solid $theme_photo_border_color;
+}
+div.group_photos > ul > li > div:hover
+{
+  border: 1px solid $theme_border_dark_color;
+}
+div.group_photos > ul > li > div img
+{
+  display: block;
+}
+
+
+
+
+
+
+
+/* discussions tab and view page */
+.group_discussions_options
+{
+  +foreground;
+  +rounded;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.group_discussions_options a
+{
+  margin-right: 15px;
+}
+html[dir="rtl"] .group_discussions_options a
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+ul.group_discussions > li
+{
+  padding: 10px 10px 10px 0px;
+  overflow: hidden;
+}
+ul.group_discussions > li + li
+{
+  border-top-width: 1px;
+}
+ul.group_discussions .group_discussions_replies
+{
+  +foreground;
+  +rounded;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+  width: 40px;
+  padding: 7px 10px 7px 10px;
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+html[dir="rtl"] ul.group_discussions .group_discussions_replies
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+ul.group_discussions .group_discussions_replies span
+{
+  font-size: 2em;
+  display: block;
+}
+ul.group_discussions .group_discussions_info
+{
+  overflow: hidden;
+}
+ul.group_discussions h3
+{
+  margin-bottom: 0px;
+}
+ul.group_discussions .group_discussions_sticky a
+{
+  background-image: url(~/application/modules/Group/externals/images/post/stick.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-position: 0px .2em;
+}
+html[dir="rtl"] ul.group_discussions .group_discussions_sticky a
+{
+  background-position: right center;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+ul.group_discussions .group_discussions_lastreply
+{
+  float: right;
+  overflow: hidden;
+  width: 250px;
+  margin-left: 10px;
+}
+html[dir="rtl"] ul.group_discussions .group_discussions_lastreply
+{
+  float: left;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+ul.group_discussions .group_discussions_lastreply > a
+{
+  float: left;
+  display: block;
+}
+html[dir="rtl"] ul.group_discussions .group_discussions_lastreply > a
+{
+  float: right;
+}
+ul.group_discussions .group_discussions_lastreply > a > img
+{
+  display: block;
+}
+ul.group_discussions .group_discussions_lastreply_info
+{
+  overflow: hidden;
+  padding-left: 5px;
+}
+html[dir="rtl"] ul.group_discussions .group_discussions_lastreply_info
+{
+  padding-left: 0px;
+  padding-right: 5px;
+}
+ul.group_discussions .group_discussions_lastreply_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+/* some overrides on the tab page for spacing purposes */
+div.group_discussions_list
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+}
+div.group_discussions_list h3
+{
+  font-size: 1em;
+  letter-spacing: 0px;
+}
+div.group_discussions_list .group_discussions_sticky a
+{
+  background-position: 0px 0px;
+}
+html[dir="rtl"] div.group_discussions_list .group_discussions_sticky a
+{
+  background-position: top right;
+}
+
+
+
+
+/* view group discussion thread */
+div.group_discussions_thread_options .buttonlink
+{
+  padding-top: 1px;
+  font-size: .8em;
+  height: 16px;
+  margin-right: 15px;
+}
+html[dir="rtl"] div.group_discussions_thread_options .buttonlink
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+div.group_discussions_thread_options_closed
+{
+  background-image: url(~/application/modules/Group/externals/images/post/close.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: $theme_font_color_light;
+  display: inline-block;
+  margin-left: 20px;
+}
+html[dir="rtl"] div.group_discussions_thread_options_closed
+{
+  background-position: right center;
+  padding-left: 0px;
+  margin-left: 0px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+ul.group_discussions_thread
+{
+  margin: 10px 0px 10px 0px;
+  overflow: hidden;
+}
+ul.group_discussions_thread > li
+{
+  +foreground;
+  overflow: hidden;
+  border-top: 1px solid $theme_foreground_border_color;
+}
+ul.group_discussions_thread > li + li
+{
+  margin-top: 5px;
+}
+ul.group_discussions_thread .group_discussions_thread_author
+{
+  float: left;
+  overflow: hidden;
+  width: 120px;
+  font-weight: bold;
+  padding: 5px 10px 7px 10px;
+}
+ul.group_discussions_thread .group_discussions_thread_author_name
+{
+  margin-bottom: 5px;
+}
+html[dir="rtl"] ul.group_discussions_thread .group_discussions_thread_author
+{
+  float: right;
+}
+ul.group_discussions_thread .group_discussions_thread_photo
+{
+  display: block;
+  margin-bottom: 3px;
+  clear: both;
+}
+ul.group_discussions_thread .group_discussions_thread_info
+{
+  padding: 0px 10px 5px 5px;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.group_discussions_thread .group_discussions_thread_info
+{
+  padding: 0px 5px 5px 10px;
+}
+ul.group_discussions_thread .group_discussions_thread_details
+{
+  padding: 6px 0px 6px 0px;
+  border-bottom: 1px solid $theme_foreground_border_color;
+}
+ul.group_discussions_thread .group_discussions_thread_details_date
+{
+  font-size: .8em;
+  overflow: hidden;
+  color: $theme_font_color_light;
+}
+ul.group_discussions_thread .group_discussions_thread_details_options
+{
+  margin-top: -2px;
+  float: right;
+  overflow: hidden;
+  text-align: right;
+}
+html[dir="rtl"] ul.group_discussions_thread .group_discussions_thread_details_options
+{
+  float: left;
+  text-align: left;
+}
+ul.group_discussions_thread .group_discussions_thread_details_options .buttonlink
+{
+  font-size: .8em;
+  height: 16px;
+  margin-left: 10px;
+}
+html[dir="rtl"] ul.group_discussions_thread .group_discussions_thread_details_options .buttonlink
+{
+  margin-left: 0px;
+  margin-right: 10px;
+}
+ul.group_discussions_thread .group_discussions_thread_body
+{
+  padding: 5px 0px 5px 0px;
+}
+ul.group_discussions_thread .group_discussions_thread_body blockquote
+{
+  border: 1px dashed $theme_border_medium_color;
+  background: $theme_body_background_color;
+  padding: 10px;
+}
+
+
+
+/*
+GROUP PHOTOS UPLOAD FORM
+Some minor changes to the global form.
+*/
+.group_form_upload #file-label,
+.group_form_upload #submit-label
+{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/*
+VIEW GROUP ALBUM
+Styles for the list group photo page.
+*/
+.group_album_options > a
+{
+  margin-right: 15px;
+}
+html[dir="rtl"] .group_album_options > a
+{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+/*
+VIEW GROUP PHOTO
+These styles are used on the view photo page within
+an album.
+*/
+div.group_photo_view
+{
+  margin: 25px auto 0px auto;
+  max-width: 750px;
+  min-width: 400px;
+  overflow: visible;
+}
+div.group_photo_view #media_photo
+{
+  border: 1px solid $theme_photo_border_color;
+  margin: auto;
+  display: block;
+  max-width: 720px;
+}
+div.group_photo_view .group_photo_nav
+{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+div.group_photo_view .group_photo_nav > div
+{
+  float: left;
+  overflow: visible;
+}
+html[dir="rtl"] div.group_photo_view .group_photo_nav > div
+{
+  float: right;
+}
+div.group_photo_view .group_photo_nav > div + div
+{
+  float: none;
+  text-align: right;
+}
+html[dir="rtl"] div.group_photo_view .group_photo_nav > div + div
+{
+  float: left;
+  text-align: left;
+}
+div.group_photo_view .group_photo_nav > div + div > a + a
+{
+  margin-left: 20px;
+}
+html[dir="rtl"] div.group_photo_view .group_photo_nav > div + div > a + a
+{
+  margin-left: 0px;
+  margin-right: 20px;
+}
+div.group_photo_info
+{
+  +foreground;
+  +rounded;
+  text-align: center;
+  padding: 10px;
+  border: 5px solid $theme_foreground_border_color;
+}
+div.group_photo_info p
+{
+  text-align: left;
+}
+html[dir="rtl"] div.group_photo_info p
+{
+  text-align: right;
+}
+div.group_photo_container
+{
+  position: relative;
+  display: inline-block;
+}
+div.group_photo_container a:link
+{
+  text-decoration: none;
+}
+div.group_photo_view > span + div > a
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.group_photo_view > span + div > a:link
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.group_photo_info .group_photo_title
+{
+  margin-top: 5px;
+  font-weight: bold;
+}
+div.group_photo_info .group_photo_description
+{
+  margin-top: 3px;
+  font-size: .8em;
+}
+div.group_photo_info .group_photo_owner
+{
+  margin-top: 3px;
+  font-size: .8em;
+}
+div.group_photo_info .group_photo_title + .group_photo_tags,
+div.group_photo_info .group_photo_description + .group_photo_tags
+{
+  margin-top: 15px;
+}
+div.group_photo_info .group_photo_tags
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.group_photo_info .group_photo_date
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.group_photo_view > div.comments
+{
+  margin-top: 15px;
+}
+
+
+
+
+
+/*
+GROUPS USER PROFILE TAB
+Styles the list of groups on a user's Groups profile tab.
+*/
+.layout_group_profile_groups ul > li,
+.layout_group_profile_events ul > li
+{
+  overflow: hidden;
+}
+.layout_group_profile_groups ul > li + li,
+.layout_group_profile_events ul > li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+.layout_group_profile_groups ul .groups_profile_tab_photo,
+.layout_group_profile_events ul .groups_profile_tab_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+html[dir="rtl"] .layout_group_profile_groups ul .groups_profile_tab_photo,
+html[dir="rtl"] .layout_group_profile_events ul .groups_profile_tab_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+.layout_group_profile_groups ul .groups_profile_tab_photo img,
+.layout_group_profile_events ul .groups_profile_tab_photo img
+{
+  max-width: 90px;
+}
+.layout_group_profile_groups ul .groups_profile_tab_info,
+.layout_group_profile_events ul .groups_profile_tab_info
+{
+  overflow: hidden;
+}
+.layout_group_profile_groups ul .groups_profile_tab_title > a,
+.layout_group_profile_events ul .groups_profile_tab_title > a
+{
+  font-weight: bold;
+}
+.layout_group_profile_groups ul .groups_profile_tab_members,
+.layout_group_profile_events ul .groups_profile_tab_members
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+.layout_group_profile_groups ul .groups_profile_tab_desc,
+.layout_group_profile_events ul .groups_profile_tab_desc
+{
+  margin-top: 7px;
+}
+
+
+
+
+/*
+POST GROUP TOPIC FORM
+*/
+#group_topic_create .form-elements
+{
+  margin-top: 10px;
+}
+#group_topic_create .form-label
+{
+  clear: both;
+  float: none;
+  text-align: left;
+  margin-bottom: 3px;
+}
+html[dir="rtl"] #group_topic_create .form-label
+{
+  text-align: right;
+}
+#group_topic_create #watch-label
+{
+  display: none;
+}
+
+/*
+REPLY TO GROUP TOPIC FORM
+*/
+#group_topic_reply h3,
+#group_topic_reply #body-label,
+#group_topic_reply #submit-label
+{
+  display: none;
+}
+#group_topic_reply .form-elements
+{
+  margin-top: 0px;
+}
+#group_topic_reply #watch-label
+{
+  display: none;
+}
+
+
+/*
+INVITE FORM
+*/
+#group_form_invite #users-label
+{
+  display: none;
+}
+#group_form_invite #users-element
+{
+  border: 1px solid $theme_border_dark_color;
+  padding: 7px 10px 7px 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 10px 0px 10px 0px;
+}
+
+
+
+/*
+EDIT MEMBER TITLE FORM
+*/
+#group_form_title #title-label
+{
+  display: none;
+}
+#group_form_title #fieldset-buttons
+{
+  margin-top: 10px;
+}
+#group_form_title .form-elements
+{
+  margin-top: 10px;
+}
+
+
+
+/*
+TAGS FOR MESSEAGE RECIPIENTS
+*/
+.tag.tag_group
+{
+  background-image: url(~/application/modules/Group/externals/images/types/group.png);
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+}
+
+
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_group
+{
+  background-image: url(~/application/modules/Group/externals/images/types/group.png);
+}
+.item_icon_group_topic,
+.item_icon_group_post
+{
+  background-image: url(~/application/modules/Group/externals/images/types/post.png);
+}
+.item_icon_group_album,
+.item_icon_group_photo
+{
+  background-image: url(~/application/modules/Group/externals/images/types/album.png);
+}
+
+
+
+
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_group_discussion_response,
+.notification_type_group_discussion_reply
+{
+  background-image: url(~/application/modules/Group/externals/images/types/post.png);
+}
+.notification_type_group_invite
+{
+  background-image: url(~/application/modules/Group/externals/images/member/invite.png);
+}
+.notification_type_group_approve
+{
+  background-image: url(~/application/modules/Group/externals/images/types/group_request.png);
+}
+.notification_type_group_accepted
+{
+  background-image: url(~/application/modules/Group/externals/images/types/group.png);
+}
+.notification_type_group_promote
+{
+  background-image: url(~/application/modules/Group/externals/images/member/promote.png);
+}
+
+
+/* ICONS */
+.icon_group_photo_new
+{
+  background-image: url(~/application/modules/Group/externals/images/photo/upload.png);
+}
+.icon_group_new
+{
+  background-image: url(~/application/modules/Group/externals/images/create.png);
+}
+.icon_group_edit
+{
+  background-image: url(~/application/modules/Group/externals/images/edit.png);
+}
+.icon_group_delete
+{
+  background-image: url(~/application/modules/Group/externals/images/delete.png);
+}
+.icon_group_join
+{
+  background-image: url(~/application/modules/Group/externals/images/member/join.png);
+}
+.icon_group_leave
+{
+  background-image: url(~/application/modules/Group/externals/images/member/leave.png);
+}
+.icon_group_photo_view
+{
+  background-image: url(~/application/modules/Group/externals/images/photo/view.png);
+}
+.icon_group_photo_new
+{
+  background-image: url(~/application/modules/Group/externals/images/photo/upload.png);
+}
+.icon_group_post_new
+{
+  background-image: url(~/application/modules/Group/externals/images/post/create.png);
+}
+.icon_group_post_edit
+{
+  background-image: url(~/application/modules/Group/externals/images/post/edit.png);
+}
+.icon_group_post_reply
+{
+  background-image: url(~/application/modules/Group/externals/images/post/reply.png);
+}
+.icon_group_post_stick
+{
+  background-image: url(~/application/modules/Group/externals/images/post/stick.png);
+}
+.icon_group_post_unstick
+{
+  background-image: url(~/application/modules/Group/externals/images/post/unstick.png);
+}
+.icon_group_post_close
+{
+  background-image: url(~/application/modules/Group/externals/images/post/close.png);
+}
+.icon_group_post_open
+{
+  background-image: url(~/application/modules/Group/externals/images/post/unclose.png);
+}
+.icon_group_post_rename
+{
+  background-image: url(~/application/modules/Group/externals/images/post/rename.png);
+}
+.icon_group_post_delete
+{
+  background-image: url(~/application/modules/Group/externals/images/post/delete.png);
+}
+.icon_group_post_quote
+{
+  background-image: url(~/application/modules/Group/externals/images/post/quote.png);
+}
+.icon_group_accept
+{
+  background-image: url(~/application/modules/Group/externals/images/member/accept.png);
+}
+.icon_group_reject
+{
+  background-image: url(~/application/modules/Group/externals/images/member/reject.png);
+}
+.icon_group_cancel
+{
+  background-image: url(~/application/modules/Group/externals/images/member/cancel.png);
+}
+.icon_group_demote
+{
+  background-image: url(~/application/modules/Group/externals/images/member/demote.png);
+}
+.icon_group_promote
+{
+  background-image: url(~/application/modules/Group/externals/images/member/promote.png);
+}
+.icon_group_topic_watch
+{
+  background-image: url(~/application/modules/Group/externals/images/watch.png);
+}
+.icon_group_topic_unwatch
+{
+  background-image: url(~/application/modules/Group/externals/images/unwatch.png);
+}
+.activity_icon_group_join
+{
+  background-image: url(~/application/modules/Group/externals/images/member/join.png);
+}
+.activity_icon_group_promote
+{
+  background-image: url(~/application/modules/Group/externals/images/member/promote.png);
+}

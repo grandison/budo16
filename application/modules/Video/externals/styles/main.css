@@ -1,0 +1,373 @@
+
+/* $Id: main.css 8403 2011-02-05 01:57:16Z john $ */
+
+
+/*
+FEED COMPOSER
+Styles the insert video part of the feed composer.
+*/
+#compose-video-body .compose-preview-image
+{
+  float: left;
+  margin-right: 2px;
+  border: 1px solid $theme_photo_border_color;
+}
+html[dir="rtl"] #compose-video-body .compose-preview-image
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 2px;
+}
+#compose-video-body .compose-preview-info
+{
+  overflow: hidden;
+}
+#compose-video-body .compose-preview-info a
+{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+#compose-video-body .compose-preview-info > div
+{
+  font-size: .8em;
+}
+
+
+
+
+/*
+BROWSE VIDEOS & FEED ITEMS
+Styles the browse videos page as well as videos embedded
+in the feed.
+*/
+.feed_item_attachments .video_thumb_wrapper
+{
+  margin-right: 7px;
+}
+html[dir="rtl"] .feed_item_attachments .video_thumb_wrapper
+{
+  margin-right: 0px;
+  margin-left: 7px;
+}
+.feed_item_attachments .video_info
+{
+  overflow: hidden;
+}
+.feed_item_attachments .video_info > a
+{
+  font-size: .8em;
+  font-weight: bold;
+}
+.video_title
+{
+  font-size: .8em;
+  font-weight: bold;
+  display: inline-block;
+  clear: both;
+}
+.feed_item_attachments .video_desc
+{
+  margin-top: 2px;
+  font-size: .8em;
+}
+ul.videos_browse
+{
+  overflow: hidden;
+}
+ul.videos_browse > li
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+  height: 180px;
+  max-width: 140px;
+}
+html[dir="rtl"] ul.videos_browse > li
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+.video_length
+{
+  +opacity(.7);
+  +rounded(4px, true, true, false, true);
+  display: inline-block;
+  position: absolute;
+  margin: 6px;
+  padding: 3px 5px 3px 5px;
+  background: #000;
+  color: #fff;
+  font-size: .7em;
+}
+.video_thumb_wrapper
+{
+  +rounded(4px);
+  float: left;
+  margin-bottom: 2px;
+  background: #666;
+}
+html[dir="rtl"] .video_thumb_wrapper
+{
+  float: right;
+}
+.video_thumb_wrapper:hover
+{
+  background: #777;
+}
+.video_thumb_wrapper a
+{
+  display: block;
+}
+.video_thumb_wrapper img,
+.video_thumb_wrapper span.item_nophoto
+{
+  display: block;
+  margin: 5px;
+  border: 1px solid #888;
+}
+.video_author
+{
+  font-size: .8em;
+  display: block;
+}
+.video_stats > span
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+
+/*
+MANAGE VIDEOS
+Styles the manage videos page.
+*/
+ul.videos_manage > li
+{
+  clear: both;
+  overflow: hidden;
+}
+ul.videos_manage > li + li
+{
+  margin-top: 15px;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+ul.videos_manage .video_thumb_wrapper
+{
+  +rounded(4px);
+  float: left;
+  margin-bottom: 2px;
+  background: #666;
+}
+html[dir="rtl"] ul.videos_manage .video_thumb_wrapper
+{
+  float: right;
+}
+ul.videos_manage .video_thumb_wrapper:hover
+{
+  background: #777;
+}
+ul.videos_manage .video_thumb_wrapper a
+{
+  display: block;
+}
+ul.videos_manage .video_thumb_wrapper img
+{
+  display: block;
+  margin: 5px;
+  border: 1px solid #888;
+}
+ul.videos_manage .video_info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+html[dir="rtl"] ul.videos_manage .video_info
+{
+  padding-left: 0px;
+  padding-right: 10px;
+}
+ul.videos_manage .video_info h3
+{
+  margin-bottom: 0px;
+}
+ul.videos_manage .video_options
+{
+  float: right;
+  width: 120px;
+  padding-left: 15px;
+}
+html[dir="rtl"] ul.videos_manage .video_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+ul.videos_manage .video_options a
+{
+  clear: both;
+  margin: 3px 0px 0px 0px;
+  font-size: .8em;
+  padding-top: 1px;
+  height: 16px;
+}
+ul.videos_manage .video_title
+{
+  margin-bottom: 1px;
+  margin-left: -1px;
+}
+html[dir="rtl"] ul.videos_manage .video_title
+{
+  margin-left: 0px;
+  margin-right: -1px;
+}
+ul.videos_manage .video_author
+{
+  font-size: .8em;
+  display: block;
+}
+ul.videos_manage .video_stats
+{
+  margin-top: 2px;
+}
+ul.videos_manage .video_stats > span
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+
+
+/*
+VIEW VIDEO
+Styles the view video page, where a single
+video is shown.
+*/
+div.video_view h3
+{
+  border-top-width: 1px;
+  padding-top: 7px;
+  margin-bottom: 2px;
+}
+div.video_view .video_embed
+{
+  margin: 10px 0px 3px 0px;
+}
+div.video_view .video_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+div.video_view .rating
+{
+  margin-top: 7px;
+}
+.layout_page_video_index_view .layout_core_comments,
+div.video_view .comments
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+.layout_page_video_index_view .layout_core_comments .comments_options span,
+div.video_view .comments_options span
+{
+  font-weight: bold;
+  font-size: 1em;
+  color: $theme_font_color_light;
+  margin-bottom: 6px;
+}
+.video_view_container .video_options a
+{
+  font-weight: bold;
+}
+
+/*
+Message VIDEO
+Styles for videos attached to the message page.
+*/
+div.message_attachment .video_info > a
+{
+  font-size: .8em;
+  font-weight: bold;
+}
+div.message_attachment .video_info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+div.message_attachment .video_info h3
+{
+  margin-bottom: 0px;
+}
+div.message_attachment .video_desc
+{
+  margin-top: 2px;
+  font-size: .8em;
+}
+
+
+
+
+
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_video
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+
+/* ITEM TYPE ICONS */
+.item_icon_video
+{
+  background-image: url(~/application/modules/Video/externals/images/types/video.png);
+}
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_video_processed
+{
+  background-image: url(~/application/modules/Video/externals/images/new.png);
+}
+
+/*
+ACTIVITY FEED COMPOSER VIDEO
+Used for the attachment composer above the main feed.
+*/
+#compose-video-activator,
+#compose-video-menu span
+{
+  background-image: url(~/application/modules/Video/externals/images/new.png);
+  background-repeat: no-repeat;
+}
+#compose-video-form-input
+{
+  width: 300px;
+  margin-top: 5px;
+}
+#compose-video-form-submit
+{
+  margin-top: 5px;
+  clear: both;
+}
+
+
+
+
+/* ICONS */
+.icon_video_new
+{
+  background-image: url(~/application/modules/Video/externals/images/new.png);
+}
+.icon_video_edit
+{
+  background-image: url(~/application/modules/Video/externals/images/edit.png);
+}
+.icon_video_delete
+{
+  background-image: url(~/application/modules/Video/externals/images/delete.png);
+}

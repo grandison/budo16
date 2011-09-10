@@ -1,0 +1,142 @@
+{
+  "type": "external",
+  "name": "open-flash-chart",
+  "version": "4.0.0",
+  "revision": "7593",
+  "path": "externals\/open-flash-chart",
+  "repository": null,
+  "date": "Wed, 18 May 2011 23:59:12 +0000",
+  "title": "Open Flash Chart",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Wed, 18 May 2011 23:59:12 +0000",
+    "title": "Open Flash Chart",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/open-flash-chart": {
+      "type": "directory",
+      "path": "externals\/open-flash-chart",
+      "structure": [
+        {
+          "path": "js",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "js\/json",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "js\/json\/json2.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 16927,
+          "sha1": "13795397cef186eec27d7dfad1720dc907983240"
+        },
+        {
+          "path": "js\/README.txt",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 370,
+          "sha1": "d6a532a4279aea45d1159912a48a39d74746f25e"
+        },
+        {
+          "path": "js\/swfobject.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9759,
+          "sha1": "66851ab2133e27b97c4f3048416b947aa7ed82c5"
+        },
+        {
+          "path": "js-ofc-library",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "js-ofc-library\/ofc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 878,
+          "sha1": "c350e861e3ec1f2344970249a6731a01517d8e44"
+        },
+        {
+          "path": "js-ofc-library\/open_flash_chart.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5338,
+          "sha1": "a7d5a34ef47975f14a61221fa4b93bd1608781ca"
+        },
+        {
+          "path": "js-ofc-library\/open_flash_chart.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3862,
+          "sha1": "e1c758d59b4bc670951c4f5907e08f55f76ae120"
+        },
+        {
+          "path": "license",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 111,
+          "sha1": "20c4b7efeb6880315c43fafd6c1ade3909cde5b4"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 404,
+          "sha1": "03dd17dc555e5c77f67943221658a51d70ce5007"
+        },
+        {
+          "path": "open-flash-chart.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 276186,
+          "sha1": "913df5bf76d33f565c934c6f8eb998936539dfd5"
+        }
+      ]
+    }
+  }
+}
